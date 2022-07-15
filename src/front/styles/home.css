@@ -1,7 +1,193 @@
-/*
-    home.css: This website contains selectors only used in home.css
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+h1 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 650px;
+}
+
+h1 span {
+  font-size: 50px;
+  margin-left: 0px;
+}
+
+.message {
+  /* background-color: #5994ce; */
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5c58b6 0,
+    #5994ce 100%
+  );
+  color: #333;
+  display: block;
+  font-weight: 700;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 200px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5 {
+  font-family: "Orbitron", sans-serif;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 300px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 300px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 300px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+.imagemain {
+  object-fit: contain;
+  width: 700px;
+  height: 700px;
+}
+.conta {
+  height: 100vh;
+  width: 100vw;
+  /* Created with https://www.css-gradient.com */
+  background: #1c012c;
+  background: -webkit-linear-gradient(top left, #1c012c, #9e018e);
+  background: -moz-linear-gradient(top left, #1c012c, #9e018e);
+  background: linear-gradient(to bottom right, #1c012c, #9e018e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 55px;
+  font-family: "Orbitron", sans-serif;
+}
+.title2 {
+  font-size: 45px;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5c58b6 0,
+    #5994ce 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
