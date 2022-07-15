@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 import main1 from "../../img/main1.png";
 import "../../styles/home.css";
 
@@ -28,7 +29,7 @@ export const Home = () => {
 
 				<p className="text-white">Lorem ipsum is placeholder text commonly used in the graphic, <br />print, and publishing industries for previewing layouts and visual mockups <br />Lorem ipsum is placeholder text commonly used in the graphic, <br />print, and publishing industries for previewing layouts and visual mockups.</p>
 				<div className="d-flex">
-					<button className="button-29 me-3"> Hire us!</button>
+					<Link to="/aboutus"><button className="button-29 me-3"> Hire us!</button></Link>
 					<button className="button-29"> See protafolio</button></div>
 			</div>
 
