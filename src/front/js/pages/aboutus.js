@@ -24,11 +24,30 @@ export const Aboutus = () => {
 		},
 		visible: {
 			x: 0,
-			duration: 2
+			duration: 2,
+			// transition: {
+			// 	delay: 0.3
+			// }
+		}
+	}
+
+
+	const boxVarient2 = {
+		hidden: {
+			x: -10,
+			opacity: 0,
+			y: 65
+		},
+		visible: {
+			x: 0,
+			opacity: 1,
+			transition: {
+				delay: 0.9
+			}
 		}
 	}
 	return (
-		<div className="contai">
+		<div className="contai bg-ligth">
 			<div>
 				{/* <button variant="primary" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setShow(false)}>
 					Custom Width Modal
@@ -85,7 +104,10 @@ export const Aboutus = () => {
 						creating custom web solutions custom-fit to support the growth of modern startups.
 
 					</motion.h4>
-					{/* <p className="paragraph">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.</p>  */}
+					<motion.p className="paragraph"
+						variants={boxVarient2}
+						animate="visible"
+						initial="hidden">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.</motion.p>
 				</div>
 			</div>
 		</div>

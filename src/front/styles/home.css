@@ -196,8 +196,8 @@ h1 span {
 .contai {
   width: 100%;
   height: 100vh;
-  padding: 50px;
-  background-color: #f0f8ff;
+  padding: 70px;
+  /* background-color: #f0f8ff; */
 }
 .text-gradient {
   font-size: 92px;
@@ -220,6 +220,6 @@ h1 span {
   line-height: 1.7em;
 }
 
-.navbar {
+/* .navbar {
   background-color: #f0f8ff;
-}
+} */
