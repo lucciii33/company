@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 import { Context } from "../store/appContext";
 
@@ -15,10 +16,21 @@ export const Aboutus = () => {
 		})
 	}, []);
 
+
+	const boxVarient = {
+		hidden: {
+			x: "-100vh",
+			y: 65
+		},
+		visible: {
+			x: 0,
+			duration: 2
+		}
+	}
 	return (
 		<div className="contai">
 			<div>
-				<button variant="primary" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setShow(false)}>
+				{/* <button variant="primary" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setShow(false)}>
 					Custom Width Modal
 				</button>
 
@@ -39,16 +51,41 @@ export const Aboutus = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className="text-center">
 
-					<h5 className="ourvision">OUR VISION</h5>
-					<h2 className="text-gradient">Getting the most out <br /> of your web presence</h2>
-					<h4 className="paragraph">We’re a unique combination of a software house and interactive agency,<br />
+					<motion.h5 className="ourvision"
+						animate={{
+							y: 25,
+							opacity: 1,
+						}}
+						initial={{
+							opacity: 0.6
+						}}
+						transition={{ type: "spring", stiffness: 130 }}
+					>OUR VISION</motion.h5>
+					<motion.h2
+						className="text-gradient"
+						animate={{
+							y: 75,
+							opacity: 1
+						}}
+						initial={{
+							opacity: 0.6
+						}}
+						transition={{ type: "spring", stiffness: 130 }}
+					>Getting the most out <br /> of your web presence</motion.h2>
+					<motion.h4 className="paragraph"
+
+						transition={{ type: "spring", stiffness: 130 }}
+						variants={boxVarient}
+						animate="visible"
+						initial="hidden"
+					>We’re a unique combination of a software house and interactive agency,<br />
 						creating custom web solutions custom-fit to support the growth of modern startups.
 
-					</h4>
-					<p className="paragraph">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.</p>
+					</motion.h4>
+					{/* <p className="paragraph">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.</p>  */}
 				</div>
 			</div>
 		</div>
