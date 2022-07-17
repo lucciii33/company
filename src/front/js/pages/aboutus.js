@@ -6,15 +6,35 @@ import { Context } from "../store/appContext";
 
 export const Aboutus = () => {
 	const { store, actions } = useContext(Context);
-	const [show, setShow] = useState(false);
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const [didUserScrollDown, setDidUserScrollDown] = useState(false);
+	//function below constantly updates scrollPosition with the pageYOffset. Starts at 0, and increases as
+	//the user scrolls down
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+		setScrollPosition(position);
+		//As soon as the user moves and the position is no longer 0, the second hook is set to true which
+		//triggers the toast
+		position != 0 ? setDidUserScrollDown(true) : null;
+	};
 
+	//adds the event listener on initial render and cleans it up when finished.
 	useEffect(() => {
-		window.addEventListener("load", function () {
-			setTimeout(() => {
-				setShow(true)
-			}, 1000)
-		})
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
+
+	const toastStyles = {
+		position: "fixed",
+		bottom: "3%",
+		right: "3%",
+		zIndex: "2",
+	};
+
+
 
 
 	const boxVarient = {
@@ -49,28 +69,35 @@ export const Aboutus = () => {
 	return (
 		<div className="contai bg-ligth">
 			<div>
-				{/* <button variant="primary" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setShow(false)}>
-					Custom Width Modal
-				</button>
-
-				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" show={show}
-					onHide={() => setShow(false)}>
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								...
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div>
+				<div
+					className={
+						didUserScrollDown ? "toast show" : "toast hide"
+					}
+					style={toastStyles}
+					n
+				>
+					<div className="toast-header" style={{ backgroundColor: "#7dcfb6" }}>
+						<strong className="me-auto" style={{ color: "black" }}>
+							New Here?
+						</strong>
+						<button
+							type="button"
+							className="btn-close"
+							data-bs-dismiss="toast"
+						></button>
 					</div>
-				</div> */}
+					<div className="toast-body " style={{ backgroundColor: "ghostwhite" }}>
+						<p>
+							Check out the{" "}
+							<Link to="/tutorial" className=".active">
+								tutorial
+							</Link>
+							!
+						</p>
+					</div>
+				</div>
+
+
 				<div className="text-center">
 
 					<motion.h5 className="ourvision"

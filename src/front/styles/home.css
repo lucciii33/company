@@ -223,3 +223,7 @@ h1 span {
 /* .navbar {
   background-color: #f0f8ff;
 } */
+
+div.toast:not(.hide) {
+  transition: all 0.6s ease-in-out;
+}
