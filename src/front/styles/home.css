@@ -400,3 +400,21 @@ div.toast:not(.hide) {
   color: #fff;
   z-index: 10;
 }
+
+/* /////////////////questions///////////////// */
+
+.questions-box {
+  width: 400px;
+  height: 350px;
+  border: solid 2px black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+}
+
+.answer-box {
+  width: 450px;
+  height: auto;
+  border: solid 2px black;
+}

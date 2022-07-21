@@ -8,6 +8,7 @@ import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 import { ContactUs } from "./pages/contact";
 import { Projects } from "./pages/projects";
+import { Questions } from "./pages/questions";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -25,6 +26,7 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<Questions />} path="/questions" />
                         <Route element={<Aboutus />} path="/aboutus" />
                         <Route element={<ContactUs />} path="/contact" />
                         <Route element={<Single />} path="/single/:theid" />
