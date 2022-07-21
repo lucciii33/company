@@ -20,7 +20,8 @@ export const Questions = () => {
                     <h4>Cost and time estimations</h4>
                     <h4>How we work</h4>
                     <h4>Legal and safety issues</h4>
-                    <h4>Technical aspects</h4>
+                    <a href='#technicalAspects'>Technical aspects</a>
+                    {/* <h4>Technical aspects</h4> */}
                 </div>
                 <div>
 
@@ -188,7 +189,7 @@ export const Questions = () => {
                     {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
                     <div className="answer-box">
-                        <h4>Technical aspects</h4>
+                        <h4 id="technicalAspects">Technical aspects</h4>
                         <div>
                             <h6 onClick={() => setShowParagraph(!showParagraph)}>How much do your services cost?</h6>
                             {showParagraph &&
