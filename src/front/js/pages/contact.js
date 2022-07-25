@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 import emailjs from 'emailjs-com';
@@ -20,18 +20,18 @@ export const ContactUs = () => {
 			// }
 		}
 	}
-
+	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm('gmail', 'service_d70o4b5', e.target, 'HASNJCXly2tABuH0x')
+		emailjs.sendForm('gmail', 'template_7xxg1xi', form.current, 'HASNJCXly2tABuH0x')
 			.then((result) => {
 				console.log(result.text);
 			}, (error) => {
 				console.log(error.text);
 			});
 
-		e.target.reset()
+		// e.target.reset()
 	};
 
 	return (
@@ -43,7 +43,7 @@ export const ContactUs = () => {
 				<h6 className="title-contact-3">Fill out the enquiry form and we’ll get back to you as soon as possible.</h6>
 			</div>
 
-			<form onSubmit={sendEmail} >
+			<form onSubmit={sendEmail} ref={form} >
 				<div className="d-flex conta-form">
 					<div>
 						<input className="email" placeholder="Email address" type="text" name="email"></input>
@@ -61,7 +61,8 @@ export const ContactUs = () => {
 							<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
 						</div>
 						<div>
-							<button className="button-29 mt-2">Lest talk<i className="far fa-paper-plane ms-1"></i></button>
+							<input type="submit" value="Send" />
+							{/* <button className="button-29 mt-2">Lest talk<i className="far fa-paper-plane ms-1"></i></button> */}
 						</div>
 
 					</div>
