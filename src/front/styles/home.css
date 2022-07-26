@@ -449,3 +449,6 @@ div.toast:not(.hide) {
   color: white;
   text-decoration: none;
 }
+.nav-link {
+  white-space: nowrap;
+}

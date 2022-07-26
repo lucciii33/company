@@ -76,7 +76,7 @@ export const Aboutus = () => {
 					style={toastStyles}
 					n
 				>
-					<div className="toast-header" style={{ backgroundColor: "#7dcfb6" }}>
+					<div className="toast-header" style={{ backgroundColor: "#5c58b6" }}>
 						<strong className="me-auto" style={{ color: "black" }}>
 							New Here?
 						</strong>
@@ -88,9 +88,9 @@ export const Aboutus = () => {
 					</div>
 					<div className="toast-body " style={{ backgroundColor: "ghostwhite" }}>
 						<p>
-							Check out the{" "}
+							Want 20% off?{" "}
 							<Link to="/tutorial" className=".active">
-								tutorial
+								click here
 							</Link>
 							!
 						</p>
