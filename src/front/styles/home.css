@@ -406,15 +406,46 @@ div.toast:not(.hide) {
 .questions-box {
   width: 400px;
   height: 350px;
-  border: solid 2px black;
+  border: solid 3px #5c58b6;
   align-items: center;
   justify-content: center;
   text-align: center;
   display: grid;
+  border-radius: 10px;
+  margin: 20px;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5c58b6 0,
+    #5994ce 100%
+  );
 }
 
 .answer-box {
-  width: 450px;
+  width: 650px;
+  padding: 45px;
   height: auto;
-  border: solid 2px black;
+  border: solid 3px #5c58b6;
+  border-radius: 10px;
+  margin: 20px;
+  margin-left: 165px;
+}
+.bg-answer {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5c58b6 0,
+    #5994ce 100%
+  );
+  border-radius: 3px;
+  padding: 5px;
+}
+.question-border {
+  padding: 20px;
+  border-bottom: 1px solid #5c58b6;
+  display: flex;
+  font-family: "Orbitron", sans-serif;
+}
+.link-tag {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  text-decoration: none;
 }
