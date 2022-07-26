@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import { Context } from "../store/appContext";
 
@@ -24,7 +24,7 @@ export const ContactUs = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm('gmail', 'template_7xxg1xi', form.current, 'HASNJCXly2tABuH0x')
+		emailjs.sendForm('service_d70o4b5', 'template_7xxg1xi', form.current, 'HASNJCXly2tABuH0x')
 			.then((result) => {
 				console.log(result.text);
 			}, (error) => {
@@ -61,7 +61,7 @@ export const ContactUs = () => {
 							<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
 						</div>
 						<div>
-							<input type="submit" value="Send" />
+							<input type="submit" value="Send" className="button-29 mt-2" />
 							{/* <button className="button-29 mt-2">Lest talk<i className="far fa-paper-plane ms-1"></i></button> */}
 						</div>
 
