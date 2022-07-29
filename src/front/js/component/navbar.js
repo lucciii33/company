@@ -23,7 +23,7 @@ export const Navbar = () => {
 						<Link className="text-decoration-none" to="/aboutus"><a className="nav-link text-black" href="#">About Us</a></Link>
 					</li>
 					<li className="nav-item">
-						<Link className="text-decoration-none" to="/contact"><a className="nav-link text-black" href="#">Contact Us</a></Link>
+						<Link className="text-decoration-none" to="/contact"><a className="nav-link text-black" href="#">Contact Us!</a></Link>
 					</li>
 					<li className="nav-item">
 						<Link className="text-decoration-none" to="/questions"><a className="nav-link text-black" href="#">FQA</a></Link>
