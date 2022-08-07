@@ -83,7 +83,7 @@ export const Projects = () => {
 						style={{ scaleX: scrollYProgress }}>
 						<img src="https://i.pinimg.com/originals/e1/b8/79/e1b879128c55a9c38d8c6a5f57282b46.png" className="img-project ms-3"></img>
 						<h3 className="paragraph ms-3">Lorem Ipsum</h3>
-						<p className="description ms-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p className="description ms-3">Loremm ipsum dolor sit amet, consectetur adipiscing elit</p>
 						<button className="button-29 ms-3">see me!</button>
 					</motion.div>
 				</div>
