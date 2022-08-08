@@ -462,17 +462,42 @@ div.toast:not(.hide) {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* position: relative; */
 }
+
+@media (max-width: 667px) {
+  .box-project {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    border: 2px solid #5c58b6;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* position: relative; */
+  }
+}
 .img-project {
   width: 500px;
   height: 400px;
-
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; */
   margin: auto;
   border-radius: 3px;
+}
+@media (max-width: 667px) {
+  .box-project {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    border: 2px solid #5c58b6;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* position: relative; */
+  }
+  .img-project {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border-radius: 3px;
+  }
 }
 
 .text-gradient2 {
@@ -491,6 +516,11 @@ div.toast:not(.hide) {
 }
 .margin-left {
   margin-left: 130px;
+}
+@media (max-width: 667px) {
+  .margin-left {
+    margin-left: 30px;
+  }
 }
 
 /* //////////////////////////services////////////////// */
