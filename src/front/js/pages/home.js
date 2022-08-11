@@ -63,7 +63,7 @@ export const Home = () => {
 					</div>
 				</div>
 
-				<div>
+				<div className="">
 					<img src={main1} className="imagemain"></img>
 				</div>
 			</div >
