@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
-
+import tech from "../../img/tech.jpg";
 import { Context } from "../store/appContext";
 
 export const Aboutus = () => {
@@ -66,6 +66,21 @@ export const Aboutus = () => {
 			}
 		}
 	}
+
+	const boxVarient3 = {
+		hidden: {
+			x: -10,
+			opacity: 0,
+			y: 0
+		},
+		visible: {
+			x: 0,
+			opacity: 1,
+			transition: {
+				delay: 1.1
+			}
+		}
+	}
 	return (
 		<div className="contai bg-ligth">
 			<div>
@@ -113,7 +128,7 @@ export const Aboutus = () => {
 					<motion.h2
 						className="text-gradient"
 						animate={{
-							y: 75,
+							y: 55,
 							opacity: 1
 						}}
 						initial={{
@@ -134,7 +149,18 @@ export const Aboutus = () => {
 					<motion.p className="paragraph"
 						variants={boxVarient2}
 						animate="visible"
-						initial="hidden">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.</motion.p>
+						initial="hidden">With top-notch technical foundations, unique design, and engaging content,<br /> we build smooth customer journeys with a proven track record of skyrocketing conversion rates.
+					</motion.p>
+					<motion.div className="p-image"
+						variants={boxVarient3}
+						animate="visible"
+						initial="hidden">
+						<img src={tech} className="tech-image"></img>
+						<h3 className="text-gradient-small">We believe that effectiveness <br /> is the common characteristic of <br />  all great products</h3>
+						<p className="paragraph">That’s why you can expect us to put the highest emphasis on<br /> seamless UX, high performance, scalability, and accessibility in the solutions we deliver.
+
+						</p>
+					</motion.div>
 				</div>
 			</div>
 		</div>

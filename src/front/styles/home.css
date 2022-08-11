@@ -200,12 +200,21 @@ h1 span {
   /* background-color: #f0f8ff; */
 }
 .text-gradient {
-  font-size: 92px;
+  font-size: 72px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: "Orbitron", sans-serif;
+}
+.text-gradient-small {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#9e018e, #3a4e93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 45px;
 }
 .ourvision {
   color: #3a4e93;
@@ -226,6 +235,15 @@ h1 span {
 
 div.toast:not(.hide) {
   transition: all 0.6s ease-in-out;
+}
+.tech-image {
+  width: 85%;
+  height: 400px;
+  border-radius: 10px;
+}
+.p-image {
+  padding: 25px;
+  margin-top: 80px;
 }
 
 /* ///////////////////////contactus */
