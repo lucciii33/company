@@ -91,18 +91,20 @@ export const ContactUs = () => {
 					</motion.div>
 				</div>
 			</form>
-			<div className="App">
+			<div className="App" styles={{
+				height: '200pxs'
+			}}>
 				<InlineWidget url="https://calendly.com/angelomaiele" />
 			</div>
 
 			<div className="">
-				<PopupWidget
+				{/* <PopupWidget
 					url="https://calendly.com/your_scheduling_page"
-					rootElement={document.getElementById("app")}
+					rootElement={document.getElementById("#app")}
 					text="Click here to schedule!"
 					textColor="#ffffff"
 					color="#00a2ff"
-				/>
+				/> */}
 			</div>
 		</div>
 	);
