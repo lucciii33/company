@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 import emailjs from '@emailjs/browser';
+import { InlineWidget } from "react-calendly"
+import { PopupWidget } from "react-calendly";
 
 import { Context } from "../store/appContext";
 
@@ -86,14 +88,22 @@ export const ContactUs = () => {
 							</div>
 
 						</div>
-
-
-
-
 					</motion.div>
 				</div>
 			</form>
+			<div className="App">
+				<InlineWidget url="https://calendly.com/angelomaiele" />
+			</div>
 
+			<div className="">
+				<PopupWidget
+					url="https://calendly.com/your_scheduling_page"
+					rootElement={document.getElementById("app")}
+					text="Click here to schedule!"
+					textColor="#ffffff"
+					color="#00a2ff"
+				/>
+			</div>
 		</div>
 	);
 };

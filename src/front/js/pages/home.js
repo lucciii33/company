@@ -57,8 +57,8 @@ export const Home = () => {
 
 					<p className="text-white">Lorem ipsum is placeholder text commonly used in the graphic, <br />print, and publishing industries for previewing layouts and visual mockups <br />Lorem ipsum is placeholder text commonly used in the graphic, <br />print, and publishing industries for previewing layouts and visual mockups.</p>
 					<div className="d-flex">
-						<Link to="/contact"><button className="button-29 me-3"> Hire us!</button></Link>
-						<Link to="/projects"><button className="button-29"> See protafolio</button></Link>
+						<Link to="/contact" className="text-decoration-none"><button className="button-29 me-3"> Hire us!</button></Link>
+						<Link to="/projects" className="text-decoration-none"><button className="button-29"> See protafolio</button></Link>
 
 					</div>
 				</div>
