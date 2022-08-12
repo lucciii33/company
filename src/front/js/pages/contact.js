@@ -33,7 +33,7 @@ export const ContactUs = () => {
 				console.log(error.text);
 			});
 
-		// e.target.reset()
+		form.current.reset()
 	};
 
 	return (
