@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 	return (
 
-		<div className="navbar bg-ligth navbar-expand-lg  d-flex justify-content-between">
+		<div className="navbar bg-ligth navbar-expand-lg  d-flex justify-content-between p-3">
 			<div className="container-fluid ">
 				<div>
-					<Link className="text-decoration-none" to="/"><a className="navbar-brand text-black" href="#">ILUTION</a></Link>
+					<Link className="text-decoration-none" to="/"><a className="navbar-brand text-black" href="#">CODE ILUTION</a></Link>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
 					</button>
@@ -23,7 +23,7 @@ export const Navbar = () => {
 						<Link className="text-decoration-none" to="/aboutus"><a className="nav-link text-black" href="#">About Us</a></Link>
 					</li>
 					<li className="nav-item">
-						<Link className="text-decoration-none" to="/contact"><a className="nav-link text-black" href="#">Contact Us!</a></Link>
+						<Link className="text-decoration-none" to="/contact"><a className="nav-link text-black" href="#">Contact Us</a></Link>
 					</li>
 					<li className="nav-item">
 						<Link className="text-decoration-none" to="/questions"><a className="nav-link text-black" href="#">FQA</a></Link>

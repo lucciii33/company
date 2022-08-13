@@ -6,6 +6,9 @@
 
 body {
 }
+/* //////////////////////navbar/////////////////////////////// */
+
+/* ///////////////////homepage////////////////////// */
 h1 {
   color: white;
   font-family: "Orbitron", sans-serif;
@@ -615,4 +618,31 @@ div.toast:not(.hide) {
   .box-services {
     display: none;
   }
+}
+
+.squaer1 {
+  width: 25px;
+  height: 25px;
+  boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
+  background: linear-gradient(
+    291deg,
+    rgba(28, 1, 44, 1) 0%,
+    rgba(158, 1, 142, 1) 47%
+  );
+  border-radius: 3px;
+}
+.squaer {
+  width: 15px;
+  height: 15px;
+  boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
+  background: linear-gradient(
+    291deg,
+    rgba(28, 1, 44, 1) 0%,
+    rgba(158, 1, 142, 1) 47%
+  );
+  border-radius: 3px;
+}
+.icon-image {
+  width: 100px;
+  height: 100px;
 }

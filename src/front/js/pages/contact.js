@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import emailjs from '@emailjs/browser';
 import { InlineWidget } from "react-calendly"
 import { PopupWidget } from "react-calendly";
+import arrow from "../../img/arrow.png";
 
 import { Context } from "../store/appContext";
 
@@ -39,7 +40,28 @@ export const ContactUs = () => {
 	return (
 		<div className="contai bg-ligth">
 			<div className="texts">
+				<motion.div
+					className="squaer1"
+					initial={{ scale: 0 }}
+					animate={{ rotate: 180, scale: 2, x: -100, y: 100 }}
+					transition={{
+						type: "spring",
+						stiffness: 260,
+						damping: 20
+					}}
 
+				/>
+				<motion.div
+					className="squaer"
+					initial={{ scale: 3 }}
+					animate={{ rotate: 180, scale: 1, x: 800, y: -10 }}
+					transition={{
+						type: "spring",
+						stiffness: 220,
+						damping: 20
+					}}
+
+				/>
 				<h5 className="title-contact-1">MAKE YOUR PRODUCT REALLY MATTER</h5>
 				<h2 className="title-contact-2">Free project quote</h2>
 				<h6 className="title-contact-3">Fill out the enquiry form and we’ll get back to you as soon as possible.</h6>
@@ -71,7 +93,12 @@ export const ContactUs = () => {
 					<motion.div className="second-box" transition={{ type: "spring", stiffness: 130 }}
 						variants={boxVarient}
 						animate="visible"
-						initial="hidden">
+						initial="hidden"
+						whileHover={{
+							boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+							scale: 1.1,
+							originX: 0,
+						}}>
 						<h2 className="text-center p-box">Usertive Solutions</h2>
 						<div>
 							<div className="d-flex">
@@ -91,21 +118,27 @@ export const ContactUs = () => {
 					</motion.div>
 				</div>
 			</form>
-			<div className="App" styles={{
-				height: '200pxs'
-			}}>
-				<InlineWidget url="https://calendly.com/angelomaiele" />
+			<br />
+			<br />
+
+			<div className="text-center">
+				<h2 className="text-gradient-small">Please book a meting here</h2>
+				<p className="paragraph">and let us know what you want to build</p>
+				<motion.img src={arrow} className="icon-image" whileHover={{
+					boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+					scale: 1.1,
+					originX: 0,
+				}}></motion.img>
 			</div>
 
-			<div className="">
-				{/* <PopupWidget
-					url="https://calendly.com/your_scheduling_page"
-					rootElement={document.getElementById("#app")}
-					text="Click here to schedule!"
-					textColor="#ffffff"
-					color="#00a2ff"
-				/> */}
+
+
+			<div className="App">
+				<InlineWidget url="https://calendly.com/angelomaiele" styles={{ height: "600px" }} />
 			</div>
+
+
+
 		</div>
 	);
 };

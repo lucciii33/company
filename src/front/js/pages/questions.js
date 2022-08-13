@@ -13,19 +13,87 @@ export const Questions = () => {
     const [showParagraphFour, setShowParagraphFour] = useState(false);
 
 
+    const boxVarient = {
+        hidden: {
+            x: "-100vh",
+        },
+        visible: {
+            x: 0,
+            duration: 2,
+            // transition: {
+            // 	delay: 0.3
+            // }
+        }
+    }
+
+    const boxVarient2 = {
+        hidden: {
+            x: "100vh",
+        },
+        visible: {
+            x: 0,
+            duration: 3,
+            // transition: {
+            // 	delay: 0.3
+            // }
+        }
+    }
+
     return (
         <div className="">
             <div className="d-flex m-4 mt-2 mb-3">
-                <div className="questions-box p-5 me-3">
+                <motion.div className="questions-box p-5 me-3" transition={{ type: "spring", stiffness: 130 }}
+                    variants={boxVarient}
+                    animate="visible"
+                    initial="hidden"
+                    whileHover={{
+                        boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+                        scale: 1.1,
+                        originX: 0,
+                    }}>
                     <a className="link-tag" href='#costAndTimeEstimation'>Cost and time estimations</a>
                     <a className="link-tag" href='#howWeWork'>How we work</a>
                     <a className="link-tag" href='#legalAndSafetyIssues'>Legal and safety issues</a>
                     <a className="link-tag" href='#technicalAspects'>Technical aspects</a>
                     {/* <h4>Technical aspects</h4> */}
-                </div>
+                </motion.div>
+                <motion.div
+                    className="squaer"
+                    initial={{ scale: 3 }}
+                    animate={{ rotate: 180, scale: 1, x: 800, y: -10 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 220,
+                        damping: 20,
+                        duration: 1.5
+                    }}
+                ></motion.div>
+                <motion.div
+                    className="squaer"
+                    initial={{ scale: 1 }}
+                    animate={{ rotate: 180, scale: 3, y: 430, x: -10 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 220,
+                        damping: 20,
+                        duration: 2
+                    }}></motion.div>
+                <motion.div
+                    className="squaer"
+                    initial={{ scale: 0 }}
+                    animate={{ rotate: 180, scale: 2, x: 900, y: 300 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 220,
+                        damping: 20,
+                        duration: 50
+                    }}></motion.div>
                 <div>
 
-                    <div className="answer-box">
+                    <motion.div className="answer-box" transition={{ type: "spring", stiffness: 90 }}
+                        variants={boxVarient2}
+                        animate="visible"
+                        initial="hidden">
                         <h4 id="costAndTimeEstimation">Cost and time estimations</h4>
                         <div className="question-border">
                             <div>
@@ -91,7 +159,7 @@ export const Questions = () => {
 
                             <div className="ms-5"><i className="fas fa-plus"></i></div>
                         </div>
-                    </div>
+                    </motion.div>
                     {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
                     <div className="answer-box">
