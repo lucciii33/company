@@ -502,6 +502,13 @@ div.toast:not(.hide) {
   margin: auto;
   border-radius: 3px;
 }
+.img-project1 {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  border-radius: 3px;
+  object-fit: fill;
+}
 @media (max-width: 667px) {
   .box-project {
     width: 350px;
