@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 export const Navbar = () => {
 	return (
 
 		<div className="navbar bg-ligth navbar-expand-lg  d-flex justify-content-between p-3">
+
 			<div className="container-fluid ">
 				<div>
 					<Link className="text-decoration-none" to="/"><a className="navbar-brand text-black" href="#">CODE ILUTION</a></Link>

@@ -68,24 +68,43 @@ export const ContactUs = () => {
 			</div>
 
 			<form onSubmit={sendEmail} ref={form} >
-				<div className="d-flex conta-form">
+				<div className="conta-form">
 					<div>
-						<input className="email" placeholder="Email address" type="text" name="email"></input>
-						<div className="d-flex mt-3">
-							<input className="name" placeholder="Full Name" type="text" name="name"></input>
-							<input className="phone" placeholder="Phone" type="text" name="phone"></input>
-						</div>
-						<div className="text-area">
+						<div className="no-mobile">
+							<input className="email" placeholder="Email address" type="text" name="email"></input>
+							<div className="d-flex mt-3">
+								<input className="name" placeholder="Full Name" type="text" name="name"></input>
+								<input className="phone" placeholder="Phone" type="text" name="phone"></input>
+							</div>
+							<div className="text-area">
 
-							<input className="mensaje mt-3" placeholder="Tell us about your project/product" type="text" name="message"></input>
-						</div>
-						<div className="mt-2">
+								<input className="mensaje mt-3" placeholder="Tell us about your project/product" type="text" name="message"></input>
+							</div>
+							<div className="mt-2">
 
-							<input type="checkbox" className="checkbox-round"></input>
-							<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
+								<input type="checkbox" className="checkbox-round"></input>
+								<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
+							</div>
 						</div>
-						<div>
+
+						<motion.div className="responsive-contact-form" transition={{ type: "spring", stiffness: 130 }}
+							variants={boxVarient}
+							animate="visible"
+							initial="hidden"
+							whileHover={{
+								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+								scale: 1.1,
+								originX: 0,
+							}}>
+							<input></input>
+							<input></input>
+							<inpit></inpit>
+							<input></input>
 							<input type="submit" value="Send" className="button-29 mt-2" />
+						</motion.div>
+
+						<div>
+							<input type="submit" value="Send" className="button-29 mt-2 no-mobile" />
 							{/* <button className="button-29 mt-2">Lest talk<i className="far fa-paper-plane ms-1"></i></button> */}
 						</div>
 
@@ -116,6 +135,8 @@ export const ContactUs = () => {
 
 						</div>
 					</motion.div>
+
+
 				</div>
 			</form>
 			<br />
@@ -130,8 +151,6 @@ export const ContactUs = () => {
 					originX: 0,
 				}}></motion.img>
 			</div>
-
-
 
 			<div className="App">
 				<InlineWidget url="https://calendly.com/angelomaiele" styles={{ height: "600px" }} />
