@@ -96,10 +96,10 @@ export const ContactUs = () => {
 								scale: 1.1,
 								originX: 0,
 							}}>
-							<input></input>
-							<input></input>
-							<inpit></inpit>
-							<input></input>
+							<input placeholder="Write your email" className="input-responisve"></input>
+							<input placeholder="your name" className="input-responisve"></input>
+							<input placeholder="your phone" className="input-responisve"></input>
+							<input placeholder="message" className="input-responisve"></input>
 							<input type="submit" value="Send" className="button-29 mt-2" />
 						</motion.div>
 
@@ -152,8 +152,8 @@ export const ContactUs = () => {
 				}}></motion.img>
 			</div>
 
-			<div className="App">
-				<InlineWidget url="https://calendly.com/angelomaiele" styles={{ height: "600px" }} />
+			<div className="mt-2">
+				<InlineWidget url="https://calendly.com/angelomaiele" styles={{ height: "600px", boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)" }} />
 			</div>
 
 

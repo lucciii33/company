@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 import tech from "../../img/tech.jpg";
+import tech2 from "../../img/tech2.jpg";
 import { Context } from "../store/appContext";
 
 export const Aboutus = () => {
@@ -156,6 +157,7 @@ export const Aboutus = () => {
 						animate="visible"
 						initial="hidden">
 						<img src={tech} className="tech-image"></img>
+						<img src={tech2} className="tech2-image"></img>
 						<h3 className="text-gradient-small">We believe that effectiveness <br /> is the common characteristic of <br />  all great products</h3>
 						<p className="paragraph">That’s why you can expect us to put the highest emphasis on<br /> seamless UX, high performance, scalability, and accessibility in the solutions we deliver.
 
