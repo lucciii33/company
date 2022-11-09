@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 export const Success = () => {
-	//adds the event listener on initial render and cleans it up when finished.
-	useEffect(() => {
+  //adds the event listener on initial render and cleans it up when finished.
+  useEffect(() => {}, []);
 
-	}, []);
-
-	return (
-		<div className="">
-			<h1>success</h1>
-		</div>
-	);
+  return (
+    <div className="">
+      <h1 className="text-dark">success</h1>
+    </div>
+  );
 };

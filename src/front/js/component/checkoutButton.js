@@ -14,7 +14,7 @@ export const CheckOutButton = () => {
       <button
         className="btn btn-primary"
         onClick={
-          () => actions.createOrder()
+          () => actions.createOrder(store.cart)
           //   .then((data) => {
           //     console.log(data);
           //     return (window.location.href = data.url.url);
