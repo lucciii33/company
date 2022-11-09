@@ -10,9 +10,13 @@ import { ContactUs } from "./pages/contact";
 import { Projects } from "./pages/projects";
 import { Questions } from "./pages/questions";
 import { Services } from "./pages/services";
+import { Payment } from "./pages/payment"
+import { Success } from "./pages/success";
+import { Cancel } from "./pages/cancel";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import "../fonts/RobloxBlackOutline.ttf"
 
 //create your first component
 const Layout = () => {
@@ -27,7 +31,10 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<Success />} path="/cuccess" />
+                        <Route element={<Cancel />} path="/cancel" />
                         <Route element={<Questions />} path="/questions" />
+                        <Route element={<Payment />} path="/payment" />
                         <Route element={<Services />} path="/services" />
                         <Route element={<Aboutus />} path="/aboutus" />
                         <Route element={<ContactUs />} path="/contact" />

@@ -36,9 +36,10 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>}
+			<p className="testFont">ttttttttestttttttt</p>
 			<div className="d-flex conta">
 				<div className="m-top">
-					<h2 className="text-white title">Your website needs</h2>
+					<h2 className="text-white title ">Your website needs</h2>
 					<div className="d-grid">
 						<h1>
 							<span className="m-left">to be</span>

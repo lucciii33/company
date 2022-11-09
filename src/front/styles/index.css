@@ -1,3 +1,13 @@
+/* @font-face {
+  font-family: "Drip"; 
+  src: local("Drip"), url(../fonts/DripOctober-vm0JA.ttf) format("truetype");
+} */
+
+@font-face {
+  font-family: "Stereofunk";
+  src: local("Stereofunk"), url(../fonts/Stereofunk.ttf) format("truetype");
+}
+
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */

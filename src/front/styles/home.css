@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
 
+/* 
+    General Styles used on every website (Don't Repeat Yourself)
+*/
+.testFont {
+  font-family: Stereofunk;
+  color: black;
+}
 * {
   box-sizing: border-box;
 }
@@ -11,7 +18,7 @@ body {
 /* ///////////////////homepage////////////////////// */
 h1 {
   color: white;
-  font-family: "Orbitron", sans-serif;
+  font-family: "stereofunk";
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.5;
@@ -50,7 +57,7 @@ h1 span {
 .word3,
 .word4,
 .word5 {
-  font-family: "Orbitron", sans-serif;
+  font-family: "stereofunk";
 }
 
 @keyframes openclose {

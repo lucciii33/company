@@ -1,4 +1,5 @@
 //import react into the bundle
+import "../fonts/RobloxBlackOutline.ttf"
 import React from "react";
 import ReactDOM from "react-dom";
 
