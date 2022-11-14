@@ -3,11 +3,26 @@ const getState = ({ getStore, getActions, setStore }) => {
     store: {
       message: null,
       cart: [],
+      language: "en",
     },
     actions: {
       // Use getActions to call a function within a fuction
-      exampleFunction: () => {
-        getActions().changeColor(0, "green");
+      changeLanguege: () => {
+        if (getStore().language === "en") {
+          setStore({
+            language: "es",
+          });
+        } else {
+          setStore({
+            language: "en",
+          });
+        }
+
+        // if (getStore().language === "es") {
+        //   setStore({
+        //     language: "en",
+        //   });
+        // }
       },
 
       createOrder: (order) => {

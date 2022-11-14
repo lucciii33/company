@@ -17,6 +17,10 @@ export const Home = () => {
     handleShow();
   }, []);
 
+  // useEffect(() => {
+  //   handleShow();
+  // }, []);
+  console.log(store.language);
   return (
     <div>
       {show && (
@@ -51,7 +55,11 @@ export const Home = () => {
       )}
       <div className="d-flex conta">
         <div className="m-top">
-          <h2 className="text-white title ">Your website needs</h2>
+          <h2 className="text-white title ">
+            {store.language === "en"
+              ? "Your website needs"
+              : "Tu pagina necesita"}
+          </h2>
           <div className="d-grid">
             <h1>
               <span className="m-left">to be</span>
