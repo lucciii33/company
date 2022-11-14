@@ -539,6 +539,7 @@ div.toast:not(.hide) {
     #5c58b6 0,
     #5994ce 100%
   );
+  position: fixed;
 }
 
 .answer-box {
@@ -548,13 +549,24 @@ div.toast:not(.hide) {
   border: solid 3px #5c58b6;
   border-radius: 10px;
   margin: 20px;
-  margin-left: 165px;
+  margin-left: 605px;
+}
+@media (max-width: 1286px) {
+  .answer-box {
+    width: 650px;
+    padding: 45px;
+    height: auto;
+    border: solid 3px #5c58b6;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 500px;
+  }
 }
 .bg-answer {
   background-image: radial-gradient(
     100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
+    #ffffff 0,
+    #f7f5f5 100%
   );
   border-radius: 3px;
   padding: 5px;
@@ -701,7 +713,7 @@ div.toast:not(.hide) {
 
 @media (max-width: 767px) {
   .responsiveBox {
-    boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
+    /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
     background: linear-gradient(
       291deg,
       rgba(28, 1, 44, 1) 0%,
@@ -718,7 +730,6 @@ div.toast:not(.hide) {
     font-family: "Orbitron", sans-serif;
     border: 2px solid #5c58b6;
   }
-  ,
   .display-none-big-screen {
     display: none;
   }
@@ -730,7 +741,7 @@ div.toast:not(.hide) {
 .squaer1 {
   width: 25px;
   height: 25px;
-  boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
+  /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
   background: linear-gradient(
     291deg,
     rgba(28, 1, 44, 1) 0%,
@@ -741,7 +752,7 @@ div.toast:not(.hide) {
 .squaer {
   width: 15px;
   height: 15px;
-  boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
+  /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
   background: linear-gradient(
     291deg,
     rgba(28, 1, 44, 1) 0%,
@@ -762,6 +773,50 @@ div.toast:not(.hide) {
     display: none;
   }
   .icon-image {
-    margin-button: 10px;
+    /* margin-button: 10px; */
   }
+}
+
+.map-card {
+  /* background-color: #66cae3; */
+  background-image: url("https://www.armyupress.army.mil/portals/7/military-review/img/ENGLISHja2017/map-Ellis.png");
+  width: 300px;
+  height: 250px;
+}
+.map-card-usa {
+  /* background-color: #66cae3; */
+  background-image: url("https://geographic.media/wp-content/uploads/USA-Google-Map.jpg");
+  width: 300px;
+  height: 250px;
+}
+.map-card-spain {
+  /* background-color: #66cae3; */
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.xwMExNaXm71ukR3jmWcwcwHaEy&pid=Api&P=0");
+  width: 100%;
+  height: 250px;
+}
+
+.entire-card {
+  border-radius: 8px;
+  border: solid 2px #3a4e93;
+}
+.bg-banner-1 {
+  background-color: #3a4e93;
+  width: 100%;
+  height: 600px;
+}
+.bg-banner-2 {
+  background-color: #839bf1;
+  width: 100%;
+  height: 400px;
+}
+.bg-banner-3 {
+  background-color: #79487e;
+  width: 100%;
+  height: 500px;
+}
+.bg-banner-4 {
+  background-color: #fdfafabd;
+  width: 100%;
+  height: 500px;
 }
