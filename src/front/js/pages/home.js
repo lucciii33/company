@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import main1 from "../../img/main1.png";
+import elana from "../../img/captureElana.png";
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 
@@ -100,10 +101,45 @@ export const Home = () => {
       <Chatboot></Chatboot>
 
       <div className="bg-banner-1">
-        <h2>Banner one story of the company about us</h2>
+        <h2 className="text-center text-gradient-home pt-5">Story of the company</h2>
+        <div className="d-flex">
+          <div className="m-5">
+            <div className="d-flex ">
+              <div className="person1 me-3">
+                <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-1"></img>
+              </div>
+              <div className="person2">
+                <img src="https://images.pexels.com/photos/3178744/pexels-photo-3178744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-2"></img>
+              </div>
+            </div>
+            <div className="d-flex ">
+              <div className="person3 me-3">
+                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-3"></img>
+              </div>
+              <div className="person4">
+                <img src="https://images.pexels.com/photos/7989039/pexels-photo-7989039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-4"></img>
+              </div>
+            </div>
+          </div>
+          <div className="text-controller-2 my-auto px-5">
+            <h2 className="title-home-text">TEXT TITLE</h2>
+            <p className="paragraph-home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. "There's one exception to the rule above: If you are using the display property to define your div as a flex container, then you can't use the text-align property to center text horizontally inside the div. Instead, you have to use the justify-content property with the value center."https://blog.hubspot.com/website/center-div-css</p>
+          </div>
+        </div>
+
       </div>
       <div className="bg-banner-2">
-        <h2>Banner two our last project</h2>
+        <h2 className="text-center text-gradient-home pt-5">Our last project</h2>
+        <div className="d-flex justify-content-evenly">
+          <div className="text-controller-2 my-auto px-5 ">
+            <h2 className="title-home-text">TEXT TITLE</h2>
+            <p className="paragraph-home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. "There's one exception to the rule above: If you are using the display property to define your div as a flex container, then you can't use the text-align property to center text horizontally inside the div. Instead, you have to use the justify-content property with the value center."https://blog.hubspot.com/website/center-div-css</p>
+            <span><a>See project</a></span>
+          </div>
+          <div className="">
+            <img src={elana} className="image-lastProject"></img>
+          </div>
+        </div>
       </div>
       <div className="bg-banner-3">
         <h2>Banner 3 another cotact form</h2>

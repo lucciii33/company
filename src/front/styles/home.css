@@ -18,7 +18,7 @@ body {
 /* ///////////////////homepage////////////////////// */
 h1 {
   color: white;
-  font-family: "stereofunk";
+  font-family: "Orbitron", sans-serif;
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.5;
@@ -57,7 +57,7 @@ h1 span {
 .word3,
 .word4,
 .word5 {
-  font-family: "stereofunk";
+  font-family: "Orbitron", sans-serif;
 }
 
 @keyframes openclose {
@@ -233,6 +233,26 @@ h1 span {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   margin-top: 45px;
+}
+.text-gradient-home {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#9e018e, #3a4e93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+.title-home-text {
+  font-size: 42px;
+  background: -webkit-linear-gradient(#9e018e, #3a4e93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+.paragraph-home-text {
+  color: #3a4e93;
+  font-family: "Orbitron", sans-serif;
 }
 .ourvision {
   color: #3a4e93;
@@ -801,9 +821,9 @@ div.toast:not(.hide) {
   border: solid 2px #3a4e93;
 }
 .bg-banner-1 {
-  background-color: #3a4e93;
+  background-color: #f8f9fa;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 .bg-banner-2 {
   background-color: #839bf1;
@@ -819,4 +839,62 @@ div.toast:not(.hide) {
   background-color: #fdfafabd;
   width: 100%;
   height: 500px;
+}
+.person1 {
+  background-color: cyan;
+  height: 300px;
+  width: 240px;
+  border-radius: 12px;
+}
+.img-person-1 {
+  height: 300px;
+  width: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.person2 {
+  background-color: green;
+  height: 200px;
+  width: 250px;
+  border-radius: 12px;
+}
+.img-person-2 {
+  height: 200px;
+  width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.person3 {
+  background: green;
+  height: 200px;
+  width: 280px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.img-person-3 {
+  height: 200px;
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.person4 {
+  height: 305px;
+  width: 280px;
+  border-radius: 12px;
+  margin-top: -80px;
+  object-fit: contain;
+}
+.img-person-4 {
+  height: 305px;
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.text-controller-2 {
+  text-align: center;
+}
+.image-lastProject {
+  width: auto;
+  height: 100px;
+  object-fit: contain;
 }
