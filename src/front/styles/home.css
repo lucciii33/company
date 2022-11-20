@@ -828,7 +828,7 @@ div.toast:not(.hide) {
 .bg-banner-2 {
   background-color: #839bf1;
   width: 100%;
-  height: 400px;
+  height: 750px;
 }
 .bg-banner-3 {
   background-color: #79487e;
@@ -897,4 +897,68 @@ div.toast:not(.hide) {
   width: auto;
   height: 100px;
   object-fit: contain;
+}
+/* ////card */
+.home-image-project {
+  /* background-image: url("captureElana.png"); */
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: -143px;
+}
+.home-image-project-screen {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  margin-top: -143px;
+}
+.card-home {
+  background-color: #e9e9e9;
+  width: 350px;
+  height: auto;
+  border-radius: 13px;
+}
+.card-home-screen {
+  background-color: #e9e9e9;
+  width: 350px;
+  height: 200px;
+  border-radius: 13px;
+}
+
+/* .wave {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  background: red;
+}
+
+.wave:after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  height: 200px;
+  display: block;
+  border-bottom: 19px solid black;
+  border-radius: 50%;
+  left: 50%;
+}
+
+.wave:before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  height: 200px;
+  display: block;
+  border-top: 19px solid black;
+  border-radius: 50%;
+} */
+
+.icon-home {
+  margin-top: 200px;
+  font-size: 52px;
+}
+
+.arrow-down {
+  font-size: 52px;
+  margin-left: 180px;
 }
