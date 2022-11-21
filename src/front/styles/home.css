@@ -38,8 +38,8 @@ h1 span {
   /* background-color: #5994ce; */
   background-image: radial-gradient(
     100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
+    #e2a8ff 0,
+    #9e018e 100%
   );
   color: #333;
   display: block;
@@ -135,7 +135,7 @@ h1 span {
   background: #1c012c;
   background: -webkit-linear-gradient(top left, #1c012c, #9e018e);
   background: -moz-linear-gradient(top left, #1c012c, #9e018e);
-  background: linear-gradient(to bottom right, #1c012c, #9e018e);
+  background: linear-gradient(to bottom right, #1c012c, #77acf0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,8 +155,8 @@ h1 span {
   appearance: none;
   background-image: radial-gradient(
     100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
+    #e2a8ff 0,
+    #9e018e 100%
   );
   border: 0;
   border-radius: 6px;
@@ -235,7 +235,7 @@ h1 span {
   margin-top: 45px;
 }
 .text-gradient-home {
-  font-size: 52px;
+  font-size: 62px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

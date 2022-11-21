@@ -72,7 +72,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <button className="btn btn-success" onClick={() => actions.changeLanguege()}>
+            <button className="button-29" onClick={() => actions.changeLanguege()}>
               {store.language == "en"
                 ? "ESPANOL"
                 : "ENGLISH"}
