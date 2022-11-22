@@ -73,7 +73,9 @@ export const Home = () => {
   }
 
   function customPaging(i) {
+    console.log(i)
     return <span>{i + 1}</span>;
+    // return <img src={elana} />
   }
 
   // function appendDots(dots) {
@@ -230,26 +232,28 @@ export const Home = () => {
       <div className="bg-banner-3">
 
 
-
-        <Slider
-          nextArrow={<Arrow type="next" />}
-          prevArrow={<Arrow type="prev" />}
-          dots={true}
-          customPaging={customPaging}
-        // appendDots={appendDots}
+        <div className="">
+          <Slider className="d-flex align-items-center"
+            nextArrow={<Arrow type="next" />}
+            prevArrow={<Arrow type="prev" />}
+            dots={true}
+            customPaging={customPaging}
+            autoplay={true}
+            autoplaySpeed={2000}
+          // appendDots={appendDots}
+          >
+            {renderSlides()}
+          </Slider>
+        </div>
+        {/* <Slider
+          dots={false}
+          slidesToShow={1}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={2000}
         >
           {renderSlides()}
-        </Slider>
-
-        {/* <Slider
-        dots={false}
-        slidesToShow={2}
-        slidesToScroll={2}
-        autoplay={true}
-        autoplaySpeed={3000}
-      >
-        {renderSlides()}
-      </Slider> */}
+        </Slider> */}
 
 
       </div>
