@@ -27,14 +27,55 @@ export const Home = () => {
   //   handleShow();
   // }, []);
   const renderSlides = () =>
-    [1, 2, 3, 4, 5, 6, 7, 8].map(num => (
+    [{
+      project: "elana pelvic care",
+      duration: "1 year"
+
+    },
+    {
+      project: "doc page",
+      duration: "2 year"
+
+    }, {
+      project: "lorem",
+      duration: "2 moth"
+    }, {},].map(num => (
       <div>
-        <div>
-          <h3>Slide {num}</h3>
-          <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style={{ width: "300px", heigth: "300px" }}></img>
+        <div className="carouselController">
+          <div>
+            <h3>Slide {num.project}</h3>
+            <h3>Slide {num.duration}</h3>
+            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style={{ width: "300px", heigth: "300px" }}></img>
+          </div>
+          <div>
+            <h2>title test</h2>
+            <p>Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
         </div>
       </div>
     ));
+  function Arrow(props) {
+    let className = props.type === "next" ? "nextArrow" : "prevArrow";
+    className += " arrow";
+    const char = props.type === "next" ? "👉" : "👈";
+    return (
+      <span className={className} onClick={props.onClick}>
+        {char}
+      </span>
+    );
+  }
+
+  function customPaging(i) {
+    return <span>{i + 1}</span>;
+  }
+
+  function appendDots(dots) {
+    return (
+      <div style={{ backgroundColor: "#eee" }}>
+        <ul style={{ margin: "3px" }}> {dots} </ul>
+      </div>
+    );
+  }
   console.log(store.language);
   return (
     <div>
@@ -183,11 +224,25 @@ export const Home = () => {
 
 
 
-        <Slider dots={false}
-          slidesToShow={1}
-          slidesToScroll={1}
-          autoplay={true}
-          autoplaySpeed={2000}>{renderSlides()}</Slider>
+        <Slider
+          nextArrow={<Arrow type="next" />}
+          prevArrow={<Arrow type="prev" />}
+          dots={true}
+          customPaging={customPaging}
+          appendDots={appendDots}
+        >
+          {renderSlides()}
+        </Slider>
+
+        {/* <Slider
+        dots={false}
+        slidesToShow={2}
+        slidesToScroll={2}
+        autoplay={true}
+        autoplaySpeed={3000}
+      >
+        {renderSlides()}
+      </Slider> */}
 
 
       </div>

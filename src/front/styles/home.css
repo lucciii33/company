@@ -962,3 +962,7 @@ div.toast:not(.hide) {
   font-size: 52px;
   margin-left: 180px;
 }
+.carouselController {
+  display: flex;
+  justify-content: space-between;
+}
