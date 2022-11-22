@@ -42,14 +42,21 @@ export const Home = () => {
     }, {},].map(num => (
       <div>
         <div className="carouselController">
-          <div>
-            <h3>Slide {num.project}</h3>
-            <h3>Slide {num.duration}</h3>
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style={{ width: "300px", heigth: "300px" }}></img>
+          <div className="info-project-home">
+            <img src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg" className="img-project-1" ></img>
           </div>
-          <div>
+          <div className="my-auto">
+            <div className="border-name-project">
+              <h5>{num.project}</h5>
+            </div>
+
             <h2>title test</h2>
             <p>Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <button className="button-29">VIEW PROJECT</button>
+              <button className="button-29">CONTACT US</button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -59,9 +66,9 @@ export const Home = () => {
     className += " arrow";
     const char = props.type === "next" ? "👉" : "👈";
     return (
-      <span className={className} onClick={props.onClick}>
+      <div className={className} onClick={props.onClick}>
         {char}
-      </span>
+      </div>
     );
   }
 
@@ -69,13 +76,13 @@ export const Home = () => {
     return <span>{i + 1}</span>;
   }
 
-  function appendDots(dots) {
-    return (
-      <div style={{ backgroundColor: "#eee" }}>
-        <ul style={{ margin: "3px" }}> {dots} </ul>
-      </div>
-    );
-  }
+  // function appendDots(dots) {
+  //   return (
+  //     <div style={{ backgroundColor: "#eee", marginTop: "30px" }}>
+  //       <ul style={{ margin: "3px" }}> {dots} </ul>
+  //     </div>
+  //   );
+  // }
   console.log(store.language);
   return (
     <div>
@@ -229,7 +236,7 @@ export const Home = () => {
           prevArrow={<Arrow type="prev" />}
           dots={true}
           customPaging={customPaging}
-          appendDots={appendDots}
+        // appendDots={appendDots}
         >
           {renderSlides()}
         </Slider>
