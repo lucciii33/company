@@ -193,41 +193,8 @@ export const Home = () => {
 
       </div>
       <div className="bg-banner-2">
-        <h2 className="text-center text-gradient-home pt-5">Our last project</h2>
-        <div className="d-flex">
-          <div className="card-home m-5">
-            <div className="">
-              <img src={elana} className="home-image-project mt-4 ms-5"></img>
-            </div>
-            <div className="ms-3 mt-2 p-3">
-              <h6 className="card-title">Duration:</h6><span>1 YEAR</span>
-              <h6 className="card-title">Location:</h6><span>England-Uk, USA-Miami</span>
-              <h6 className="card-title">Description:</h6><span>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</span>
-            </div>
-          </div>
-          <div className="icon-home">
-            <i class="fas fa-arrow-right"></i>
-          </div>
+        <h2 className="text-center text-gradient-home pt-5">MAU TRABAJA AQUI</h2>
 
-          {/* <div className="card-home-screen m-5"> */}
-          <div className="bg-image-home d-block">
-            <div>
-              <img src={elana1} className="home-image-project-screen mt-4 ms-4"></img>
-            </div>
-            <div className="arrow-down">
-              <i class="fas fa-arrow-down"></i>
-            </div>
-
-          </div>
-          {/* </div> */}
-
-          {/* <div className="card-home-screen m-5"> */}
-          <div className="">
-            <img src={elana2} className="home-image-project-screen mt-4 ms-5"></img>
-          </div>
-          {/* </div> */}
-
-        </div>
       </div>
       <div className="bg-banner-3">
 
