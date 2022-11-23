@@ -10,6 +10,7 @@ import { Context } from "../store/appContext";
 
 export const ContactUs = () => {
 	const { store, actions } = useContext(Context);
+	const [formData, setFormData] = useState({ fullName: "", email: "", terms: false, phone: "", description: "" })
 
 	const boxVarient = {
 		hidden: {
@@ -22,6 +23,15 @@ export const ContactUs = () => {
 			// 	delay: 0.3
 			// }
 		}
+	}
+	const handleChange = (e) => {
+		if (e.target.name === "terms") {
+			setFormData({ ...formData, [e.target.name]: !formData.terms })
+		}
+		else {
+			setFormData({ ...formData, [e.target.name]: e.target.value })
+		}
+
 	}
 	const form = useRef();
 	const sendEmail = (e) => {
@@ -156,7 +166,23 @@ export const ContactUs = () => {
 				<InlineWidget url="https://calendly.com/angelomaiele" styles={{ height: "600px", boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)" }} />
 			</div>
 
+			<div className="no-mobile">
+				<input className="email" placeholder="Email address" type="text" name="email" onChange={handleChange} value={formData.email}></input>
+				<div className="d-flex mt-3">
+					<input className="name" placeholder="Full Name" type="text" name="fullName" onChange={handleChange} value={formData.fullName}></input>
+					<input className="phone" placeholder="Phone" type="text" name="phone" onChange={handleChange} value={formData.phone}></input>
+				</div>
+				<div className="text-area">
 
+					<input className="mensaje mt-3" placeholder="Tell us about your project/product" type="text" name="description" onChange={handleChange} value={formData.description}></input>
+				</div>
+				<div className="mt-2">
+
+					<input type="checkbox" className="checkbox-round" name="terms" onChange={handleChange} value={formData.terms}></input>
+					<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
+				</div>
+				<button>send me</button>
+			</div>
 
 		</div>
 	);
