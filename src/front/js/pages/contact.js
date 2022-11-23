@@ -181,7 +181,7 @@ export const ContactUs = () => {
 					<input type="checkbox" className="checkbox-round" name="terms" onChange={handleChange} value={formData.terms}></input>
 					<span>I have read and accept the <strong className="strong">Terms of use </strong>& <strong className="strong">Privacy Policy</strong></span>
 				</div>
-				<button>send me</button>
+				<button onClick={() => actions.createContactForm(formData.email, formData.phone, formData.terms, formData.fullName, formData.description)}>send me</button>
 			</div>
 
 		</div>

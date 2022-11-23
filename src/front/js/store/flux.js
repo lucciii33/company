@@ -4,6 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       message: null,
       cart: [],
       language: "en",
+      contactForm: []
     },
     actions: {
       // Use getActions to call a function within a fuction
@@ -45,6 +46,34 @@ const getState = ({ getStore, getActions, setStore }) => {
         const store = getStore();
         const newList = [...store.cart, item];
         setStore({ cart: newList });
+      },
+
+      createContactForm: (fullName, email, description, phone, terms) => {
+        let storeCartShop = getStore().carShop;
+        //   let favoriteString = favorites.toString();
+        fetch('http://localhost:5000/contact/create', {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName,
+            email,
+            description,
+            phone,
+            terms
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+
+            setStore({ contactForm: data })
+
+
+          })
+
+          .catch((err) => console.log(err));
+
       },
     },
   };
