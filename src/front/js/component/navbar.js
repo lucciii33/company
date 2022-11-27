@@ -11,7 +11,7 @@ export const Navbar = () => {
         <div>
           <Link className="text-decoration-none" to="/">
             <a className="navbar-brand text-black" href="#">
-              CODE ILUTION
+              Bluelight Tech
             </a>
           </Link>
           <button
@@ -30,30 +30,9 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="text-decoration-none" to="/">
+            <Link className="text-decoration-none" to="/services">
               <a className="nav-link text-black" href="#">
-                Home
-              </a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-decoration-none" to="/aboutus">
-              <a className="nav-link text-black" href="#">
-                About Us
-              </a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-decoration-none" to="/contact">
-              <a className="nav-link text-black" href="#">
-                Contact Us
-              </a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-decoration-none" to="/questions">
-              <a className="nav-link text-black" href="#">
-                FQA
+                Services
               </a>
             </Link>
           </li>
@@ -65,12 +44,27 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-decoration-none" to="/services">
+            <Link className="text-decoration-none" to="/questions">
               <a className="nav-link text-black" href="#">
-                Services
+                FAQ
               </a>
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="text-decoration-none" to="/contact">
+              <a className="nav-link text-black" href="#">
+                Contact Us
+              </a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="text-decoration-none" to="/aboutus">
+              <a className="nav-link text-black" href="#">
+                About Us
+              </a>
+            </Link>
+          </li>
+
           <li className="nav-item">
             <button
               className="button-29"

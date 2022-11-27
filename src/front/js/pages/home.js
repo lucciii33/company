@@ -8,7 +8,7 @@ import elana2 from "../../img/elana.png";
 import design from "../../img/design.png";
 import code from "../../img/code.png";
 import webdesign from "../../img/webdesign.png";
-import Card from "../component/Card";
+import { Card } from "../component/card"
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 import "slick-carousel/slick/slick.css";
