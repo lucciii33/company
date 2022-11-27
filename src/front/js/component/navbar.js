@@ -60,7 +60,7 @@ export const Navbar = () => {
           <li className="nav-item">
             <Link className="text-decoration-none" to="/projects">
               <a className="nav-link text-black" href="#">
-                Protafolio
+                Projects
               </a>
             </Link>
           </li>
@@ -72,10 +72,11 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <button className="button-29" onClick={() => actions.changeLanguege()}>
-              {store.language == "en"
-                ? "ESPANOL"
-                : "ENGLISH"}
+            <button
+              className="button-29"
+              onClick={() => actions.changeLanguege()}
+            >
+              {store.language == "en" ? "ESPANOL" : "ENGLISH"}
             </button>
           </li>
         </ul>

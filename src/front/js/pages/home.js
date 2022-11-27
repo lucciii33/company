@@ -27,23 +27,28 @@ export const Home = () => {
   //   handleShow();
   // }, []);
   const renderSlides = () =>
-    [{
-      project: "elana pelvic care",
-      duration: "1 year"
-
-    },
-    {
-      project: "doc page",
-      duration: "2 year"
-
-    }, {
-      project: "lorem",
-      duration: "2 moth"
-    }, {},].map(num => (
+    [
+      {
+        project: "elana pelvic care",
+        duration: "1 year",
+      },
+      {
+        project: "doc page",
+        duration: "2 year",
+      },
+      {
+        project: "lorem",
+        duration: "2 moth",
+      },
+      {},
+    ].map((num) => (
       <div>
         <div className="carouselController">
           <div className="info-project-home">
-            <img src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg" className="img-project-1" ></img>
+            <img
+              src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg"
+              className="img-project-1"
+            ></img>
           </div>
           <div className="my-auto">
             <div className="border-name-project">
@@ -51,12 +56,16 @@ export const Home = () => {
             </div>
 
             <h2>title test</h2>
-            <p>Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+              Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
             <div>
               <button className="button-29">VIEW PROJECT</button>
               <button className="button-29">CONTACT US</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -73,7 +82,7 @@ export const Home = () => {
   }
 
   function customPaging(i) {
-    console.log(i)
+    console.log(i);
     return <span>{i + 1}</span>;
     // return <img src={elana} />
   }
@@ -150,10 +159,10 @@ export const Home = () => {
           </p>
           <div className="d-flex">
             <Link to="/contact" className="text-decoration-none">
-              <button className="button-29 me-3"> Let's Talk!</button>
+              <button className="button-29 me-3">Contact Us</button>
             </Link>
             <Link to="/projects" className="text-decoration-none">
-              <button className="button-29"> See protafolio</button>
+              <button className="button-29">Our Portfolio</button>
             </Link>
           </div>
         </div>
@@ -165,49 +174,71 @@ export const Home = () => {
       <Chatboot></Chatboot>
 
       <div className="bg-banner-1">
-        <h2 className="text-center text-gradient-home pt-5">Story of the company</h2>
+        <h2 className="text-center text-gradient-home pt-5">
+          Story of the company
+        </h2>
         <div className="d-flex">
           <div className="m-5">
             <div className="d-flex ">
               <div className="person1 me-3">
-                <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-1"></img>
+                <img
+                  src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="img-person-1"
+                ></img>
               </div>
               <div className="person2">
-                <img src="https://images.pexels.com/photos/3178744/pexels-photo-3178744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-2"></img>
+                <img
+                  src="https://images.pexels.com/photos/3178744/pexels-photo-3178744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="img-person-2"
+                ></img>
               </div>
             </div>
             <div className="d-flex ">
               <div className="person3 me-3">
-                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-3"></img>
+                <img
+                  src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="img-person-3"
+                ></img>
               </div>
               <div className="person4">
-                <img src="https://images.pexels.com/photos/7989039/pexels-photo-7989039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-person-4"></img>
+                <img
+                  src="https://images.pexels.com/photos/7989039/pexels-photo-7989039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="img-person-4"
+                ></img>
               </div>
             </div>
           </div>
           <div className="text-controller-2 my-auto px-5">
             <h2 className="title-home-text">TEXT TITLE</h2>
-            <p className="paragraph-home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. "There's one exception to the rule above: If you are using the display property to define your div as a flex container, then you can't use the text-align property to center text horizontally inside the div. Instead, you have to use the justify-content property with the value center."https://blog.hubspot.com/website/center-div-css</p>
+            <p className="paragraph-home-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              "There's one exception to the rule above: If you are using the
+              display property to define your div as a flex container, then you
+              can't use the text-align property to center text horizontally
+              inside the div. Instead, you have to use the justify-content
+              property with the value
+              center."https://blog.hubspot.com/website/center-div-css
+            </p>
           </div>
         </div>
-
       </div>
       <div className="bg-banner-2">
-        <h2 className="text-center text-gradient-home pt-5">MAU TRABAJA AQUI</h2>
-
+        <h2 className="text-center text-gradient-home pt-5">
+          MAU TRABAJA AQUI
+        </h2>
       </div>
       <div className="bg-banner-3">
-
-
         <div className="">
-          <Slider className="d-flex align-items-center"
+          <Slider
+            className="d-flex align-items-center"
             nextArrow={<Arrow type="next" />}
             prevArrow={<Arrow type="prev" />}
             dots={true}
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-          // appendDots={appendDots}
+            // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
@@ -221,8 +252,6 @@ export const Home = () => {
         >
           {renderSlides()}
         </Slider> */}
-
-
       </div>
       <div className="bg-banner-4">
         <h2>Banner four description of our bussiness </h2>
