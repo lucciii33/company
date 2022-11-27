@@ -5,6 +5,10 @@ import main1 from "../../img/main1.png";
 import elana from "../../img/Logo.png";
 import elana1 from "../../img/figma.png";
 import elana2 from "../../img/elana.png";
+import design from "../../img/design.png";
+import code from "../../img/code.png";
+import webdesign from "../../img/webdesign.png";
+import Card from "../component/Card";
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 import "slick-carousel/slick/slick.css";
@@ -172,7 +176,6 @@ export const Home = () => {
         </div>
       </div>
       <Chatboot></Chatboot>
-
       <div className="bg-banner-1">
         <h2 className="text-center text-gradient-home pt-5">
           Story of the company
@@ -223,11 +226,27 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      {/* Here start the div of Mau  */}
       <div className="bg-banner-2">
-        <h2 className="text-center text-gradient-home pt-5">
-          MAU TRABAJA AQUI
-        </h2>
+        <div className="d-flex align-items-center justify-content-evenly container-card-banner-2">
+          <Card
+            title="Branding"
+            description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
+            img=<img src={design} className="icon-banner"></img>
+          />
+          <Card
+            title="Web Design"
+            description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
+            img=<img src={webdesign} className="icon-banner2 "></img>
+          />
+          <Card
+            title="Web Development"
+            description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
+            img=<img src={code} className="icon-banner3 "></img>
+          />
+        </div>
       </div>
+      {/* until here is the div */}
       <div className="bg-banner-3">
         <div className="">
           <Slider
@@ -238,7 +257,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-            // appendDots={appendDots}
+          // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
