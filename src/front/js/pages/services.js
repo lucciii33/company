@@ -190,7 +190,7 @@ export const Services = () => {
 
 
 
-			<div className="responsiveContainer">
+			<div className="responsiveContainer m-5">
 
 				<motion.div className="responsiveBox"
 					transition={{ type: "spring", stiffness: 500, }} variants={boxVarient3}
@@ -233,6 +233,10 @@ export const Services = () => {
 				</motion.div>
 			</div>
 
+
+			<div className="techWeuseBanner">
+				<h2 className="text-center">Technologies we use</h2>
+			</div>
 		</div>
 	);
 };
