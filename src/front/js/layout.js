@@ -14,6 +14,7 @@ import { Services } from "./pages/services";
 import { Payment } from "./pages/payment";
 import { Success } from "./pages/success";
 import { Cancel } from "./pages/cancel";
+import { WebDevelopment } from "./pages/webDevelopment";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -36,6 +37,7 @@ const Layout = () => {
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Success />} path="/success" />
+            <Route element={<WebDevelopment />} path="/webDevelopment" />
             <Route element={<Cancel />} path="/cancel" />
             <Route element={<Questions />} path="/questions" />
             <Route element={<Payment />} path="/payment" />
