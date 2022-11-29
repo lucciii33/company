@@ -1202,7 +1202,40 @@ div.toast:not(.hide) {
 
 /* //////////////////////////services */
 .techWeuseBanner {
-  background-color: #4682b4;
+  background: linear-gradient(to bottom right, #1c012c, #77acf0);
   width: 100%;
-  height: 500px;
+  height: auto;
+}
+.circle-technologies {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+.circle-technologies-child {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+}
+.reactlogo {
+  width: 100px;
+  height: 130px;
+}
+.jslogo {
+  width: 100px;
+  height: 100px;
+}
+
+.controller-circle {
+  margin-left: -12px;
+}
+.tech-text {
+  color: white;
+  font-size: 55px;
+  font-family: "Orbitron", sans-serif;
+}
+.makeit-close {
+  margin-top: -6px;
 }

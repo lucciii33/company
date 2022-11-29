@@ -5,6 +5,10 @@ import desing from "../../img/design.png";
 import code from "../../img/code.png";
 import webdesign from "../../img/webdesign.png";
 import photo from "../../img/photo.png";
+import react from "../../img/react.png";
+import jslogo from "../../img/jslogo.png";
+import nodejs from "../../img/nodejs.png";
+import mongo from "../../img/mongo.png";
 
 import { Context } from "../store/appContext";
 
@@ -235,7 +239,63 @@ export const Services = () => {
 
 
 			<div className="techWeuseBanner">
-				<h2 className="text-center">Technologies we use</h2>
+				<h2 className="text-center pt-5 tech-text">Technologies we use</h2>
+				<div className="d-flex justify-content-evenly mt-5">
+					<div className="circle-technologies m-4 mb-2">
+						<div className="circle-technologies-child">
+							<img src={react} className="reactlogo"></img>
+							<h3>React JS</h3>
+						</div>
+					</div>
+					<div className="circle-technologies m-5 mt-2">
+						<div className="circle-technologies-child">
+							<img src={jslogo} className="jslogo mt-3"></img>
+							<h3 className="controller-circle">JavaScript</h3>
+						</div>
+					</div>
+					<div className="circle-technologies m-5 mb-2">
+						<div className="circle-technologies-child">
+							<img src={nodejs} className="jslogo"></img>
+							<h3 className="">Node JS</h3>
+						</div>
+					</div>
+					<div className="circle-technologies m-5 mt-2">
+						<div className="circle-technologies-child ">
+							<img src={mongo} className="jslogo"></img>
+							<h3 className="controller-circle">MongoDB</h3>
+						</div>
+					</div>
+				</div>
+				<div className="mb-5">
+					<div className="d-flex justify-content-evenly mb-5 ms-5 makeit-close">
+						<div className="circle-technologies m-4 mb-2">
+							<div className="circle-technologies-child">
+								<img src={react} className="reactlogo"></img>
+								<h3>React JS</h3>
+							</div>
+						</div>
+						<div className="circle-technologies m-5 mt-2">
+							<div className="circle-technologies-child">
+								<img src={jslogo} className="jslogo mt-3"></img>
+								<h3 className="controller-circle">JavaScript</h3>
+							</div>
+						</div>
+						<div className="circle-technologies m-5 mb-2">
+							<div className="circle-technologies-child">
+								<img src={nodejs} className="jslogo"></img>
+								<h3 className="">Node JS</h3>
+							</div>
+						</div>
+						<div className="circle-technologies m-5 mt-2 me-3">
+							<div className="circle-technologies-child ">
+								<img src={mongo} className="jslogo"></img>
+								<h3 className="controller-circle">MongoDB</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	);
