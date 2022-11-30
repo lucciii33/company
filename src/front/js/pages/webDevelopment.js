@@ -47,6 +47,22 @@ export const WebDevelopment = () => {
                         </div>
                     </div>
                 </div>
+                <div className="techWeuseBanner">
+                    <h2 className="text-center pt-5 tech-text">Why is Web development important</h2>
+                    <div className="text-center p-4">
+                        <p className="text-white">Web development is the process of creating websites. It involves a wide range of activities including website design, web content development, web server configuration, and client-side scripting.
+                            <br /><br />
+                            Web developers usually have a good understanding of both front-end and back-end web technologies.
+                            <br /><br />
+                            Web development is a very important part of the modern world. The internet has become an essential part of our lives and businesses can no longer function without a website.
+                            <br /><br />
+                            Websites allow businesses to reach a wider audience and sell their products or services online. They also provide a way for customers to contact businesses and find out more about their products or services.
+                            <br /><br />
+                            Web development is not only important for businesses, but also for individuals. A personal website can be used to showcase your work, build your online presence, and attract potential employers.
+                            <br /><br />
+                            A well-developed website can also be used as a platform to sell products or services, or to generate income through advertising.</p>
+                    </div>
+                </div>
             </div>
 
 
