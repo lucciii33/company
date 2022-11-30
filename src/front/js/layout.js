@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-
 import { Home } from "./pages/home";
 import { Aboutus } from "./pages/aboutus";
 import { Single } from "./pages/single";
@@ -27,11 +26,8 @@ const Layout = () => {
   const basename = process.env.BASENAME || "";
 
   return (
-
     <>
-
       <BrowserRouter basename={basename}>
-
         <ScrollToTop>
           <Navbar />
           <Routes>
@@ -50,11 +46,8 @@ const Layout = () => {
           </Routes>
           {/* <Footer /> */}
         </ScrollToTop>
-
       </BrowserRouter>
-
     </>
-
   );
 };
 

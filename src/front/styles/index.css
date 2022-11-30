@@ -11,3 +11,14 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+/*
+    Class Styles
+*/
+.fs-52 {
+  font-size: 52px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}

@@ -8,12 +8,13 @@ import elana2 from "../../img/elana.png";
 import design from "../../img/design.png";
 import code from "../../img/code.png";
 import webdesign from "../../img/webdesign.png";
-import { Card } from "../component/card"
+import { Card } from "../component/card";
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import ProcessBanner from "../component/ProcessBanner";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -267,7 +268,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-          // appendDots={appendDots}
+            // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
@@ -282,9 +283,7 @@ export const Home = () => {
           {renderSlides()}
         </Slider> */}
       </div>
-      <div className="bg-banner-4">
-        <h2>Banner four description of our bussiness </h2>
-      </div>
+      <ProcessBanner />
     </div>
   );
 };
