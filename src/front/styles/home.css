@@ -7,12 +7,13 @@
   font-family: Stereofunk;
   color: black;
 }
+
 * {
   box-sizing: border-box;
 }
 
-body {
-}
+body {}
+
 /* //////////////////////navbar/////////////////////////////// */
 
 /* ///////////////////homepage////////////////////// */
@@ -36,11 +37,9 @@ h1 span {
 
 .message {
   /* background-color: #5994ce; */
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #e2a8ff 0,
-    #9e018e 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #e2a8ff 0,
+      #9e018e 100%);
   color: #333;
   display: block;
   font-weight: 700;
@@ -65,69 +64,85 @@ h1 span {
     top: 0.2rem;
     width: 0;
   }
+
   5% {
     width: 0;
   }
+
   15% {
     width: 300px;
   }
+
   30% {
     top: 0.2rem;
     width: 300px;
   }
+
   33% {
     top: 0.2rem;
     width: 0;
   }
+
   35% {
     top: 0.2rem;
     width: 0;
   }
+
   38% {
     top: -4.5rem;
   }
+
   48% {
     top: -4.5rem;
     width: 300px;
   }
+
   62% {
     top: -4.5rem;
     width: 300px;
   }
+
   66% {
     top: -4.5rem;
     width: 0;
     text-indent: 0;
   }
+
   71% {
     top: -9rem;
     width: 0;
     text-indent: 5px;
   }
+
   86% {
     top: -9rem;
     width: 300px;
   }
+
   95% {
     top: -9rem;
     width: 300px;
   }
+
   98% {
     top: -9rem;
     width: 0;
     text-indent: 5px;
   }
+
   100% {
     top: 0;
     width: 0;
     text-indent: 0;
   }
 }
+
 .imagemain {
   object-fit: contain;
   width: 700px;
   height: 700px;
 }
+
 .conta {
   height: auto;
   width: 100vw;
@@ -140,10 +155,12 @@ h1 span {
   align-items: center;
   justify-content: center;
 }
+
 .title {
   font-size: 55px;
   font-family: "Orbitron", sans-serif;
 }
+
 .title2 {
   font-size: 45px;
   font-family: "Orbitron", sans-serif;
@@ -153,11 +170,9 @@ h1 span {
 .button-29 {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #e2a8ff 0,
-    #9e018e 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #e2a8ff 0,
+      #9e018e 100%);
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
@@ -205,11 +220,9 @@ h1 span {
 .button-28 {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #4169e1 0,
-    #4682b4 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #4169e1 0,
+      #4682b4 100%);
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
@@ -261,6 +274,7 @@ h1 span {
   padding: 70px;
   /* background-color: #f0f8ff; */
 }
+
 @media (max-width: 600px) {
   .contai {
     width: 100%;
@@ -269,6 +283,11 @@ h1 span {
     /* background-color: #f0f8ff; */
   }
 }
+
+.text-or {
+  font-family: "Orbitron", sans-serif;
+}
+
 .text-gradient {
   font-size: 72px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
@@ -277,6 +296,7 @@ h1 span {
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
+
 .text-gradient-small {
   font-size: 52px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
@@ -286,6 +306,7 @@ h1 span {
   font-family: "Orbitron", sans-serif;
   margin-top: 45px;
 }
+
 .text-gradient-home {
   font-size: 62px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
@@ -294,6 +315,7 @@ h1 span {
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
+
 .title-home-text {
   font-size: 42px;
   background: -webkit-linear-gradient(#9e018e, #3a4e93);
@@ -302,15 +324,18 @@ h1 span {
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
+
 .paragraph-home-text {
   color: #3a4e93;
   font-family: "Orbitron", sans-serif;
 }
+
 .ourvision {
   color: #3a4e93;
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
+
 .paragraph {
   color: #3a4e93;
   margin-top: 20px;
@@ -318,9 +343,11 @@ h1 span {
   font-family: "Orbitron", sans-serif;
   line-height: 1.7em;
 }
+
 .tech2-image {
   display: none;
 }
+
 @media (max-width: 600px) {
   .text-gradient {
     font-size: 52px;
@@ -330,6 +357,7 @@ h1 span {
     text-align: center;
     font-family: "Orbitron", sans-serif;
   }
+
   .text-gradient-small {
     font-size: 32px;
     background: -webkit-linear-gradient(#9e018e, #3a4e93);
@@ -339,11 +367,13 @@ h1 span {
     font-family: "Orbitron", sans-serif;
     margin-top: 45px;
   }
+
   .ourvision {
     color: #3a4e93;
     text-align: center;
     font-family: "Orbitron", sans-serif;
   }
+
   .paragraph {
     color: #3a4e93;
     margin-top: 20px;
@@ -351,9 +381,11 @@ h1 span {
     font-family: "Orbitron", sans-serif;
     line-height: 1.7em;
   }
+
   .tech-image {
     display: none;
   }
+
   .tech2-image {
     display: block;
     width: 100%;
@@ -368,11 +400,13 @@ h1 span {
 div.toast:not(.hide) {
   transition: all 0.6s ease-in-out;
 }
+
 .tech-image {
   width: 85%;
   height: 400px;
   border-radius: 10px;
 }
+
 .p-image {
   padding: 25px;
   margin-top: 80px;
@@ -383,12 +417,14 @@ div.toast:not(.hide) {
   display: flex;
   justify-content: space-evenly;
 }
+
 .responsive-contact-form {
   width: 500px;
   height: auto;
   border: 1px solid black;
   display: none;
 }
+
 @media (max-width: 600px) {
   .responsive-contact-form {
     width: 100%;
@@ -401,34 +437,42 @@ div.toast:not(.hide) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .p-image {
     padding: 10px;
     margin-top: 80px;
   }
+
   .no-mobile {
     display: none;
   }
+
   .conta-form {
     display: grid;
   }
+
   .input-responisve {
     height: 45px;
   }
 }
+
 .texts {
   padding-left: 160px;
 }
+
 @media (max-width: 600px) {
   .texts {
     padding-left: 0px;
   }
 }
+
 .email {
   width: 570px;
   height: 45px;
   border-radius: 10px;
   margin-top: 15px;
 }
+
 .name {
   width: 270px;
   height: 45px;
@@ -436,17 +480,20 @@ div.toast:not(.hide) {
   margin-right: 25px;
   margin-top: 15px;
 }
+
 .phone {
   width: 270px;
   height: 45px;
   border-radius: 10px;
   margin-top: 15px;
 }
+
 .mensaje {
   width: 570px;
   height: 115px;
   border-radius: 10px;
 }
+
 .text-area {
   margin-top: 15px;
 }
@@ -464,35 +511,38 @@ div.toast:not(.hide) {
   font-size: 62px;
   margin-top: 20px;
 }
+
 .title-contact-3 {
   font-family: "Orbitron", sans-serif;
   color: #3a4e93;
   font-size: 15px;
   margin-top: 20px;
 }
+
 @media (max-width: 667px) {
   .title-contact-2 {
     font-size: 42px;
     padding: 0px;
   }
 }
+
 .second-box {
   width: 350px;
   height: 320px;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #5c58b6 0,
+      #5994ce 100%);
   margin-button: 20px;
   border-radius: 7px;
   align-items: center;
 }
+
 .p-box {
   font-family: "Orbitron", sans-serif;
   color: white;
   padding-top: 35px;
 }
+
 .fa-envelope {
   color: white;
   font-size: 35px;
@@ -500,6 +550,7 @@ div.toast:not(.hide) {
   margin-right: 10px;
   margin-top: 15px;
 }
+
 .fa-map-marker-alt {
   color: white;
   font-size: 35px;
@@ -507,6 +558,7 @@ div.toast:not(.hide) {
   margin-right: 15px;
   margin-top: 15px;
 }
+
 .fa-mobile-alt {
   color: white;
   font-size: 35px;
@@ -514,11 +566,13 @@ div.toast:not(.hide) {
   margin-right: 10px;
   margin-top: 15px;
 }
+
 .text-contact-box {
   font-family: "Orbitron", sans-serif;
   color: white;
   margin-top: 15px;
 }
+
 .strong {
   font-family: "Orbitron", sans-serif;
   color: #3a4e93;
@@ -540,12 +594,11 @@ div.toast:not(.hide) {
 }
 
 .checkbox-round:checked {
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #5c58b6 0,
+      #5994ce 100%);
 }
+
 /* //////////////////projects////////////////////// */
 /* .project-container {
   background: #fbfbfb;
@@ -572,6 +625,7 @@ div.toast:not(.hide) {
   background: linear-gradient(to bottom right, #1c012c, #9e018e);
   border-radius: 16px;
 }
+
 .box::before {
   content: " ";
   position: absolute;
@@ -580,14 +634,17 @@ div.toast:not(.hide) {
   background: linear-gradient(#00ccff, #00ccff);
   animation: animate 3s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .box h2 {
   font-size: 9px;
   color: #fff;
@@ -606,11 +663,9 @@ div.toast:not(.hide) {
   display: grid;
   border-radius: 10px;
   margin: 20px;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #5c58b6 0,
-    #5994ce 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #5c58b6 0,
+      #5994ce 100%);
   position: fixed;
 }
 
@@ -623,6 +678,7 @@ div.toast:not(.hide) {
   margin: 20px;
   margin-left: 605px;
 }
+
 @media (max-width: 1286px) {
   .answer-box {
     width: 650px;
@@ -634,29 +690,32 @@ div.toast:not(.hide) {
     margin-left: 500px;
   }
 }
+
 .bg-answer {
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #ffffff 0,
-    #f7f5f5 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #ffffff 0,
+      #f7f5f5 100%);
   border-radius: 3px;
   padding: 5px;
 }
+
 .question-border {
   padding: 20px;
   border-bottom: 1px solid #5c58b6;
   display: flex;
   font-family: "Orbitron", sans-serif;
 }
+
 .link-tag {
   font-family: "Orbitron", sans-serif;
   color: white;
   text-decoration: none;
 }
+
 .nav-link {
   white-space: nowrap;
 }
+
 .box-project {
   width: 550px;
   height: 650px;
@@ -680,12 +739,14 @@ div.toast:not(.hide) {
     /* position: relative; */
   }
 }
+
 .img-project {
   width: 500px;
   height: 400px;
   margin: auto;
   border-radius: 3px;
 }
+
 .img-project1 {
   width: 300px;
   height: 400px;
@@ -693,6 +754,7 @@ div.toast:not(.hide) {
   border-radius: 3px;
   object-fit: fill;
 }
+
 @media (max-width: 667px) {
   .box-project {
     width: 350px;
@@ -704,6 +766,7 @@ div.toast:not(.hide) {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* position: relative; */
   }
+
   .img-project {
     width: 300px;
     height: 200px;
@@ -721,14 +784,17 @@ div.toast:not(.hide) {
   font-family: "Orbitron", sans-serif;
   padding: 30px;
 }
+
 .description {
   color: #3a4e93;
   font-family: "Orbitron", sans-serif;
   font-size: 15px;
 }
+
 .margin-left {
   margin-left: 130px;
 }
+
 @media (max-width: 667px) {
   .margin-left {
     margin-left: 30px;
@@ -750,10 +816,12 @@ div.toast:not(.hide) {
   font-family: "Orbitron", sans-serif;
   border: 2px solid #5c58b6;
 }
+
 .logo-image {
   width: 100px;
   height: 100px;
 }
+
 /* .text-services {
   color: #3a4e93;
   font-family: "Orbitron", sans-serif;
@@ -762,14 +830,13 @@ div.toast:not(.hide) {
   color: white;
   border: none;
 }
+
 /* ///////////////////////responisve box seriveces.///////////////////////////////// */
 .responsiveBox {
   boxshadow: 0px, 0px, 8px, rgba(255, 255, 255);
-  background: linear-gradient(
-    291deg,
-    rgba(28, 1, 44, 1) 0%,
-    rgba(158, 1, 142, 1) 47%
-  );
+  background: linear-gradient(291deg,
+      rgba(28, 1, 44, 1) 0%,
+      rgba(158, 1, 142, 1) 47%);
   display: none;
   width: 300px;
   height: 440px;
@@ -786,11 +853,9 @@ div.toast:not(.hide) {
 @media (max-width: 767px) {
   .responsiveBox {
     /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
-    background: linear-gradient(
-      291deg,
-      rgba(28, 1, 44, 1) 0%,
-      rgba(158, 1, 142, 1) 47%
-    );
+    background: linear-gradient(291deg,
+        rgba(28, 1, 44, 1) 0%,
+        rgba(158, 1, 142, 1) 47%);
     display: block;
     width: 300px;
     height: 440px;
@@ -802,9 +867,11 @@ div.toast:not(.hide) {
     font-family: "Orbitron", sans-serif;
     border: 2px solid #5c58b6;
   }
+
   .display-none-big-screen {
     display: none;
   }
+
   .box-services {
     display: none;
   }
@@ -814,24 +881,22 @@ div.toast:not(.hide) {
   width: 25px;
   height: 25px;
   /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
-  background: linear-gradient(
-    291deg,
-    rgba(28, 1, 44, 1) 0%,
-    rgba(158, 1, 142, 1) 47%
-  );
+  background: linear-gradient(291deg,
+      rgba(28, 1, 44, 1) 0%,
+      rgba(158, 1, 142, 1) 47%);
   border-radius: 3px;
 }
+
 .squaer {
   width: 15px;
   height: 15px;
   /* boxshadow: 0px, 0px, 8px, rgba(255, 255, 255); */
-  background: linear-gradient(
-    291deg,
-    rgba(28, 1, 44, 1) 0%,
-    rgba(158, 1, 142, 1) 47%
-  );
+  background: linear-gradient(291deg,
+      rgba(28, 1, 44, 1) 0%,
+      rgba(158, 1, 142, 1) 47%);
   border-radius: 3px;
 }
+
 .icon-image {
   width: 100px;
   height: 100px;
@@ -841,9 +906,11 @@ div.toast:not(.hide) {
   .squaer {
     display: none;
   }
+
   .squaer1 {
     display: none;
   }
+
   .icon-image {
     /* margin-button: 10px; */
   }
@@ -855,12 +922,14 @@ div.toast:not(.hide) {
   width: 300px;
   height: 250px;
 }
+
 .map-card-usa {
   /* background-color: #66cae3; */
   background-image: url("https://geographic.media/wp-content/uploads/USA-Google-Map.jpg");
   width: 300px;
   height: 250px;
 }
+
 .map-card-spain {
   /* background-color: #66cae3; */
   background-image: url("https://tse4.mm.bing.net/th?id=OIP.xwMExNaXm71ukR3jmWcwcwHaEy&pid=Api&P=0");
@@ -872,55 +941,65 @@ div.toast:not(.hide) {
   border-radius: 8px;
   border: solid 2px #3a4e93;
 }
+
 .bg-banner-1 {
   background-color: #f8f9fa;
   width: 100%;
   height: auto;
 }
+
 .bg-banner-2 {
   background-color: #f8f9fa;
   width: 100%;
   height: 750px;
 }
+
 .bg-grey-lines {
   background-color: #f8f9fa;
   width: 100%;
   height: auto;
 }
+
 .bg-banner-3 {
   background-color: #fff;
   width: 100%;
   height: 600px;
 }
+
 .bg-banner-4 {
   background-color: #fdfafabd;
   width: 100%;
   height: 500px;
 }
+
 .person1 {
   background-color: cyan;
   height: 300px;
   width: 240px;
   border-radius: 12px;
 }
+
 .img-person-1 {
   height: 300px;
   width: 240px;
   border-radius: 12px;
   object-fit: cover;
 }
+
 .person2 {
   background-color: green;
   height: 200px;
   width: 250px;
   border-radius: 12px;
 }
+
 .img-person-2 {
   height: 200px;
   width: 250px;
   border-radius: 12px;
   object-fit: cover;
 }
+
 .person3 {
   background: green;
   height: 200px;
@@ -928,12 +1007,14 @@ div.toast:not(.hide) {
   border-radius: 12px;
   margin-top: 20px;
 }
+
 .img-person-3 {
   height: 200px;
   width: 280px;
   border-radius: 12px;
   object-fit: cover;
 }
+
 .person4 {
   height: 305px;
   width: 280px;
@@ -941,20 +1022,24 @@ div.toast:not(.hide) {
   margin-top: -80px;
   object-fit: contain;
 }
+
 .img-person-4 {
   height: 305px;
   width: 280px;
   border-radius: 12px;
   object-fit: cover;
 }
+
 .text-controller-2 {
   text-align: center;
 }
+
 .image-lastProject {
   width: auto;
   height: 100px;
   object-fit: contain;
 }
+
 /* ////card */
 .home-image-project {
   /* background-image: url("captureElana.png"); */
@@ -963,18 +1048,21 @@ div.toast:not(.hide) {
   object-fit: contain;
   margin-top: -143px;
 }
+
 .home-image-project-screen {
   width: 350px;
   height: 350px;
   object-fit: contain;
   margin-top: -143px;
 }
+
 .card-home {
   background-color: #e9e9e9;
   width: 350px;
   height: auto;
   border-radius: 13px;
 }
+
 .card-home-screen {
   background-color: #e9e9e9;
   width: 350px;
@@ -1019,10 +1107,12 @@ div.toast:not(.hide) {
   font-size: 52px;
   margin-left: 180px;
 }
+
 .carouselController {
   display: flex;
   justify-content: space-between;
 }
+
 .info-project-home {
   width: 100%;
   background-color: rgb(199, 228, 238);
@@ -1032,12 +1122,14 @@ div.toast:not(.hide) {
 
   /* border-radius: 20px; */
 }
+
 .img-project-1 {
   width: 630px;
   height: 400px;
   border-radius: 20px;
   margin-left: 100px;
 }
+
 .border-name-project {
   border-bottom: solid 5px rgb(199, 228, 238);
   width: 200px;
@@ -1049,21 +1141,25 @@ div.toast:not(.hide) {
   width: auto;
   height: 550px;
 }
+
 .col-banner {
   display: d-flex;
 }
+
 .card-banner-2 {
   width: 18rem;
   height: 30rem;
   border: solid 2px #3a4e93;
   color: black;
 }
+
 .title-banner-box {
   display: flex;
   margin-top: 30px;
   margin-bottom: -10px;
   justify-content: center;
 }
+
 .title-banner-color {
   width: auto;
   color: black;
@@ -1075,9 +1171,11 @@ div.toast:not(.hide) {
   border-radius: 3px;
   white-space: nowrap;
 }
+
 .description-banner-box {
   display: flex;
 }
+
 .description-banner {
   display: flex;
   margin-left: 1rem;
@@ -1088,6 +1186,7 @@ div.toast:not(.hide) {
   font-size: 1rem;
   font-family: "Orbitron", sans-serif;
 }
+
 .icon-banner {
   display: flex;
   height: 4.5rem;
@@ -1095,6 +1194,7 @@ div.toast:not(.hide) {
   margin-top: 10.5rem;
   margin-left: 13rem;
 }
+
 .icon-banner2 {
   display: flex;
   height: 4.5rem;
@@ -1102,6 +1202,7 @@ div.toast:not(.hide) {
   margin-top: 9rem;
   margin-left: 12.5rem;
 }
+
 .icon-banner3 {
   display: flex;
   height: 4.5rem;
@@ -1109,6 +1210,7 @@ div.toast:not(.hide) {
   margin-top: 9.3rem;
   margin-left: 13rem;
 }
+
 /* /////////////////////////////web development page */
 
 .webDevelopment-image {
@@ -1124,35 +1226,40 @@ div.toast:not(.hide) {
   font-size: 23px;
   font-family: "Orbitron", sans-serif;
 }
+
 .title-webdevelopment {
   color: white !important;
   font-family: "Orbitron", sans-serif;
 }
+
 .border-down-web-development {
   border-bottom: 2px solid white !important;
   width: 200px;
   white-space: nowrap;
 }
+
 .btn-outline-primary {
   color: #4682b4;
   border-color: #4682b4;
 }
+
 .btn-outline-primary:hover {
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #4169e1 0,
-    #4682b4 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #4169e1 0,
+      #4682b4 100%);
   border-color: #4682b4;
 }
+
 .controller-p {
   padding: 11.3px;
 }
+
 .wD-2banner {
   background-color: #fff;
   height: 500px;
   width: 100%;
 }
+
 .box-chart {
   width: 150px;
   height: 150px;
@@ -1179,6 +1286,7 @@ div.toast:not(.hide) {
   padding: 10px;
   font-family: "Orbitron", sans-serif;
 }
+
 .box-charts-three {
   width: 200px;
   height: 200px;
@@ -1191,6 +1299,7 @@ div.toast:not(.hide) {
   font-family: "Orbitron", sans-serif;
   padding: 10px;
 }
+
 .box-charts-four {
   width: 140px;
   height: 170px;
@@ -1211,6 +1320,7 @@ div.toast:not(.hide) {
   width: 100%;
   height: auto;
 }
+
 .circle-technologies {
   background-color: #eee;
   width: 200px;
@@ -1218,16 +1328,19 @@ div.toast:not(.hide) {
   border-radius: 50%;
   position: relative;
 }
+
 .circle-technologies-child {
   position: absolute;
   top: 30%;
   left: 50%;
   margin: -50px 0 0 -50px;
 }
+
 .reactlogo {
   width: 100px;
   height: 130px;
 }
+
 .jslogo {
   width: 100px;
   height: 100px;
@@ -1236,28 +1349,34 @@ div.toast:not(.hide) {
 .controller-circle {
   margin-left: -12px;
 }
+
 .tech-text {
   color: white;
   font-size: 55px;
   font-family: "Orbitron", sans-serif;
 }
+
 .tech-text-blue {
   color: #77acf0;
   font-size: 55px;
   font-family: "Orbitron", sans-serif;
 }
+
 .makeit-close {
   margin-top: -6px;
 }
+
 .border-large {
   border-top: 3px solid #e2a8ff;
   width: 70%;
 }
+
 .border-med {
   border-top: 3px solid #9e018e;
   width: 50%;
   margin-top: 25px;
 }
+
 .border-med-min {
   height: 20px;
   border-top: 3px solid #9e018e;
