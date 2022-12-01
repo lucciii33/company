@@ -30,11 +30,35 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="text-decoration-none" to="/services">
-              <a className="nav-link text-black" href="#">
+            <div className="nav-link dropdown">
+              <a
+                className=" dropdown-toggle text-dark text-decoration-none"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Services
               </a>
-            </Link>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <Link to="/services" className="text-decoration-none">
+                  <li>
+                    <a class="dropdown-item " href="#">
+                      All services
+                    </a>
+                  </li>
+                </Link>
+                <Link to="/webDevelopment" className="text-decoration-none">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Web Development
+                    </a>
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </li>
           <li className="nav-item">
             <Link className="text-decoration-none" to="/projects">
@@ -57,16 +81,6 @@ export const Navbar = () => {
               </a>
             </Link>
           </li>
-          <div class="dropdown mt-2">
-            <a className=" dropdown-toggle text-dark text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              services
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <Link to='/services' className="text-decoration-none"><li><a class="dropdown-item " href="#">All services</a></li></Link>
-              <Link to='/webDevelopment' className="text-decoration-none"><li><a class="dropdown-item" href="#">Web Development</a></li></Link>
-            </ul>
-          </div>
           <li className="nav-item">
             <Link className="text-decoration-none" to="/aboutus">
               <a className="nav-link text-black" href="#">

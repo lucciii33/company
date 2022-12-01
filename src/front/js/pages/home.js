@@ -8,12 +8,14 @@ import elana2 from "../../img/elana.png";
 import design from "../../img/design.png";
 import code from "../../img/code.png";
 import webdesign from "../../img/webdesign.png";
-import { Card } from "../component/card"
+import { Card } from "../component/card";
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import ProcessBanner from "../component/ProcessBanner";
+import CallToActionHome from "../component/CallToActionHome";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -86,7 +88,7 @@ export const Home = () => {
   }
 
   function customPaging(i) {
-    console.log(i);
+    // console.log(i);
     return <span>{i + 1}</span>;
     // return <img src={elana} />
   }
@@ -235,24 +237,23 @@ export const Home = () => {
         </div>
       </div>
 
-
       <div className="bg-banner-2">
         <h2 className="text-center pt-5 tech-text-blue">Services</h2>
         <div className="d-flex align-items-center justify-content-evenly container-card-banner-2">
           <Card
             title="Branding"
             description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
-            img=<img src={design} className="icon-banner"></img>
+            img={<img src={design} className="icon-banner"></img>}
           />
           <Card
             title="Web Design"
             description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
-            img=<img src={webdesign} className="icon-banner2 "></img>
+            img={<img src={webdesign} className="icon-banner2 "></img>}
           />
           <Card
             title="Web Development"
             description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
-            img=<img src={code} className="icon-banner3 "></img>
+            img={<img src={code} className="icon-banner3 "></img>}
           />
         </div>
       </div>
@@ -267,7 +268,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-          // appendDots={appendDots}
+            // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
@@ -282,9 +283,8 @@ export const Home = () => {
           {renderSlides()}
         </Slider> */}
       </div>
-      <div className="bg-banner-4">
-        <h2>Banner four description of our bussiness </h2>
-      </div>
+      <ProcessBanner />
+      <CallToActionHome />
     </div>
   );
 };
