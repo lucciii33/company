@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import tech from "../../img/tech.jpg";
 import tech2 from "../../img/tech2.jpg";
 import { Context } from "../store/appContext";
+import OurVision from "../component/OurVision";
+import Locations from "../component/Locations";
 
 export const Aboutus = () => {
   const { store, actions } = useContext(Context);
@@ -111,7 +113,7 @@ export const Aboutus = () => {
         </div>
 
         <div className="text-center">
-          <motion.h5
+          {/* <motion.h5
             className="ourvision"
             animate={{
               y: 25,
@@ -123,7 +125,7 @@ export const Aboutus = () => {
             transition={{ type: "spring", stiffness: 130 }}
           >
             OUR VISION
-          </motion.h5>
+          </motion.h5> */}
           <motion.h2
             className="text-gradient"
             animate={{
@@ -150,7 +152,7 @@ export const Aboutus = () => {
             creating custom web solutions custom-fit to support the growth of
             modern startups.
           </motion.h4>
-          <motion.p
+          {/* <motion.p
             className="paragraph"
             variants={boxVarient2}
             animate="visible"
@@ -160,7 +162,7 @@ export const Aboutus = () => {
             content,
             <br /> we build smooth customer journeys with a proven track record
             of skyrocketing conversion rates.
-          </motion.p>
+          </motion.p> */}
           <motion.div
             className="p-image"
             variants={boxVarient3}
@@ -180,41 +182,9 @@ export const Aboutus = () => {
             </p>
           </motion.div>
         </div>
+        <OurVision />
       </div>
-      <div>
-        <h2 className="text-dark text-center">Locations</h2>
-        <div className="d-flex justify-content-between mt-4">
-          <div className="entire-card">
-            <div className="map-card"></div>
-            <p className="">
-              lorem ipsum lorem ipsum is a cool and <br />
-              thing ti try your text before anything
-            </p>
-            <button>See venezuela</button>
-          </div>
-          <div className="entire-card">
-            <div className="map-card-usa"></div>
-            <p className="px-3 py-1">
-              lorem ipsum lorem ipsum is a cool and <br />
-              thing ti try your text before anything
-            </p>
-            <button>See Usa</button>
-          </div>
-          <div className="entire-card">
-            <div className="map-card-spain"></div>
-            <p className="px-3 py-1">
-              lorem ipsum lorem ipsum is a cool and <br />
-              thing ti try your text before anything
-            </p>
-            <div className="px-3 py-1 mt-2 pb-2">
-              <button className="">See Spain</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
+      <Locations />
     </div>
   );
 };

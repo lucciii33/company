@@ -44,7 +44,7 @@ const Layout = () => {
             <Route element={<Projects />} path="/projects" />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </ScrollToTop>
       </BrowserRouter>
     </>
