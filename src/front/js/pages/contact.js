@@ -270,7 +270,8 @@ export const ContactUs = () => {
             className="checkbox-round"
             name="terms"
             onChange={handleChange}
-            value={formData.terms}
+            // value={formData.terms}
+            checked={formData.terms}
           ></input>
           <span>
             I have read and accept the{" "}
@@ -279,15 +280,30 @@ export const ContactUs = () => {
           </span>
         </div>
         <button
-          onClick={() =>
-            actions.createContactForm(
-              formData.email,
-              formData.phone,
-              formData.terms,
-              formData.fullName,
-              formData.description
-            )
-          }
+          onClick={() => {
+            if (
+              formData.email != "" ||
+              formData.phone != "" ||
+              formData.terms != false ||
+              formData.fullName != "" ||
+              formData.description != ""
+            ) {
+              actions.createContactForm(
+                formData.email,
+                formData.phone,
+                formData.terms,
+                formData.fullName,
+                formData.description
+              );
+              setFormData({
+                email: "",
+                fullName: "",
+                terms: !formData,
+                phone: "",
+                description: "",
+              });
+            }
+          }}
         >
           send me
         </button>
