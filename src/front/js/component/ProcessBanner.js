@@ -22,11 +22,11 @@ const ProcessBanner = () => {
 
   return (
     <>
-      <div className="p-5 bg-light">
+      <div className="py-5 px-md-2 px-lg-5 bg-light">
         <h1 className="text-center fs-52 text-dark w-100 pb-5">Our Process</h1>
         <MDBRow className="px-5 pb-3">
           <MDBCol md="12" lg="3">
-            <div className="d-flex align-items-center h-100">
+            <div className="d-flex align-items-center justify-content-center h-100 p-3">
               <MDBTabs className="flex-column text-center border-0">
                 <MDBTabsItem>
                   <MDBTabsLink
@@ -34,8 +34,8 @@ const ProcessBanner = () => {
                     active={verticalActive === "tab1"}
                     className={
                       verticalActive === "tab1"
-                        ? "text-start p-3 fs-20 text-dark  border border-0 rounded-0 border-start"
-                        : "text-start p-3 fs-20 text-secondary  border border-0 rounded-0 "
+                        ? "text-start p-3 fs-20 text-dark border border-dark border-0 rounded-0 border-start"
+                        : "text-start p-3 fs-20 text-secondary border border-dark border-0 rounded-0 "
                     }
                   >
                     1. Idea of Concept
@@ -47,8 +47,8 @@ const ProcessBanner = () => {
                     active={verticalActive === "tab2"}
                     className={
                       verticalActive === "tab2"
-                        ? "text-start p-3 fs-20 text-dark  border border-0 rounded-0 border-start"
-                        : "text-start p-3 fs-20 text-secondary  border border-0 rounded-0 "
+                        ? "text-start p-3 fs-20 text-dark border border-0 border-dark rounded-0 border-start"
+                        : "text-start p-3 fs-20 text-secondary border border-0 border-dark rounded-0 "
                     }
                   >
                     2. Design
@@ -60,8 +60,8 @@ const ProcessBanner = () => {
                     active={verticalActive === "tab3"}
                     className={
                       verticalActive === "tab3"
-                        ? "text-start p-3 fs-20 text-dark  border border-0 rounded-0 border-start"
-                        : "text-start p-3 fs-20 text-secondary  border border-0 rounded-0 "
+                        ? "text-start p-3 fs-20 text-dark border border-0 border-dark rounded-0 border-start"
+                        : "text-start p-3 fs-20 text-secondary border border-0 border-dark rounded-0 "
                     }
                   >
                     3. Development
@@ -73,12 +73,12 @@ const ProcessBanner = () => {
           <MDBCol md="12" lg="9">
             <MDBTabsContent>
               <MDBTabsPane show={verticalActive === "tab1"}>
-                <div className="p-5 bg-dark">
+                <div className="p-sm-2 p-md-3 p-lg-5 bg-dark rounded">
                   <MDBRow>
                     <MDBCol md="12" lg="6">
                       <img
                         className="img-fluid rounded"
-                        src="https://picsum.photos/id/444/4288/2848"
+                        src="https://picsum.photos/id/444/4200/2800"
                         alt="design"
                       />
                     </MDBCol>
@@ -98,12 +98,12 @@ const ProcessBanner = () => {
                 </div>
               </MDBTabsPane>
               <MDBTabsPane show={verticalActive === "tab2"}>
-                <div className="p-5 bg-dark">
+                <div className="p-sm-2 p-md-3 p-lg-5 bg-dark rounded">
                   <MDBRow>
                     <MDBCol md="12" lg="6">
                       <img
                         className="img-fluid rounded"
-                        src="https://picsum.photos/id/42/3456/2304"
+                        src="https://picsum.photos/id/42/4200/2800"
                         alt="design"
                       />
                     </MDBCol>
@@ -123,12 +123,12 @@ const ProcessBanner = () => {
                 </div>
               </MDBTabsPane>
               <MDBTabsPane show={verticalActive === "tab3"}>
-                <div className="p-5 bg-dark">
+                <div className="p-sm-2 p-md-3 p-lg-5 bg-dark rounded">
                   <MDBRow>
                     <MDBCol md="12" lg="6">
                       <img
                         className="img-fluid rounded"
-                        src="https://picsum.photos/id/60/1920/1200"
+                        src="https://picsum.photos/id/60/4200/2800"
                         alt="design"
                       />
                     </MDBCol>

@@ -937,6 +937,18 @@ div.toast:not(.hide) {
   height: 250px;
 }
 
+.bg-blue-gradient {
+  background: linear-gradient(to bottom right, #1c012c, #77acf0);
+}
+
+.bg-dark-gray {
+  background-color: #494949 !important;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+}
+
 .entire-card {
   border-radius: 8px;
   border: solid 2px #3a4e93;
