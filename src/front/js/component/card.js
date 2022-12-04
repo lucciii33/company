@@ -4,7 +4,7 @@ import desing from "../../img/design.png";
 
 export const Card = ({ title, description, img }) => {
     return (
-        <motion.div className="box-services"
+        <motion.div className="box-services-home"
             whileHover={{
                 boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
                 scale: 1.1,
