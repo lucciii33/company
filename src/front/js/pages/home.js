@@ -243,17 +243,17 @@ export const Home = () => {
           <Card
             title="Branding"
             description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
-            img={<img src={design} className="icon-banner"></img>}
+            img={<img src={design} className="logo-image"></img>}
           />
           <Card
             title="Web Design"
             description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
-            img={<img src={webdesign} className="icon-banner2 "></img>}
+            img={<img src={webdesign} className="logo-image"></img>}
           />
           <Card
             title="Web Development"
             description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
-            img={<img src={code} className="icon-banner3 "></img>}
+            img={<img src={code} className="logo-image"></img>}
           />
         </div>
       </div>
@@ -268,7 +268,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-            // appendDots={appendDots}
+          // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
