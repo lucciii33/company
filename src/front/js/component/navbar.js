@@ -57,6 +57,13 @@ export const Navbar = () => {
                     </a>
                   </li>
                 </Link>
+                <Link to="/mobileApps" className="text-decoration-none">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Mobile Apps
+                    </a>
+                  </li>
+                </Link>
               </ul>
             </div>
           </li>
