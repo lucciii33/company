@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import pic1 from "../../img/pexels-fauxels-3183153.jpg"
+import { CardMobileApp } from "../component/cardMobileApps";
 
 
 export const MobileApps = () => {
@@ -49,24 +50,19 @@ export const MobileApps = () => {
                     </div>
 
                 </div>
-                <div className="techWeuseBanner">
-                    <h2 className="text-center pt-5 tech-text">Why is Web development important</h2>
-                    <div className="text-center p-4">
-                        <p className="text-white">Web development is the process of creating websites. It involves a wide range of activities including website design, web content development, web server configuration, and client-side scripting.
-                            <br /><br />
-                            Web developers usually have a good understanding of both front-end and back-end web technologies.
-                            <br /><br />
-                            Web development is a very important part of the modern world. The internet has become an essential part of our lives and businesses can no longer function without a website.
-                            <br /><br />
-                            Websites allow businesses to reach a wider audience and sell their products or services online. They also provide a way for customers to contact businesses and find out more about their products or services.
-                            <br /><br />
-                            Web development is not only important for businesses, but also for individuals. A personal website can be used to showcase your work, build your online presence, and attract potential employers.
-                            <br /><br />
-                            A well-developed website can also be used as a platform to sell products or services, or to generate income through advertising.</p>
-                    </div>
+            </div>
+            <div className="bg-grey-lines pt-5">
+                <div className=" position-relative">
+                    <div className="border-large  position-absolute top-50 start-50 translate-middle"></div>
+                    <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
+                    <div className="border-med-min mx-auto"></div>
                 </div>
             </div>
-
+            <div className="d-flex justify-content-evenly pt-5 bg-card-mobile-app">
+                <CardMobileApp className="" title={"IOS APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-apple"></i>} />
+                <CardMobileApp className="" title={"ANDROID APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-android"></i>} />
+                <CardMobileApp className="" title={"REACT NATIVE APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-react"></i>} />
+            </div>
 
         </>
     );

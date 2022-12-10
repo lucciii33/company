@@ -1012,7 +1012,7 @@ div.toast:not(.hide) {
 }
 
 .bg-banner-3 {
-  background-color: #fff;
+  background-color: #f8f9fa;
   width: 100%;
   height: 600px;
 }
@@ -1435,4 +1435,17 @@ div.toast:not(.hide) {
   border-top: 3px solid #9e018e;
   width: 30%;
   padding-bottom: 55px;
+}
+.box-card-mobile-app {
+  width: 230px;
+  height: auto;
+  background-color: #9e018e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.bg-card-mobile-app {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: auto;
 }

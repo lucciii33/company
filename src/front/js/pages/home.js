@@ -229,14 +229,6 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="bg-grey-lines pt-5">
-        <div className=" position-relative">
-          <div className="border-large  position-absolute top-50 start-50 translate-middle"></div>
-          <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
-          <div className="border-med-min mx-auto"></div>
-        </div>
-      </div>
-
       <div className="bg-banner-2">
         <h2 className="text-center pt-5 tech-text-blue">Services</h2>
         <div className="d-flex align-items-center justify-content-evenly container-card-banner-2">
@@ -282,6 +274,13 @@ export const Home = () => {
         >
           {renderSlides()}
         </Slider> */}
+      </div>
+      <div className="bg-grey-lines pt-5">
+        <div className=" position-relative">
+          <div className="border-large  position-absolute top-50 start-50 translate-middle"></div>
+          <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
+          <div className="border-med-min mx-auto"></div>
+        </div>
       </div>
       <ProcessBanner />
       <CallToActionHome />
