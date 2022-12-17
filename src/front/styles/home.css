@@ -1449,3 +1449,18 @@ div.toast:not(.hide) {
   width: 100%;
   height: auto;
 }
+.img-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.intro-image {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 600px) {
+  .intro-image {
+    width: 220px;
+    height: 220px;
+  }
+}

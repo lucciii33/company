@@ -15,6 +15,7 @@ import { Success } from "./pages/success";
 import { Cancel } from "./pages/cancel";
 import { WebDevelopment } from "./pages/webDevelopment";
 import { MobileApps } from "./pages/mobileApps";
+import { Intro } from "./pages/intro";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -32,8 +33,9 @@ const Layout = () => {
         <ScrollToTop>
           <Navbar />
           <Routes>
-            <Route element={<Home />} path="/" />
+            <Route element={<Home />} path="/home" />
             <Route element={<Success />} path="/success" />
+            <Route element={<Intro />} path="/" />
             <Route element={<WebDevelopment />} path="/webDevelopment" />
             <Route element={<MobileApps />} path="/mobileApps" />
             <Route element={<Cancel />} path="/cancel" />

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import logo from "../../img/Group3.png"
+import tech from "../../img/tech.jpg";
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -10,9 +12,9 @@ export const Navbar = () => {
       <div className="container-fluid ">
         <div>
           <Link className="text-decoration-none" to="/">
-            <a className="navbar-brand text-black" href="#">
-              Bluelight Tech
-            </a>
+            <img src={logo} className="img-logo">
+
+            </img>
           </Link>
           <button
             className="navbar-toggler"
