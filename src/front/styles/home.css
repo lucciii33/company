@@ -334,7 +334,8 @@ h1 span {
 
 .paragraph-home-text {
   color: #3a4e93;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Verdana", sans-serif;
+  font-size: 20px;
 }
 
 .ourvision {
@@ -353,6 +354,10 @@ h1 span {
 
 .tech2-image {
   display: none;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
 }
 
 @media (max-width: 600px) {
@@ -990,6 +995,10 @@ div.toast:not(.hide) {
   border: solid 2px #3a4e93;
 }
 
+.homepage-banner-padding {
+  padding: 100px 0px;
+}
+
 .bg-banner-1 {
   background-color: #f8f9fa;
   width: 100%;
@@ -1002,7 +1011,7 @@ div.toast:not(.hide) {
   background: -moz-linear-gradient(top left, #1c012c, #9e018e);
   background: linear-gradient(to bottom right, #1c012c, #77acf0);
   width: 100%;
-  height: 750px;
+  height: auto;
 }
 
 .bg-grey-lines {
@@ -1187,11 +1196,6 @@ div.toast:not(.hide) {
 }
 
 /* /// mmau start wirking here  */
-
-.container-card-banner-2 {
-  width: auto;
-  height: 550px;
-}
 
 .col-banner {
   display: d-flex;
