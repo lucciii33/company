@@ -14,6 +14,7 @@ import ProcessBanner from "../component/ProcessBanner";
 import CallToActionHome from "../component/CallToActionHome";
 import HomepageBanner2 from "../component/HomepageBanner2";
 import HomepageBanner3 from "../component/HomepageBanner3";
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -122,6 +123,7 @@ export const Home = () => {
   console.log(store.language);
   return (
     <div>
+      <GoogleAnalyticsTracker />
       {show && (
         <div class="modal" tabindex="-1">
           <div class="modal-dialog">
@@ -210,7 +212,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-            // appendDots={appendDots}
+          // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
