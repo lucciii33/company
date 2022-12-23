@@ -9,7 +9,7 @@ import react from "../../img/react.png";
 import jslogo from "../../img/jslogo.png";
 import nodejs from "../../img/nodejs.png";
 import mongo from "../../img/mongo.png";
-
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
 
 export const Services = () => {

@@ -6,6 +6,7 @@ import tech2 from "../../img/tech2.jpg";
 import { Context } from "../store/appContext";
 import OurVision from "../component/OurVision";
 import Locations from "../component/Locations";
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 
 export const Aboutus = () => {
   const { store, actions } = useContext(Context);

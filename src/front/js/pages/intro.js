@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom'
 import { Context } from "../store/appContext";
 import logo from "../../img/Group3.png"
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 
 
 export const Intro = () => {
