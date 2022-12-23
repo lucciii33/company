@@ -1,20 +1,18 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import logo from "../../img/Group3.png"
+import logo from "../../img/Group3.png";
 import tech from "../../img/tech.jpg";
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
   const [language, setLanguage] = useState("en");
   return (
-    <div className="navbar bg-ligth navbar-expand-lg  d-flex justify-content-between p-3">
+    <div className="navbar bg-light navbar-expand-lg d-flex justify-content-between px-3">
       <div className="container-fluid ">
         <div>
           <Link className="text-decoration-none" to="/">
-            <img src={logo} className="img-logo">
-
-            </img>
+            <img src={logo} className="img-logo"></img>
           </Link>
           <button
             className="navbar-toggler"

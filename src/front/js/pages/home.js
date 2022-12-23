@@ -5,10 +5,6 @@ import main1 from "../../img/main1.png";
 import elana from "../../img/Logo.png";
 import elana1 from "../../img/figma.png";
 import elana2 from "../../img/elana.png";
-import design from "../../img/design.png";
-import code from "../../img/code.png";
-import webdesign from "../../img/webdesign.png";
-import { Card } from "../component/card";
 import "../../styles/home.css";
 import Chatboot from "../component/Chatboot";
 import "slick-carousel/slick/slick.css";
@@ -16,6 +12,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProcessBanner from "../component/ProcessBanner";
 import CallToActionHome from "../component/CallToActionHome";
+import HomepageBanner2 from "../component/HomepageBanner2";
+import HomepageBanner3 from "../component/HomepageBanner3";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -24,6 +22,27 @@ export const Home = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  };
+
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   useEffect(() => {
     handleShow();
@@ -177,78 +196,9 @@ export const Home = () => {
           <img src={main1} className="imagemain"></img>
         </div>
       </div>
-      <Chatboot></Chatboot>
-      <div className="bg-banner-1">
-        <h2 className="text-center text-gradient-home pt-5">
-          Story of the company
-        </h2>
-        <div className="d-flex">
-          <div className="m-5">
-            <div className="d-flex ">
-              <div className="person1 me-3">
-                <img
-                  src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="img-person-1"
-                ></img>
-              </div>
-              <div className="person2">
-                <img
-                  src="https://images.pexels.com/photos/3178744/pexels-photo-3178744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="img-person-2"
-                ></img>
-              </div>
-            </div>
-            <div className="d-flex ">
-              <div className="person3 me-3">
-                <img
-                  src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="img-person-3"
-                ></img>
-              </div>
-              <div className="person4">
-                <img
-                  src="https://images.pexels.com/photos/7989039/pexels-photo-7989039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="img-person-4"
-                ></img>
-              </div>
-            </div>
-          </div>
-          <div className="text-controller-2 my-auto px-5">
-            <h2 className="title-home-text">TEXT TITLE</h2>
-            <p className="paragraph-home-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              "There's one exception to the rule above: If you are using the
-              display property to define your div as a flex container, then you
-              can't use the text-align property to center text horizontally
-              inside the div. Instead, you have to use the justify-content
-              property with the value
-              center."https://blog.hubspot.com/website/center-div-css
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-banner-2">
-        <h2 className="text-center pt-5 tech-text-blue">Services</h2>
-        <div className="d-flex align-items-center justify-content-evenly container-card-banner-2">
-          <Card
-            title="Branding"
-            description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
-            img={<img src={design} className="logo-image"></img>}
-          />
-          <Card
-            title="Web Design"
-            description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
-            img={<img src={webdesign} className="logo-image"></img>}
-          />
-          <Card
-            title="Web Development"
-            description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
-            img={<img src={code} className="logo-image"></img>}
-          />
-        </div>
-      </div>
+      <Chatboot />
+      <HomepageBanner2 width={windowDimensions.width} />
+      <HomepageBanner3 width={windowDimensions.width} />
       {/* until here is the div */}
       <div className="bg-banner-3">
         <div className="">
@@ -260,7 +210,7 @@ export const Home = () => {
             customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
-          // appendDots={appendDots}
+            // appendDots={appendDots}
           >
             {renderSlides()}
           </Slider>
