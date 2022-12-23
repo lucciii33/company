@@ -91,117 +91,123 @@ export const ContactUs = () => {
         </h6>
       </div>
 
-      {/* <form onSubmit={sendEmail} ref={form}>
-        <div className="conta-form">
-          <div>
-            <div className="no-mobile">
-              <input
-                className="email"
-                placeholder="Email address"
-                type="text"
-                name="email"
-              ></input>
-              <div className="d-flex mt-3">
-                <input
-                  className="name"
-                  placeholder="Full Name"
-                  type="text"
-                  name="name"
-                ></input>
-                <input
-                  className="phone"
-                  placeholder="Phone"
-                  type="text"
-                  name="phone"
-                ></input>
-              </div>
-              <div className="text-area">
-                <input
-                  className="mensaje mt-3"
-                  placeholder="Tell us about your project/product"
-                  type="text"
-                  name="message"
-                ></input>
-              </div>
-              <div className="mt-2">
-                <input type="checkbox" className="checkbox-round"></input>
-                <span>
-                  I have read and accept the{" "}
-                  <strong className="strong">Terms of use </strong>&{" "}
-                  <strong className="strong">Privacy Policy</strong>
-                </span>
-              </div>
-            </div>
 
-            <motion.div
-              className="responsive-contact-form"
-              transition={{ type: "spring", stiffness: 130 }}
-              variants={boxVarient}
-              animate="visible"
-              initial="hidden"
-              whileHover={{
-                boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-                scale: 1.1,
-                originX: 0,
-              }}
-            >
-              <input
-                placeholder="Write your email"
-                className="input-responisve"
-              ></input>
-              <input
-                placeholder="your name"
-                className="input-responisve"
-              ></input>
-              <input
-                placeholder="your phone"
-                className="input-responisve"
-              ></input>
-              <input placeholder="message" className="input-responisve"></input>
-              <input type="submit" value="Send" className="button-29 mt-2" />
-            </motion.div>
-
-            <div>
-              <input
-                type="submit"
-                value="Send"
-                className="button-29 mt-2 no-mobile"
-              />
-              <button className="button-29 mt-2">Lest talk<i className="far fa-paper-plane ms-1"></i></button>
-            </div>
+      <div className="conta-form">
+        <div className="mb-5">
+          <input
+            className="email"
+            placeholder="Email address"
+            type="text"
+            name="email"
+            onChange={handleChange}
+            value={formData.email}
+          ></input>
+          <div className="d-flex mt-3">
+            <input
+              className="name"
+              placeholder="Full Name"
+              type="text"
+              name="fullName"
+              onChange={handleChange}
+              value={formData.fullName}
+            ></input>
+            <input
+              className="phone"
+              placeholder="Phone"
+              type="text"
+              name="phone"
+              onChange={handleChange}
+              value={formData.phone}
+            ></input>
           </div>
-          <motion.div
-            className="second-box"
-            transition={{ type: "spring", stiffness: 130 }}
-            variants={boxVarient}
-            animate="visible"
-            initial="hidden"
-            whileHover={{
-              boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-              scale: 1.1,
-              originX: 0,
+          <div className="text-area">
+            <input
+              className="mensaje mt-3"
+              placeholder="Tell us about your project/product"
+              type="text"
+              name="description"
+              onChange={handleChange}
+              value={formData.description}
+            ></input>
+          </div>
+          <div className="mt-2">
+            <input
+              type="checkbox"
+              className="checkbox-round"
+              name="terms"
+              onChange={handleChange}
+              // value={formData.terms}
+              checked={formData.terms}
+            ></input>
+            <span>
+              I have read and accept the{" "}
+              <strong className="strong">Terms of use </strong>&{" "}
+              <strong className="strong">Privacy Policy</strong>
+            </span>
+          </div>
+          <button
+            className="mt-3 button-29"
+            onClick={() => {
+              if (
+                formData.email != "" ||
+                formData.phone != "" ||
+                formData.terms != false ||
+                formData.fullName != "" ||
+                formData.description != ""
+              ) {
+                actions.createContactForm(
+                  formData.email,
+                  formData.phone,
+                  formData.terms,
+                  formData.fullName,
+                  formData.description
+                );
+                setFormData({
+                  email: "",
+                  fullName: "",
+                  terms: !formData,
+                  phone: "",
+                  description: "",
+                });
+              }
             }}
           >
-            <h2 className="text-center p-box">Usertive Solutions</h2>
-            <div>
-              <div className="d-flex">
-                <i className="far fa-envelope"></i>
-                <p className="text-contact-box">ilutioncode@gmail.com</p>
-              </div>
-              <div className="d-flex">
-                <i className="fas fa-map-marker-alt"></i>
-                <p className="text-contact-box">Miami, United State</p>
-              </div>
-              <div className="d-flex">
-                <i className="fas fa-mobile-alt"></i>
-                <p className="text-contact-box">9864984455</p>
-              </div>
-            </div>
-          </motion.div>
+            send me
+          </button>
         </div>
-      </form> */}
-      <br />
-      <br />
+
+
+        <br />
+        <br />
+        <motion.div
+          className="second-box"
+          transition={{ type: "spring", stiffness: 130 }}
+          variants={boxVarient}
+          animate="visible"
+          initial="hidden"
+          whileHover={{
+            boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+            scale: 1.1,
+            originX: 0,
+          }}
+        >
+          <h2 className="text-center p-box">Usertive Solutions</h2>
+          <div>
+            <div className="d-flex">
+              <i className="far fa-envelope"></i>
+              <p className="text-contact-box">ilutioncode@gmail.com</p>
+            </div>
+            <div className="d-flex">
+              <i className="fas fa-map-marker-alt"></i>
+              <p className="text-contact-box">Miami, United State</p>
+            </div>
+            <div className="d-flex">
+              <i className="fas fa-mobile-alt"></i>
+              <p className="text-contact-box">9864984455</p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
 
       <div className="text-center">
         <h2 className="text-gradient-small">Please book a meting here</h2>
@@ -227,7 +233,7 @@ export const ContactUs = () => {
         />
       </div>
 
-      <div className="">
+      {/* <div className="">
         <input
           className="email"
           placeholder="Email address"
@@ -307,7 +313,7 @@ export const ContactUs = () => {
         >
           send me
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
