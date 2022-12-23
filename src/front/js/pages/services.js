@@ -102,6 +102,7 @@ export const Services = () => {
 	}
 	return (
 		<div className="conta-services">
+			<GoogleAnalyticsTracker />
 			<div className="text-center">
 				<motion.h5 className="ourvision" variants={boxVarient2}
 					animate="visible"

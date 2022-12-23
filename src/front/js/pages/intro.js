@@ -48,6 +48,7 @@ export const Intro = () => {
 
   return (
     <div className="bg-ligth ">
+      <GoogleAnalyticsTracker />
       <motion.div
         className=""
         variants={boxVarient3}
