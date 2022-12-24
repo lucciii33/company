@@ -121,14 +121,14 @@ export const Navbar = () => {
     // </div>
     <>
       <MDBNavbar expand='lg' light bgColor='light'>
-        <MDBContainer fluid className='d-flex justify-content-evenly'>
-          <div>
-            <MDBNavbarBrand href='#'>
-              <Link className="text-decoration-none" to="/">
-                <img src={logo} className="img-logo"></img>
-              </Link>
-            </MDBNavbarBrand>
-          </div>
+        <MDBContainer fluid className=''>
+
+          <MDBNavbarBrand href='#'>
+            <Link className="text-decoration-none" to="/">
+              <img src={logo} className="img-logo"></img>
+            </Link>
+          </MDBNavbarBrand>
+
 
           <MDBNavbarToggler
             aria-expanded='false'
@@ -140,86 +140,86 @@ export const Navbar = () => {
 
           <MDBCollapse navbar show={showNavSecond}>
 
-            <div>
-              <MDBNavbarNav>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <div className="nav-link dropdown">
-                      <a
-                        className=" dropdown-toggle text-dark text-decoration-none"
-                        href="#"
-                        role="button"
-                        id="dropdownMenuLink"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Services
-                      </a>
 
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <Link to="/services" className="text-decoration-none">
-                          <li>
-                            <a class="dropdown-item " href="#">
-                              All services
-                            </a>
-                          </li>
-                        </Link>
-                        <Link to="/webDevelopment" className="text-decoration-none">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              Web Development
-                            </a>
-                          </li>
-                        </Link>
-                        <Link to="/mobileApps" className="text-decoration-none">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              Mobile Apps
-                            </a>
-                          </li>
-                        </Link>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="text-decoration-none" to="/projects">
-                      <a className="nav-link text-black" href="#">
-                        Projects
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="text-decoration-none" to="/questions">
-                      <a className="nav-link text-black" href="#">
-                        FAQ
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="text-decoration-none" to="/contact">
-                      <a className="nav-link text-black" href="#">
-                        Contact Us
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="text-decoration-none" to="/aboutus">
-                      <a className="nav-link text-black" href="#">
-                        About Us
-                      </a>
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <button
-                      className="button-29"
-                      onClick={() => actions.changeLanguege()}
+            <MDBNavbarNav fullWidth={false} right>
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <div className="nav-link dropdown">
+                    <a
+                      className=" dropdown-toggle text-dark text-decoration-none"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      {store.language == "en" ? "ESPANOL" : "ENGLISH"}
-                    </button>
-                  </li>
-                </ul>
-                {/* <MDBNavbarLink active aria-current='page' href='#'>
+                      Services
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <Link to="/services" className="text-decoration-none">
+                        <li>
+                          <a class="dropdown-item " href="#">
+                            All services
+                          </a>
+                        </li>
+                      </Link>
+                      <Link to="/webDevelopment" className="text-decoration-none">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Web Development
+                          </a>
+                        </li>
+                      </Link>
+                      <Link to="/mobileApps" className="text-decoration-none">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Mobile Apps
+                          </a>
+                        </li>
+                      </Link>
+                    </ul>
+                  </div>
+                </li>
+                <li className="nav-item">
+                  <Link className="text-decoration-none" to="/projects">
+                    <a className="nav-link text-black" href="#">
+                      Projects
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="text-decoration-none" to="/questions">
+                    <a className="nav-link text-black" href="#">
+                      FAQ
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="text-decoration-none" to="/contact">
+                    <a className="nav-link text-black" href="#">
+                      Contact Us
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="text-decoration-none" to="/aboutus">
+                    <a className="nav-link text-black" href="#">
+                      About Us
+                    </a>
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <button
+                    className="button-29"
+                    onClick={() => actions.changeLanguege()}
+                  >
+                    {store.language == "en" ? "ESPANOL" : "ENGLISH"}
+                  </button>
+                </li>
+              </ul>
+              {/* <MDBNavbarLink active aria-current='page' href='#'>
                 Home
               </MDBNavbarLink>
               <MDBNavbarLink href='#'>Features</MDBNavbarLink>
@@ -227,8 +227,7 @@ export const Navbar = () => {
               <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
                 Disabled
               </MDBNavbarLink> */}
-              </MDBNavbarNav>
-            </div>
+            </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
