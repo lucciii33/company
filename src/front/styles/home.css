@@ -35,6 +35,24 @@ h1 span {
   font-size: 50px;
   margin-left: 0px;
 }
+@media (max-width: 600px) {
+  h1 span {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  h1 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 330px;
+  }
+}
 
 .message {
   /* background-color: #5994ce; */
@@ -53,7 +71,25 @@ h1 span {
   left: 200px;
   animation: openclose 5s ease-in-out infinite;
 }
-
+@media (max-width: 600px) {
+  .message {
+    /* background-color: #5994ce; */
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #e2a8ff 0,
+      #9e018e 100%
+    );
+    color: #333;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 115px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+}
 .word1,
 .word2,
 .word3,
@@ -144,6 +180,23 @@ h1 span {
   object-fit: contain;
   width: 700px;
   height: 700px;
+}
+.m-main-controller {
+  padding: 50px;
+}
+.arrow-carrousel {
+  font-size: 40px;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .imagemain {
+    object-fit: contain;
+    width: 395px;
+    height: 340px;
+  }
+  .m-main-controller {
+    padding: 35px;
+  }
 }
 
 .conta {
@@ -543,7 +596,7 @@ div.toast:not(.hide) {
   }
 
   .email {
-    width: 360px;
+    width: 348px;
     height: 45px;
     border-radius: 10px;
     margin-top: 15px;
@@ -564,7 +617,7 @@ div.toast:not(.hide) {
     margin-top: 15px;
   }
   .mensaje {
-    width: 360px;
+    width: 348px;
     height: 115px;
     border-radius: 10px;
   }
@@ -1231,13 +1284,26 @@ div.toast:not(.hide) {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  .carouselController {
+    display: block;
+  }
+  .bg-banner-3 {
+    background-color: #f8f9fa;
+    width: 100%;
+    height: auto;
+  }
+}
 
 .info-project-home {
   width: 100%;
   background-color: rgb(199, 228, 238);
   height: 500px;
   margin: 40px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   /* border-radius: 20px; */
 }
@@ -1246,7 +1312,6 @@ div.toast:not(.hide) {
   width: 630px;
   height: 400px;
   border-radius: 20px;
-  margin-left: 100px;
 }
 
 .border-name-project {
@@ -1434,6 +1499,11 @@ div.toast:not(.hide) {
   .text-webdevelopment {
     font-size: 15px;
   }
+  .img-project-1 {
+    width: 430px;
+    height: 300px;
+    border-radius: 20px;
+  }
   .box-chart {
     width: 120px;
     height: 120px;
@@ -1446,7 +1516,17 @@ div.toast:not(.hide) {
     font-family: "Orbitron", sans-serif;
     padding: 10px;
   }
+  .info-project-home {
+    width: 100%;
+    background-color: rgb(199, 228, 238);
+    height: 400px;
+    /* margin-right: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    /* border-radius: 20px; */
+  }
   .box-charts-two {
     width: 150px;
     height: 100px;

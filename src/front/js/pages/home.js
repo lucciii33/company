@@ -15,6 +15,8 @@ import CallToActionHome from "../component/CallToActionHome";
 import HomepageBanner2 from "../component/HomepageBanner2";
 import HomepageBanner3 from "../component/HomepageBanner3";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
+import { MDBRadio } from "mdb-react-ui-kit";
+import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -71,10 +73,12 @@ export const Home = () => {
       <div>
         <div className="carouselController">
           <div className="info-project-home">
-            <img
-              src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg"
-              className="img-project-1"
-            ></img>
+            <div>
+              <img
+                src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg"
+                className="img-project-1"
+              ></img>
+            </div>
           </div>
           <div className="my-auto">
             <div className="border-name-project">
@@ -89,7 +93,7 @@ export const Home = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-              <button className="button-29">VIEW PROJECT</button>
+              <button className="button-29 me-4">VIEW PROJECT</button>
               <button className="button-29">CONTACT US</button>
             </div>
           </div>
@@ -99,19 +103,17 @@ export const Home = () => {
   function Arrow(props) {
     let className = props.type === "next" ? "nextArrow" : "prevArrow";
     className += " arrow";
-    const char = props.type === "next" ? "👉" : "👈";
+    const char = props.type === "next" ? ">" : "<";
     return (
       <div className={className} onClick={props.onClick}>
-        {char}
+        <div className="arrow-carrousel">{char}</div>
       </div>
     );
   }
 
-  function customPaging(i) {
-    // console.log(i);
-    return <span>{i + 1}</span>;
-    // return <img src={elana} />
-  }
+  // function customPaging(i) {
+  //   return <span><i class="fas fa-circle"></i></span>;
+  // }
 
   // function appendDots(dots) {
   //   return (
@@ -154,8 +156,8 @@ export const Home = () => {
           </div>
         </div>
       )}
-      <div className="d-flex conta">
-        <div className="m-top">
+      <MDBRow className="d-flex conta">
+        <MDBCol className="m-top m-main-controller" lg="6" md="6" sm="12">
           <h2 className="text-white title ">
             {store.language === "en"
               ? "Your website needs"
@@ -164,13 +166,12 @@ export const Home = () => {
           <div className="d-grid">
             <h1>
               <span className="m-left">to be</span>
+
               <div className="message">
                 <div className="word1">creative</div>
                 <div className="word2">modern</div>
                 <div className="word3">amused</div>
                 <div className="word4">usefull</div>
-                <div className="word5">prety</div>
-                <div className="word6">cool</div>
               </div>
             </h1>
           </div>
@@ -192,12 +193,12 @@ export const Home = () => {
               <button className="button-29">Our Portfolio</button>
             </Link>
           </div>
-        </div>
+        </MDBCol>
 
-        <div className="">
+        <MDBCol className="" lg="6" md="6" sm="12">
           <img src={main1} className="imagemain"></img>
-        </div>
-      </div>
+        </MDBCol>
+      </MDBRow>
       <Chatboot />
       <HomepageBanner2 width={windowDimensions.width} />
       <HomepageBanner3 width={windowDimensions.width} />
@@ -209,7 +210,7 @@ export const Home = () => {
             nextArrow={<Arrow type="next" />}
             prevArrow={<Arrow type="prev" />}
             dots={true}
-            customPaging={customPaging}
+            // customPaging={customPaging}
             autoplay={true}
             autoplaySpeed={2000}
           // appendDots={appendDots}
