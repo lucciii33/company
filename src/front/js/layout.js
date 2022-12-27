@@ -32,6 +32,7 @@ const Layout = () => {
   return (
     <>
       <BrowserRouter basename={basename}>
+        <GoogleAnalyticsTracker />
         <ScrollToTop>
           <Navbar />
           <Routes>
@@ -53,6 +54,7 @@ const Layout = () => {
           <Footer />
         </ScrollToTop>
       </BrowserRouter>
+
     </>
   );
 };
