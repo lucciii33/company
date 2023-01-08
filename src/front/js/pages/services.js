@@ -11,6 +11,7 @@ import nodejs from "../../img/nodejs.png";
 import mongo from "../../img/mongo.png";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
+import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 export const Services = () => {
 	const { store, actions } = useContext(Context);
@@ -175,7 +176,7 @@ export const Services = () => {
 						<img src={photo} className="logo-image"></img>
 						<h3 className="mt-2 ">photography</h3>
 						<p className="mt-2">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
-						<button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button>
+						<Link to="/photography" className="text-decoration-none"><button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button></Link>
 					</motion.div>
 				</div>
 			</div>
@@ -239,63 +240,34 @@ export const Services = () => {
 			</div>
 
 
-			<div className="techWeuseBanner">
-				<h2 className="text-center pt-5 tech-text">Technologies we use</h2>
-				<div className="d-flex justify-content-evenly mt-5">
-					<div className="circle-technologies m-4 mb-2">
-						<div className="circle-technologies-child">
-							<img src={react} className="reactlogo"></img>
-							<h3>React JS</h3>
-						</div>
-					</div>
-					<div className="circle-technologies m-5 mt-2">
-						<div className="circle-technologies-child">
-							<img src={jslogo} className="jslogo mt-3"></img>
-							<h3 className="controller-circle">JavaScript</h3>
-						</div>
-					</div>
-					<div className="circle-technologies m-5 mb-2">
-						<div className="circle-technologies-child">
-							<img src={nodejs} className="jslogo"></img>
-							<h3 className="">Node JS</h3>
-						</div>
-					</div>
-					<div className="circle-technologies m-5 mt-2">
-						<div className="circle-technologies-child ">
+			<div className="techWeuseBanner bg-light pb-5">
+				<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
+				<MDBRow className="d-flex justify-content-center mt-5">
+					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2" sm="12" md="12" lg="3">
+						<div className="my-auto">
 							<img src={mongo} className="jslogo"></img>
-							<h3 className="controller-circle">MongoDB</h3>
+							{/* <h3 className="controller-circle">MongoDB</h3> */}
 						</div>
-					</div>
-				</div>
-				<div className="mb-5">
-					<div className="d-flex justify-content-evenly mb-5 ms-5 makeit-close">
-						<div className="circle-technologies m-4 mb-2">
-							<div className="circle-technologies-child">
-								<img src={react} className="reactlogo"></img>
-								<h3>React JS</h3>
-							</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={nodejs} className="jslogo"></img>
+							{/* <h3 className="">Node JS</h3> */}
 						</div>
-						<div className="circle-technologies m-5 mt-2">
-							<div className="circle-technologies-child">
-								<img src={jslogo} className="jslogo mt-3"></img>
-								<h3 className="controller-circle">JavaScript</h3>
-							</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={react} className="reactlogo"></img>
+							{/* <h3>React JS</h3> */}
 						</div>
-						<div className="circle-technologies m-5 mb-2">
-							<div className="circle-technologies-child">
-								<img src={nodejs} className="jslogo"></img>
-								<h3 className="">Node JS</h3>
-							</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={jslogo} className="jslogo mt-3"></img>
+							{/* <h3 className="controller-circle">JavaScript</h3> */}
 						</div>
-						<div className="circle-technologies m-5 mt-2 me-3">
-							<div className="circle-technologies-child ">
-								<img src={mongo} className="jslogo"></img>
-								<h3 className="controller-circle">MongoDB</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-
+					</MDBCol>
+				</MDBRow>
 
 			</div>
 		</div>

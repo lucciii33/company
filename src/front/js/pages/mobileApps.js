@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import pic1 from "../../img/pexels-fauxels-3183153.jpg"
 import { CardMobileApp } from "../component/cardMobileApps";
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 
 
 export const MobileApps = () => {
     const { store, actions } = useContext(Context);
     return (
         <>
+            <GoogleAnalyticsTracker />
             <div className="position-relative">
                 <div>
                     <img src={pic1} className="webDevelopment-image"></img>

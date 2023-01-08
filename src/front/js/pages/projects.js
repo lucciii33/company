@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll } from "framer-motion"
 import elana from "../../img/captureElana.png";
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 
 
 import { Context } from "../store/appContext";
@@ -56,6 +57,7 @@ export const Projects = () => {
 
 	return (
 		<div className="project-container">
+			<GoogleAnalyticsTracker />
 			<div className="text-center">
 				<motion.h2 className="text-gradient2 p-3"
 					variants={boxVarient2}

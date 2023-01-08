@@ -2,12 +2,18 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import pic1 from "../../img/group-people-working-website-template.jpg"
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
+import react from "../../img/react.png";
+import jslogo from "../../img/jslogo.png";
+import nodejs from "../../img/nodejs.png";
+import mongo from "../../img/mongo.png";
 
 export const WebDevelopment = () => {
     const { store, actions } = useContext(Context);
     return (
         <>
+            <GoogleAnalyticsTracker />
             <div className="position-relative">
                 <div>
                     <img src={pic1} className="webDevelopment-image"></img>
@@ -22,7 +28,7 @@ export const WebDevelopment = () => {
                 </div>
 
             </div>
-            <div className="wD-2banner">
+            <div className="wD-2banner ">
                 <div className="d-flex justify-content-center">
                     <div>
                         <MDBRow className="webD-flex letters-top" sm="12" md="8" lg="8">
@@ -53,21 +59,24 @@ export const WebDevelopment = () => {
                         </MDBRow>
                     </div>
                 </div>
-                <div className="techWeuseBanner">
-                    <h2 className="text-center pt-5 tech-text">Why is Web development important</h2>
-                    <div className="text-center p-4">
-                        <p className="text-white">Web development is the process of creating websites. It involves a wide range of activities including website design, web content development, web server configuration, and client-side scripting.
-                            <br /><br />
-                            Web developers usually have a good understanding of both front-end and back-end web technologies.
-                            <br /><br />
-                            Web development is a very important part of the modern world. The internet has become an essential part of our lives and businesses can no longer function without a website.
-                            <br /><br />
-                            Websites allow businesses to reach a wider audience and sell their products or services online. They also provide a way for customers to contact businesses and find out more about their products or services.
-                            <br /><br />
-                            Web development is not only important for businesses, but also for individuals. A personal website can be used to showcase your work, build your online presence, and attract potential employers.
-                            <br /><br />
-                            A well-developed website can also be used as a platform to sell products or services, or to generate income through advertising.</p>
+                <div className="techWeuseBanner pb-5">
+                    <div className="text-center">
+                        <h2 className="">Why is web Development important</h2>
                     </div>
+                    <MDBRow className="mt-5">
+                        <MDBCol className="p-5" sm="12" md="6" lg="7">
+                            <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="image-web-development"></img>
+                        </MDBCol>
+                        <MDBCol className="my-auto py-5" sm="12" md="6" lg="5">
+                            <h3 className="">Lorem impsum</h3>
+                            <h6 className="">Lorem impsum text here</h6>
+                            <p className="pe-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p className="pe-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button className="button-28">SEE PROJECTS</button>
+
+                        </MDBCol>
+                    </MDBRow>
+
                 </div>
             </div>
 

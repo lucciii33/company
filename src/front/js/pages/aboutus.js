@@ -83,6 +83,7 @@ export const Aboutus = () => {
   };
   return (
     <div className="contai bg-ligth">
+      <GoogleAnalyticsTracker />
       <div>
         <div
           className={didUserScrollDown ? "toast show" : "toast hide"}

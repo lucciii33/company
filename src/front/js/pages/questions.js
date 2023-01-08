@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
-
+import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
 
 export const Questions = () => {
@@ -41,6 +41,7 @@ export const Questions = () => {
 
     return (
         <div className="">
+            <GoogleAnalyticsTracker />
             <div className="d-flex m-4 mt-2 mb-3">
                 <motion.div className="questions-box p-5 me-3" transition={{ type: "spring", stiffness: 130 }}
                     variants={boxVarient}

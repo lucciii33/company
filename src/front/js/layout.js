@@ -16,6 +16,7 @@ import { Cancel } from "./pages/cancel";
 import { WebDevelopment } from "./pages/webDevelopment";
 import { MobileApps } from "./pages/mobileApps";
 import { Intro } from "./pages/intro";
+import { Photoraphy } from "./pages/photography";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -38,6 +39,7 @@ const Layout = () => {
           <Routes>
             <Route element={<Home />} path="/home" />
             <Route element={<Success />} path="/success" />
+            <Route element={<Photoraphy />} path="/photography" />
             <Route element={<Intro />} path="/" />
             <Route element={<WebDevelopment />} path="/webDevelopment" />
             <Route element={<MobileApps />} path="/mobileApps" />
@@ -51,7 +53,7 @@ const Layout = () => {
             <Route element={<Projects />} path="/projects" />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </ScrollToTop>
       </BrowserRouter>
 

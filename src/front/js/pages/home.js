@@ -125,6 +125,7 @@ export const Home = () => {
   console.log(store.language);
   return (
     <div>
+      <GoogleAnalyticsTracker />
       {show && (
         <div class="modal" tabindex="-1">
           <div class="modal-dialog">
