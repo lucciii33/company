@@ -1695,3 +1695,26 @@ div.toast:not(.hide) {
 .blue-bg-card {
   background: linear-gradient(to bottom right, #1c012c, #77acf0);
 }
+
+.hover-overlay-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direccion: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 10%;
+}
+
+.overlay:hover {
+  opacity: 1;
+}

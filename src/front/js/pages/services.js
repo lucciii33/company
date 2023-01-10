@@ -9,6 +9,8 @@ import react from "../../img/react.png";
 import jslogo from "../../img/jslogo.png";
 import nodejs from "../../img/nodejs.png";
 import mongo from "../../img/mongo.png";
+import figma from "../../img/figma2.png";
+import py from "../../img/py.png";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -102,7 +104,7 @@ export const Services = () => {
 		}
 	}
 	return (
-		<div className="conta-services">
+		<div className="conta-services bg-light">
 			<GoogleAnalyticsTracker />
 			<div className="text-center">
 				<motion.h5 className="ourvision" variants={boxVarient2}
@@ -240,31 +242,94 @@ export const Services = () => {
 			</div>
 
 
-			<div className="techWeuseBanner bg-light pb-5">
+			<div className="techWeuseBanner bg-light pb-0">
 				<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
 				<MDBRow className="d-flex justify-content-center mt-5">
-					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2" sm="12" md="12" lg="3">
+					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 						<div className="my-auto">
 							<img src={mongo} className="jslogo"></img>
-							{/* <h3 className="controller-circle">MongoDB</h3> */}
+							<div className="overlay">
+								<div className="image--title-hover">
+									MongoDB
+								</div>
+							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
 						<div className="my-auto">
 							<img src={nodejs} className="jslogo"></img>
-							{/* <h3 className="">Node JS</h3> */}
+							<div className="overlay">
+								<div className="image--title-hover">
+									Node JS
+								</div>
+							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
 						<div className="my-auto">
 							<img src={react} className="reactlogo"></img>
-							{/* <h3>React JS</h3> */}
+							<div className="overlay">
+								<div className="image--title-hover">
+									React JS
+								</div>
+							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark" sm="12" md="12" lg="3">
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
 						<div className="my-auto">
 							<img src={jslogo} className="jslogo mt-3"></img>
-							{/* <h3 className="controller-circle">JavaScript</h3> */}
+							<div className="overlay">
+								<div className="image--title-hover">
+									JavaScript
+								</div>
+							</div>
+						</div>
+					</MDBCol>
+				</MDBRow>
+
+			</div>
+
+			<div className="techWeuseBanner bg-light ">
+
+				<MDBRow className="d-flex justify-content-center pt-5">
+					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
+						<div className="my-auto ">
+							<img src={figma} className="jslogo"></img>
+							<div className="overlay">
+								<div className="image--title-hover">
+									Figma
+								</div>
+							</div>
+						</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={py} className="jslogo"></img>
+							<div className="overlay">
+								<div className="image--title-hover">
+									Node JS
+								</div>
+							</div>
+						</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={react} className="reactlogo"></img>
+							<div className="overlay">
+								<div className="image--title-hover">
+									React JS
+								</div>
+							</div>
+						</div>
+					</MDBCol>
+					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+						<div className="my-auto">
+							<img src={jslogo} className="jslogo mt-3"></img>
+							<div className="overlay">
+								<div className="image--title-hover">
+									TEST
+								</div>
+							</div>
 						</div>
 					</MDBCol>
 				</MDBRow>
