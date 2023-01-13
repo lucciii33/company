@@ -1,10 +1,14 @@
-import React, { Children } from "react";
+import React, { Children, useState } from "react";
 import { motion } from "framer-motion";
 import desing from "../../img/design.png";
 
 export const Card = ({ title, description, img, type }) => {
+  const [hover, setHover] = useState(false)
   return (
+
     <motion.div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       className="box-services-home"
       whileHover={{
         boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
@@ -17,7 +21,7 @@ export const Card = ({ title, description, img, type }) => {
       <div className="logo-image">{img}</div>
       <h3 className="mt-2 text-services">{title}</h3>
       <p className="mt-2 text-services">{description}</p>
-      <button className="button-29">
+      <button className={hover ? "button-28" : "button-29"}>
         Let's {type} <i className="fas fa-paint-brush p-2"></i>
       </button>
     </motion.div>

@@ -14,6 +14,8 @@ import py from "../../img/py.png";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { Navbar } from "../component/navbar";
+import { Footer } from "../component/footer";
 
 export const Services = () => {
 	const { store, actions } = useContext(Context);
@@ -104,41 +106,99 @@ export const Services = () => {
 		}
 	}
 	return (
-		<div className="conta-services bg-light">
-			<GoogleAnalyticsTracker />
-			<div className="text-center">
-				<motion.h5 className="ourvision" variants={boxVarient2}
-					animate="visible"
-					initial="hidden">Fetaured services</motion.h5>
-				<motion.h3 className="text-gradient2" transition={{ type: "spring", stiffness: 130 }} variants={boxVarient}
-					animate="visible"
-					initial="hidden">Why you will choose <br /> Ilution Design Agency.</motion.h3>
-			</div>
-			<div className="display-none-big-screen">
-				<div className="d-flex flex-wrap">
-					<motion.div className="box-services"
-						whileHover={{
-							boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-							scale: 1.1,
-							background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-							originX: 0,
-						}}
+		<>
+			<Navbar />
+			<div className="conta-services bg-light">
+				<GoogleAnalyticsTracker />
+				<div className="text-center">
+					<motion.h5 className="ourvision" variants={boxVarient2}
+						animate="visible"
+						initial="hidden">Fetaured services</motion.h5>
+					<motion.h3 className="text-gradient2" transition={{ type: "spring", stiffness: 130 }} variants={boxVarient}
+						animate="visible"
+						initial="hidden">Why you will choose <br /> Ilution Design Agency.</motion.h3>
+				</div>
+				<div className="display-none-big-screen">
+					<div className="d-flex flex-wrap">
+						<motion.div className="box-services"
+							whileHover={{
+								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+								scale: 1.1,
+								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
+								originX: 0,
+							}}
+							transition={{ type: "spring", stiffness: 500, }} variants={boxVarient3}
+							animate="visible"
+							initial="hidden">
+
+							<img src={desing} className="logo-image"></img>
+							<h3 className="mt-2 text-services">Branding</h3>
+							<p className="mt-2 text-services">Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales.</p>
+							<button className="button-29">Lest Design <i className="fas fa-paint-brush p-2"></i></button>
+						</motion.div>
+						<motion.div className="box-services"
+							whileHover={{
+								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+								scale: 1.1,
+								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
+								originX: 0,
+							}}
+							transition={{ type: "spring", stiffness: 500, }}
+							variants={boxVarient4}
+							animate="visible"
+							initial="hidden">
+							<img src={webdesign} className="logo-image"></img>
+							<h3 className="mt-2 ">Web Design</h3>
+							<p className="mt-2">Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share.</p>
+							<button className="button-29">Lest Create <i className="fas fa-lightbulb p-2"></i></button>
+						</motion.div>
+						<motion.div className="box-services"
+							whileHover={{
+								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+								scale: 1.1,
+								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
+								originX: 0,
+							}}
+							transition={{ type: "spring", stiffness: 500, }}
+							variants={boxVarient5}
+							animate="visible"
+							initial="hidden">
+							<img src={code} className="logo-image"></img>
+							<h3 className="mt-2 ">Web development</h3>
+							<p className="mt-2">Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure.</p>
+							<button className="button-29">Lest Code <i className="fas fa-code p-2"></i></button>
+						</motion.div>
+						<motion.div className="box-services"
+							whileHover={{
+								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+								scale: 1.1,
+								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
+								originX: 0,
+							}}
+							transition={{ type: "spring", stiffness: 500, }}
+							variants={boxVarient6}
+							animate="visible"
+							initial="hidden">
+							<img src={photo} className="logo-image"></img>
+							<h3 className="mt-2 ">photography</h3>
+							<p className="mt-2">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
+							<Link to="/photography" className="text-decoration-none"><button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button></Link>
+						</motion.div>
+					</div>
+				</div>
+
+				<div className="responsiveContainer m-5">
+
+					<motion.div className="responsiveBox"
 						transition={{ type: "spring", stiffness: 500, }} variants={boxVarient3}
 						animate="visible"
 						initial="hidden">
-
 						<img src={desing} className="logo-image"></img>
 						<h3 className="mt-2 text-services">Branding</h3>
 						<p className="mt-2 text-services">Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales.</p>
 						<button className="button-29">Lest Design <i className="fas fa-paint-brush p-2"></i></button>
 					</motion.div>
-					<motion.div className="box-services"
-						whileHover={{
-							boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-							scale: 1.1,
-							background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-							originX: 0,
-						}}
+					<motion.div className="responsiveBox"
 						transition={{ type: "spring", stiffness: 500, }}
 						variants={boxVarient4}
 						animate="visible"
@@ -148,13 +208,7 @@ export const Services = () => {
 						<p className="mt-2">Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share.</p>
 						<button className="button-29">Lest Create <i className="fas fa-lightbulb p-2"></i></button>
 					</motion.div>
-					<motion.div className="box-services"
-						whileHover={{
-							boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-							scale: 1.1,
-							background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-							originX: 0,
-						}}
+					<motion.div className="responsiveBox"
 						transition={{ type: "spring", stiffness: 500, }}
 						variants={boxVarient5}
 						animate="visible"
@@ -164,13 +218,7 @@ export const Services = () => {
 						<p className="mt-2">Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure.</p>
 						<button className="button-29">Lest Code <i className="fas fa-code p-2"></i></button>
 					</motion.div>
-					<motion.div className="box-services"
-						whileHover={{
-							boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-							scale: 1.1,
-							background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-							originX: 0,
-						}}
+					<motion.div className="responsiveBox"
 						transition={{ type: "spring", stiffness: 500, }}
 						variants={boxVarient6}
 						animate="visible"
@@ -178,163 +226,106 @@ export const Services = () => {
 						<img src={photo} className="logo-image"></img>
 						<h3 className="mt-2 ">photography</h3>
 						<p className="mt-2">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
-						<Link to="/photography" className="text-decoration-none"><button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button></Link>
+						<button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button>
 					</motion.div>
 				</div>
+
+
+				<div className="techWeuseBanner bg-light pb-0">
+					<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
+					<MDBRow className="d-flex justify-content-center mt-5">
+						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={mongo} className="jslogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										MongoDB
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={nodejs} className="jslogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										Node JS
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={react} className="reactlogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										React JS
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={jslogo} className="jslogo mt-3"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										JavaScript
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+					</MDBRow>
+
+				</div>
+
+				<div className="techWeuseBanner bg-light ">
+
+					<MDBRow className="d-flex justify-content-center pt-5">
+						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto ">
+								<img src={figma} className="jslogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										Figma
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={py} className="jslogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										Node JS
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={react} className="reactlogo"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										React JS
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+							<div className="my-auto">
+								<img src={jslogo} className="jslogo mt-3"></img>
+								<div className="overlay">
+									<div className="image--title-hover">
+										TEST
+									</div>
+								</div>
+							</div>
+						</MDBCol>
+					</MDBRow>
+
+				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<div className="responsiveContainer m-5">
-
-				<motion.div className="responsiveBox"
-					transition={{ type: "spring", stiffness: 500, }} variants={boxVarient3}
-					animate="visible"
-					initial="hidden">
-					<img src={desing} className="logo-image"></img>
-					<h3 className="mt-2 text-services">Branding</h3>
-					<p className="mt-2 text-services">Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales.</p>
-					<button className="button-29">Lest Design <i className="fas fa-paint-brush p-2"></i></button>
-				</motion.div>
-				<motion.div className="responsiveBox"
-					transition={{ type: "spring", stiffness: 500, }}
-					variants={boxVarient4}
-					animate="visible"
-					initial="hidden">
-					<img src={webdesign} className="logo-image"></img>
-					<h3 className="mt-2 ">Web Design</h3>
-					<p className="mt-2">Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share.</p>
-					<button className="button-29">Lest Create <i className="fas fa-lightbulb p-2"></i></button>
-				</motion.div>
-				<motion.div className="responsiveBox"
-					transition={{ type: "spring", stiffness: 500, }}
-					variants={boxVarient5}
-					animate="visible"
-					initial="hidden">
-					<img src={code} className="logo-image"></img>
-					<h3 className="mt-2 ">Web development</h3>
-					<p className="mt-2">Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure.</p>
-					<button className="button-29">Lest Code <i className="fas fa-code p-2"></i></button>
-				</motion.div>
-				<motion.div className="responsiveBox"
-					transition={{ type: "spring", stiffness: 500, }}
-					variants={boxVarient6}
-					animate="visible"
-					initial="hidden">
-					<img src={photo} className="logo-image"></img>
-					<h3 className="mt-2 ">photography</h3>
-					<p className="mt-2">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
-					<button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button>
-				</motion.div>
-			</div>
-
-
-			<div className="techWeuseBanner bg-light pb-0">
-				<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
-				<MDBRow className="d-flex justify-content-center mt-5">
-					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={mongo} className="jslogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									MongoDB
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={nodejs} className="jslogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									Node JS
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={react} className="reactlogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									React JS
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={jslogo} className="jslogo mt-3"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									JavaScript
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-				</MDBRow>
-
-			</div>
-
-			<div className="techWeuseBanner bg-light ">
-
-				<MDBRow className="d-flex justify-content-center pt-5">
-					<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto ">
-							<img src={figma} className="jslogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									Figma
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={py} className="jslogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									Node JS
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={react} className="reactlogo"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									React JS
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-					<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
-						<div className="my-auto">
-							<img src={jslogo} className="jslogo mt-3"></img>
-							<div className="overlay">
-								<div className="image--title-hover">
-									TEST
-								</div>
-							</div>
-						</div>
-					</MDBCol>
-				</MDBRow>
-
-			</div>
-		</div>
+			<Footer />
+		</>
 	);
 };

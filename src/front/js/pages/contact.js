@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { InlineWidget } from "react-calendly";
 import { PopupWidget } from "react-calendly";
 import arrow from "../../img/arrow.png";
+import { Navbar } from "../component/navbar";
+import { Footer } from "../component/footer";
 
 import { Context } from "../store/appContext";
 
@@ -61,179 +63,181 @@ export const ContactUs = () => {
   //   };
 
   return (
-    <div className="contai bg-ligth">
-      <div className="texts">
-        <motion.div
-          className="squaer1"
-          initial={{ scale: 0 }}
-          animate={{ rotate: 180, scale: 2, x: -100, y: 100 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
-        />
-        <motion.div
-          className="squaer"
-          initial={{ scale: 3 }}
-          animate={{ rotate: 180, scale: 1, x: 800, y: -10 }}
-          transition={{
-            type: "spring",
-            stiffness: 220,
-            damping: 20,
-          }}
-        />
-        <h5 className="title-contact-1">MAKE YOUR PRODUCT REALLY MATTER</h5>
-        <h2 className="title-contact-2">Free project quote</h2>
-        <h6 className="title-contact-3">
-          Fill out the enquiry form and we’ll get back to you as soon as
-          possible.
-        </h6>
-      </div>
-
-
-      <div className="conta-form">
-        <div className="mb-5">
-          <input
-            className="email"
-            placeholder="Email address"
-            type="text"
-            name="email"
-            onChange={handleChange}
-            value={formData.email}
-          ></input>
-          <div className="d-flex mt-3">
-            <input
-              className="name"
-              placeholder="Full Name"
-              type="text"
-              name="fullName"
-              onChange={handleChange}
-              value={formData.fullName}
-            ></input>
-            <input
-              className="phone"
-              placeholder="Phone"
-              type="text"
-              name="phone"
-              onChange={handleChange}
-              value={formData.phone}
-            ></input>
-          </div>
-          <div className="text-area">
-            <input
-              className="mensaje mt-3"
-              placeholder="Tell us about your project/product"
-              type="text"
-              name="description"
-              onChange={handleChange}
-              value={formData.description}
-            ></input>
-          </div>
-          <div className="mt-2">
-            <input
-              type="checkbox"
-              className="checkbox-round"
-              name="terms"
-              onChange={handleChange}
-              // value={formData.terms}
-              checked={formData.terms}
-            ></input>
-            <span>
-              I have read and accept the{" "}
-              <strong className="strong">Terms of use </strong>&{" "}
-              <strong className="strong">Privacy Policy</strong>
-            </span>
-          </div>
-          <button
-            className="mt-3 button-29"
-            onClick={() => {
-              if (
-                formData.email != "" ||
-                formData.phone != "" ||
-                formData.terms != false ||
-                formData.fullName != "" ||
-                formData.description != ""
-              ) {
-                actions.createContactForm(
-                  formData.email,
-                  formData.phone,
-                  formData.terms,
-                  formData.fullName,
-                  formData.description
-                );
-                setFormData({
-                  email: "",
-                  fullName: "",
-                  terms: !formData,
-                  phone: "",
-                  description: "",
-                });
-              }
+    <>
+      <Navbar />
+      <div className="contai bg-ligth">
+        <div className="texts">
+          <motion.div
+            className="squaer1"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 180, scale: 2, x: -100, y: 100 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
             }}
-          >
-            send me
-          </button>
+          />
+          <motion.div
+            className="squaer"
+            initial={{ scale: 3 }}
+            animate={{ rotate: 180, scale: 1, x: 800, y: -10 }}
+            transition={{
+              type: "spring",
+              stiffness: 220,
+              damping: 20,
+            }}
+          />
+          <h5 className="title-contact-1">MAKE YOUR PRODUCT REALLY MATTER</h5>
+          <h2 className="title-contact-2">Free project quote</h2>
+          <h6 className="title-contact-3">
+            Fill out the enquiry form and we’ll get back to you as soon as
+            possible.
+          </h6>
         </div>
 
 
-        <br />
-        <br />
-        <motion.div
-          className="second-box"
-          transition={{ type: "spring", stiffness: 130 }}
-          variants={boxVarient}
-          animate="visible"
-          initial="hidden"
-          whileHover={{
-            boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-            scale: 1.1,
-            originX: 0,
-          }}
-        >
-          <h2 className="text-center p-box">Usertive Solutions</h2>
-          <div>
-            <div className="d-flex">
-              <i className="far fa-envelope"></i>
-              <p className="text-contact-box">ilutioncode@gmail.com</p>
+        <div className="conta-form">
+          <div className="mb-5">
+            <input
+              className="email"
+              placeholder="Email address"
+              type="text"
+              name="email"
+              onChange={handleChange}
+              value={formData.email}
+            ></input>
+            <div className="d-flex mt-3">
+              <input
+                className="name"
+                placeholder="Full Name"
+                type="text"
+                name="fullName"
+                onChange={handleChange}
+                value={formData.fullName}
+              ></input>
+              <input
+                className="phone"
+                placeholder="Phone"
+                type="text"
+                name="phone"
+                onChange={handleChange}
+                value={formData.phone}
+              ></input>
             </div>
-            <div className="d-flex">
-              <i className="fas fa-map-marker-alt"></i>
-              <p className="text-contact-box">Miami, United State</p>
+            <div className="text-area">
+              <input
+                className="mensaje mt-3"
+                placeholder="Tell us about your project/product"
+                type="text"
+                name="description"
+                onChange={handleChange}
+                value={formData.description}
+              ></input>
             </div>
-            <div className="d-flex">
-              <i className="fas fa-mobile-alt"></i>
-              <p className="text-contact-box">9864984455</p>
+            <div className="mt-2">
+              <input
+                type="checkbox"
+                className="checkbox-round"
+                name="terms"
+                onChange={handleChange}
+                // value={formData.terms}
+                checked={formData.terms}
+              ></input>
+              <span>
+                I have read and accept the{" "}
+                <strong className="strong">Terms of use </strong>&{" "}
+                <strong className="strong">Privacy Policy</strong>
+              </span>
             </div>
+            <button
+              className="mt-3 button-29"
+              onClick={() => {
+                if (
+                  formData.email != "" ||
+                  formData.phone != "" ||
+                  formData.terms != false ||
+                  formData.fullName != "" ||
+                  formData.description != ""
+                ) {
+                  actions.createContactForm(
+                    formData.email,
+                    formData.phone,
+                    formData.terms,
+                    formData.fullName,
+                    formData.description
+                  );
+                  setFormData({
+                    email: "",
+                    fullName: "",
+                    terms: !formData,
+                    phone: "",
+                    description: "",
+                  });
+                }
+              }}
+            >
+              send me
+            </button>
           </div>
-        </motion.div>
-      </div>
 
-      <div className="text-center">
-        <h2 className="text-gradient-small">Please book a meting here</h2>
-        <p className="paragraph">and let us know what you want to build</p>
-        <motion.img
-          src={arrow}
-          className="icon-image"
-          whileHover={{
-            boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-            scale: 1.1,
-            originX: 0,
-          }}
-        ></motion.img>
-      </div>
 
-      <div className="mt-2">
-        <InlineWidget
-          url="https://calendly.com/angelomaiele"
-          styles={{
-            height: "600px",
-            boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
-          }}
-        />
-      </div>
+          <br />
+          <br />
+          <motion.div
+            className="second-box"
+            transition={{ type: "spring", stiffness: 130 }}
+            variants={boxVarient}
+            animate="visible"
+            initial="hidden"
+            whileHover={{
+              boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+              scale: 1.1,
+              originX: 0,
+            }}
+          >
+            <h2 className="text-center p-box">Usertive Solutions</h2>
+            <div>
+              <div className="d-flex">
+                <i className="far fa-envelope"></i>
+                <p className="text-contact-box">ilutioncode@gmail.com</p>
+              </div>
+              <div className="d-flex">
+                <i className="fas fa-map-marker-alt"></i>
+                <p className="text-contact-box">Miami, United State</p>
+              </div>
+              <div className="d-flex">
+                <i className="fas fa-mobile-alt"></i>
+                <p className="text-contact-box">9864984455</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
 
-      {/* <div className="">
+        <div className="text-center">
+          <h2 className="text-gradient-small">Please book a meting here</h2>
+          <p className="paragraph">and let us know what you want to build</p>
+          <motion.img
+            src={arrow}
+            className="icon-image"
+            whileHover={{
+              boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+              scale: 1.1,
+              originX: 0,
+            }}
+          ></motion.img>
+        </div>
+
+        <div className="mt-2">
+          <InlineWidget
+            url="https://calendly.com/angelomaiele"
+            styles={{
+              height: "600px",
+              boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
+            }}
+          />
+        </div>
+
+        {/* <div className="">
         <input
           className="email"
           placeholder="Email address"
@@ -314,6 +318,11 @@ export const ContactUs = () => {
           send me
         </button>
       </div> */}
-    </div>
+
+      </div>
+
+
+      <Footer />
+    </>
   );
 };

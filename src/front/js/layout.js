@@ -35,7 +35,7 @@ const Layout = () => {
       <BrowserRouter basename={basename}>
         <GoogleAnalyticsTracker />
         <ScrollToTop>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route element={<Home />} path="/home" />
             <Route element={<Success />} path="/success" />

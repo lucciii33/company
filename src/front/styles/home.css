@@ -330,7 +330,7 @@ h1 span {
 /* .......................aboutpage */
 .contai {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 70px;
   /* background-color: #f0f8ff; */
 }
@@ -338,7 +338,6 @@ h1 span {
 @media (max-width: 600px) {
   .contai {
     width: 100%;
-    height: 100vh;
     padding: 25px;
     /* background-color: #f0f8ff; */
   }
@@ -1437,7 +1436,7 @@ div.toast:not(.hide) {
 
 .wD-2banner {
   /* background-color: #fff; */
-  height: 500px;
+  height: auto;
   width: 100%;
 }
 

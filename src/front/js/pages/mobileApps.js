@@ -4,12 +4,15 @@ import { Context } from "../store/appContext";
 import pic1 from "../../img/pexels-fauxels-3183153.jpg"
 import { CardMobileApp } from "../component/cardMobileApps";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
+import { Navbar } from "../component/navbar";
+import { Footer } from "../component/footer";
 
 
 export const MobileApps = () => {
     const { store, actions } = useContext(Context);
     return (
         <>
+            <Navbar />
             <GoogleAnalyticsTracker />
             <div className="position-relative">
                 <div>
@@ -65,7 +68,7 @@ export const MobileApps = () => {
                 <CardMobileApp className="" title={"ANDROID APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-android"></i>} />
                 <CardMobileApp className="" title={"REACT NATIVE APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-react"></i>} />
             </div>
-
+            <Footer />
         </>
     );
 };
