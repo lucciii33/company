@@ -1717,3 +1717,29 @@ div.toast:not(.hide) {
 .overlay:hover {
   opacity: 1;
 }
+.tab-margin-controlller {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.image-tabs {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.services-banner-3 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+.card-service-3-banner {
+  background-image: url("https://img.freepik.com/free-vector/topographic-map-background-concept_23-2148590229.jpg?w=1380&t=st=1673812180~exp=1673812780~hmac=81c7cecb4bee1e999aa48ce5139b18aa6fe34c1f210b6bfc49f5a573992454b9");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+}
+.card-pic-3 {
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+}

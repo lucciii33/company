@@ -6,6 +6,7 @@ import { CardMobileApp } from "../component/cardMobileApps";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
+import { TabsMobile } from "../component/tabsMobileApp";
 
 
 export const MobileApps = () => {
@@ -56,17 +57,15 @@ export const MobileApps = () => {
 
                 </div>
             </div>
-            <div className="bg-grey-lines pt-5">
+            <div className="  pt-5">
                 <div className=" position-relative">
                     <div className="border-large  position-absolute top-50 start-50 translate-middle"></div>
-                    <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
-                    <div className="border-med-min mx-auto"></div>
+                    {/* <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
+                    <div className="border-med-min mx-auto"></div> */}
                 </div>
             </div>
-            <div className="d-flex justify-content-evenly pt-5 bg-card-mobile-app">
-                <CardMobileApp className="" title={"IOS APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-apple"></i>} />
-                <CardMobileApp className="" title={"ANDROID APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-android"></i>} />
-                <CardMobileApp className="" title={"REACT NATIVE APP DEVELOPMENT"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'} icon={<i class="fab fa-react"></i>} />
+            <div className="mt-5">
+                <TabsMobile />
             </div>
             <Footer />
         </>

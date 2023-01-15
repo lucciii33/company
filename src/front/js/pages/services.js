@@ -10,6 +10,7 @@ import jslogo from "../../img/jslogo.png";
 import nodejs from "../../img/nodejs.png";
 import mongo from "../../img/mongo.png";
 import figma from "../../img/figma2.png";
+import cardPic from "../../img/4049187.jpg";
 import py from "../../img/py.png";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Context } from "../store/appContext";
@@ -233,7 +234,7 @@ export const Services = () => {
 
 				<div className="techWeuseBanner bg-light pb-0">
 					<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
-					<MDBRow className="d-flex justify-content-center mt-5">
+					<MDBRow className="d-flex justify-content-evenly mt-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 							<div className="my-auto">
 								<img src={mongo} className="jslogo"></img>
@@ -278,9 +279,8 @@ export const Services = () => {
 
 				</div>
 
-				<div className="techWeuseBanner bg-light ">
-
-					<MDBRow className="d-flex justify-content-center pt-5">
+				<div className="techWeuseBanner bg-light pb-5">
+					<MDBRow className="d-flex justify-content-evenly pt-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 							<div className="my-auto ">
 								<img src={figma} className="jslogo"></img>
@@ -324,6 +324,37 @@ export const Services = () => {
 					</MDBRow>
 
 				</div>
+			</div>
+			<div className="services-banner-3 mt-5">
+				<h2 className="my-5 text-center">TES TEXT TITLE HERE</h2>
+				<MDBRow className="d-flex justify-content-evenly">
+					{/* <div className="d-flex justify-content-evenly"> */}
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
+						<div className="">
+							<div className="">
+								<h2 className="text-white text-center">BLOG WEBSITE FROM</h2>
+								<h3 className="text-white text-center">$1000</h3>
+							</div>
+						</div>
+					</MDBCol>
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
+						<div className="">
+							<div className="">
+								<h2 className="text-white">TEST</h2>
+								<h3 className="text-white">TEXT HERE</h3>
+							</div>
+						</div>
+					</MDBCol>
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
+						<div className="">
+							<div className="">
+								<h2 className="text-white">TEST</h2>
+								<h3 className="text-white">TEXT HERE</h3>
+							</div>
+						</div>
+					</MDBCol>
+					{/* </div> */}
+				</MDBRow>
 			</div>
 			<Footer />
 		</>
