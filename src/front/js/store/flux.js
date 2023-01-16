@@ -5,6 +5,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       cart: [],
       language: "en",
       contactForm: [],
+      captureEmails: []
     },
     actions: {
       // Use getActions to call a function within a fuction
@@ -28,7 +29,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       createOrder: (order) => {
         const store = getStore();
-        fetch(`${process.env.BACKEND_URL}/order/create-checkout-session`, {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/order/create-checkout-session`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -42,6 +43,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           .catch((err) => console.log(err));
       },
 
+      createDscountCode: (name, email) => {
+        const store = getStore();
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/captureEmail`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email }),
+        })
+          .then((response) => response.json())
+          .then((data) => { setStore({ captureEmails: data }) })
+          .catch((err) => console.log(err));
+      },
+
       addToCart: (item) => {
         const store = getStore();
         const newList = [...store.cart, item];
@@ -51,7 +66,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       createContactForm: (email, phone, terms, fullName, description) => {
         // let storeCartShop = getStore().carShop;
         //   let favoriteString = favorites.toString();
-        fetch("http://localhost:5000/contact/create", {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/contact/create`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

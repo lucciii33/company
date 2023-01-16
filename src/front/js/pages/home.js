@@ -18,9 +18,54 @@ import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { MDBRadio } from "mdb-react-ui-kit";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
-import { MDBRow, MDBCol } from "mdb-react-ui-kit";
+import {
+  MDBRow, MDBCol, MDBBtn,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from "mdb-react-ui-kit";
 
 export const Home = () => {
+  const [basicModal, setBasicModal] = useState(false);
+
+  const toggleShow = () => setBasicModal(!basicModal);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [didUserScrollDown, setDidUserScrollDown] = useState(false);
+  const [captureEmail, setCaptureEmail] = useState({ name: "", email: "" });
+
+  const discountCapture = (e) => {
+    setCaptureEmail({ ...captureEmail, [e.target.name]: e.target.value })
+  }
+  //function below constantly updates scrollPosition with the pageYOffset. Starts at 0, and increases as
+  //the user scrolls down
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+    //As soon as the user moves and the position is no longer 0, the second hook is set to true which
+    //triggers the toast
+    position != 0 ? setDidUserScrollDown(true) : null;
+  };
+
+  //adds the event listener on initial render and cleans it up when finished.
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toastStyles = {
+    position: "fixed",
+    bottom: "3%",
+    right: "3%",
+    zIndex: "2",
+  };
+
   const { store, actions } = useContext(Context);
 
   const [show, setShow] = useState(false);
@@ -242,6 +287,59 @@ export const Home = () => {
         </div>
         <ProcessBanner />
         <CallToActionHome />
+        <div
+          className={didUserScrollDown ? "toast show" : "toast hide"}
+          style={toastStyles}
+          n
+        >
+          <div className="toast-header" style={{ backgroundColor: "#5c58b6" }}>
+            <strong className="me-auto" style={{ color: "black" }}>
+              New Here?
+            </strong>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="toast"
+            ></button>
+          </div>
+          <div
+            className="toast-body "
+            style={{ backgroundColor: "ghostwhite" }}
+          >
+            <p>
+              Want 20% off?{" "}
+
+              <button className="btn btn-primary .active" onClick={toggleShow} >Click here</button>
+
+              !
+            </p>
+          </div>
+        </div>
+
+
+        <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
+          <MDBModalDialog>
+            <MDBModalContent>
+              <MDBModalHeader>
+                <MDBModalTitle>Modal title</MDBModalTitle>
+                <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+              </MDBModalHeader>
+              <MDBModalBody>
+                <h3>Get your discount code adding your email</h3>
+                <input value={captureEmail.name} name="name" onChange={discountCapture} placeholder="name" />
+                <input value={captureEmail.email} name="email" onChange={discountCapture} placeholder="email" />
+                <button onClick={() => actions.createDscountCode(captureEmail.name, captureEmail.email)}>Send backend</button>
+              </MDBModalBody>
+
+              <MDBModalFooter>
+                <MDBBtn color='secondary' onClick={toggleShow}>
+                  Close
+                </MDBBtn>
+                <MDBBtn>Save changes</MDBBtn>
+              </MDBModalFooter>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
       </div>
       <Footer />
     </>
