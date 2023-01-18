@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
-import logo from "../../img/Group3.png"
+import logo from "../../img/Group3.png";
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
-
 
 export const Intro = () => {
   const boxVarient3 = {
@@ -39,13 +38,13 @@ export const Intro = () => {
     },
   };
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
-      navigate('/home')
-    }, 2500)
-  }, [])
+      navigate("/home");
+    }, 2500);
+  }, []);
 
   return (
     <div className="bg-ligth ">
@@ -56,14 +55,9 @@ export const Intro = () => {
         animate="visible"
         initial="hidden"
       >
-        <h3 className="text-gradient-small">
-          WELCOME TO BLUE LIGTH TECH
-        </h3>
+        <h3 className="text-gradient-small">WELCOME TO BLUE LIGHT TECH</h3>
         <div className="d-flex justify-content-center align-items-center">
-          <motion.div
-            variants={boxVarient4}
-            animate="visible"
-            initial="hidden">
+          <motion.div variants={boxVarient4} animate="visible" initial="hidden">
             <img src={logo} className="intro-image"></img>
           </motion.div>
         </div>
@@ -74,6 +68,5 @@ export const Intro = () => {
       <br />
       <br />
     </div>
-
   );
 };
