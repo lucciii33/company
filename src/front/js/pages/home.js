@@ -112,6 +112,10 @@ export const Home = () => {
         duration: "2 year",
       },
       {
+        project: "doc page",
+        duration: "2 year",
+      },
+      {
         project: "lorem",
         duration: "2 moth",
       },
@@ -129,19 +133,35 @@ export const Home = () => {
           </div>
           <div className="my-auto">
             <div className="border-name-project">
-              <h5>{num.project}</h5>
+              <h5 className="duration-carousel-projects">{num.duration}</h5>
             </div>
 
-            <h2>title test</h2>
-            <p>
+            <h2 className="text-carousel-projects mt-3">{num.project}</h2>
+            <p className="text-p-carousel-projects">
               Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div>
-              <button className="button-29 me-4">VIEW PROJECT</button>
-              <button className="button-29">CONTACT US</button>
+            <p className="text-p-carousel-projects">
+              Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div className="just-desktop">
+              <button className="button-29 me-4 mt-2">VIEW PROJECT</button>
+              <button className="button-29 mt-2">CONTACT US</button>
+            </div>
+            <div className="just-mobile">
+              <div className="d-flex justify-content-center">
+                <div>
+                  <button className="button-29 me-2 mt-2">VIEW PROJECT</button>
+                  <div className="d-flex justify-content-center">
+                    <button className="button-29 mt-2">CONTACT US</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -243,6 +263,7 @@ export const Home = () => {
                 <button className="button-29">Our Portfolio</button>
               </Link>
             </div>
+
           </MDBCol>
 
           <MDBCol className="" lg="6" md="6" sm="12">
@@ -262,7 +283,7 @@ export const Home = () => {
               dots={true}
               // customPaging={customPaging}
               autoplay={true}
-              autoplaySpeed={2000}
+              autoplaySpeed={3000}
             // appendDots={appendDots}
             >
               {renderSlides()}

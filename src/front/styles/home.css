@@ -1317,6 +1317,12 @@ div.toast:not(.hide) {
   border-bottom: solid 5px rgb(199, 228, 238);
   width: 200px;
 }
+@media (max-width: 767px) {
+  .border-name-project {
+    border-bottom: solid 5px rgb(199, 228, 238);
+    width: 100%;
+  }
+}
 
 /* /// mmau start wirking here  */
 
@@ -1742,4 +1748,48 @@ div.toast:not(.hide) {
   width: 300px;
   height: 400px;
   border-radius: 30px;
+}
+
+.text-carousel-projects {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+.text-p-carousel-projects {
+  font-family: "Orbitron", sans-serif;
+  text-indent: 0px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.just-desktop {
+  display: block;
+}
+.just-mobile {
+  display: none;
+}
+.duration-carousel-projects {
+  font-family: "Orbitron", sans-serif;
+}
+@media (max-width: 767px) {
+  .text-p-carousel-projects {
+    font-family: "Orbitron", sans-serif;
+    text-indent: 0px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .just-desktop {
+    display: none;
+  }
+  .just-mobile {
+    display: block;
+  }
+  .text-carousel-projects {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  .duration-carousel-projects {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+  }
 }
