@@ -59,12 +59,14 @@ export const MobileApps = () => {
             </div>
             <div className="  pt-5">
                 <div className=" position-relative">
+
                     <div className="border-large  position-absolute top-50 start-50 translate-middle"></div>
+                    <div className="border-med  position-absolute top-50 start-50 translate-middle"></div>
                     {/* <div className="border-med position-absolute top-50 start-50 translate-middle"></div>
                     <div className="border-med-min mx-auto"></div> */}
                 </div>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 pad-controller-tab">
                 <TabsMobile />
             </div>
             <Footer />

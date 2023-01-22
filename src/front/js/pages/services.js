@@ -343,6 +343,7 @@ export const Services = () => {
 								<h2 className="text-white">TEST</h2>
 								<h3 className="text-white">TEXT HERE</h3>
 							</div>
+
 						</div>
 					</MDBCol>
 					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">

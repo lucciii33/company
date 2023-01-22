@@ -1633,13 +1633,13 @@ div.toast:not(.hide) {
 }
 
 .border-large {
-  border-top: 3px solid #e2a8ff;
-  width: 70%;
+  border-top: 5px solid #1c012c;
+  width: 90%;
 }
 
 .border-med {
-  border-top: 3px solid #9e018e;
-  width: 50%;
+  border-top: 3px solid #77acf0;
+  width: 70%;
   margin-top: 25px;
 }
 
@@ -1728,7 +1728,7 @@ div.toast:not(.hide) {
   margin-right: 70px;
 }
 .image-tabs {
-  width: 600px;
+  width: 500px;
   height: 400px;
   object-fit: cover;
 }
@@ -1792,4 +1792,28 @@ div.toast:not(.hide) {
     font-family: "Orbitron", sans-serif;
     text-align: center;
   }
+}
+.nav-justified .nav-item .nav-link {
+  width: 100%;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.pad-controller-tab {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.bg-tabs {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.tabs-border {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.bg-tabs:hover {
+  background: linear-gradient(to bottom right, #1c012c, #77acf0);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.border-controller-mobile-app {
+  border-radius: 30px;
 }
