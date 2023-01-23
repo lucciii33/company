@@ -12,8 +12,8 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBIcon,
-  MDBCollapse
-} from 'mdb-react-ui-kit';
+  MDBCollapse,
+} from "mdb-react-ui-kit";
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -54,24 +54,24 @@ export const Navbar = () => {
     //             Services
     //           </a>
 
-    //           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    //           <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
     //             <Link to="/services" className="text-decoration-none">
     //               <li>
-    //                 <a class="dropdown-item " href="#">
+    //                 <a className="dropdown-item " href="#">
     //                   All services
     //                 </a>
     //               </li>
     //             </Link>
     //             <Link to="/webDevelopment" className="text-decoration-none">
     //               <li>
-    //                 <a class="dropdown-item" href="#">
+    //                 <a className="dropdown-item" href="#">
     //                   Web Development
     //                 </a>
     //               </li>
     //             </Link>
     //             <Link to="/mobileApps" className="text-decoration-none">
     //               <li>
-    //                 <a class="dropdown-item" href="#">
+    //                 <a className="dropdown-item" href="#">
     //                   Mobile Apps
     //                 </a>
     //               </li>
@@ -120,27 +120,23 @@ export const Navbar = () => {
     //   </div>
     // </div>
     <>
-      <MDBNavbar expand='lg' light bgColor='light'>
-        <MDBContainer fluid className=''>
-
-          <MDBNavbarBrand href='#'>
+      <MDBNavbar expand="lg" light bgColor="light">
+        <MDBContainer fluid className="">
+          <MDBNavbarBrand href="#">
             <Link className="text-decoration-none" to="/">
               <img src={logo} className="img-logo"></img>
             </Link>
           </MDBNavbarBrand>
 
-
           <MDBNavbarToggler
-            aria-expanded='false'
-            aria-label='Toggle navigation'
+            aria-expanded="false"
+            aria-label="Toggle navigation"
             onClick={() => setShowNavSecond(!showNavSecond)}
           >
-            <MDBIcon icon='bars' fas />
+            <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
 
           <MDBCollapse navbar show={showNavSecond}>
-
-
             <MDBNavbarNav fullWidth={false} right>
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
@@ -156,24 +152,30 @@ export const Navbar = () => {
                       Services
                     </a>
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
                       <Link to="/services" className="text-decoration-none">
                         <li>
-                          <a class="dropdown-item " href="#">
+                          <a className="dropdown-item " href="#">
                             All services
                           </a>
                         </li>
                       </Link>
-                      <Link to="/webDevelopment" className="text-decoration-none">
+                      <Link
+                        to="/webDevelopment"
+                        className="text-decoration-none"
+                      >
                         <li>
-                          <a class="dropdown-item" href="#">
+                          <a className="dropdown-item" href="#">
                             Web Development
                           </a>
                         </li>
                       </Link>
                       <Link to="/mobileApps" className="text-decoration-none">
                         <li>
-                          <a class="dropdown-item" href="#">
+                          <a className="dropdown-item" href="#">
                             Mobile Apps
                           </a>
                         </li>

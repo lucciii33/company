@@ -1609,7 +1609,7 @@ div.toast:not(.hide) {
 /* //////////////////////////services */
 .techWeuseBanner {
   /* background: linear-gradient(to bottom right, #1c012c, #77acf0); */
-  background: #fff;
+  /* background: #fff; */
   width: 100%;
   height: auto;
 }
