@@ -246,6 +246,7 @@ export const Services = () => {
 							</div>
 						</MDBCol>
 						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+
 							<div className="my-auto">
 								<img src={nodejs} className="jslogo"></img>
 								<div className="overlay">
@@ -326,31 +327,51 @@ export const Services = () => {
 				</div>
 			</div>
 			<div className="services-banner-3 mt-5">
-				<h2 className="my-5 text-center">TES TEXT TITLE HERE</h2>
+				<h2 className="my-5 text-center text-white services-text-card">TES TEXT TITLE HERE</h2>
 				<MDBRow className="d-flex justify-content-evenly">
 					{/* <div className="d-flex justify-content-evenly"> */}
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white text-center">BLOG WEBSITE FROM</h2>
-								<h3 className="text-white text-center">$1000</h3>
+								<h2 className="text-white text-center services-text-card">BLOG WEBSITE FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$1000</h3>
+							</div>
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i className="fas fa-sitemap"></i>
+									</div>
+								</div>
 							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white">TEST</h2>
-								<h3 className="text-white">TEXT HERE</h3>
+								<h2 className="text-white text-center services-text-card">SOFTWARES AND SYSTEMS FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$2500</h3>
 							</div>
-
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i class="fas fa-code"></i>
+									</div>
+								</div>
+							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white">TEST</h2>
-								<h3 className="text-white">TEXT HERE</h3>
+								<h2 className="text-white text-center services-text-card">MOBILE APPS FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$1000</h3>
+							</div>
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i class="fas fa-mobile-alt"></i>
+									</div>
+								</div>
 							</div>
 						</div>
 					</MDBCol>

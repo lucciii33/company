@@ -124,7 +124,7 @@ export const Navbar = () => {
         <MDBContainer fluid className=''>
 
           <MDBNavbarBrand href='#'>
-            <Link className="text-decoration-none" to="/">
+            <Link className="text-decoration-none" to="/home">
               <img src={logo} className="img-logo"></img>
             </Link>
           </MDBNavbarBrand>
