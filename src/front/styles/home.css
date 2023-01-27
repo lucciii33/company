@@ -380,6 +380,14 @@ h1 span {
   font-family: "Orbitron", sans-serif;
   margin-top: 45px;
 }
+.about-text {
+  font-size: 52px;
+  color: blue;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 45px;
+}
 
 .text-gradient-home {
   font-size: 62px;
@@ -1974,4 +1982,14 @@ div.toast:not(.hide) {
 .services-text-card {
   font-family: "Orbitron", sans-serif;
   z-index: ;
+}
+.padding-controller-our-vision {
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .padding-controller-our-vision {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
