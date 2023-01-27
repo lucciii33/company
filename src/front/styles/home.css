@@ -1638,7 +1638,7 @@ div.toast:not(.hide) {
 /* //////////////////////////services */
 .techWeuseBanner {
   /* background: linear-gradient(to bottom right, #1c012c, #77acf0); */
-  /* background: #fff; */
+  background: #aeaaaa;
   width: 100%;
   height: auto;
 }
@@ -1923,6 +1923,7 @@ div.toast:not(.hide) {
 .pad-controller-tab {
   padding-left: 100px;
   padding-right: 100px;
+  background: #aeaaaa;
 }
 
 .bg-tabs {

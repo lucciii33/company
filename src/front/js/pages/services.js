@@ -109,9 +109,9 @@ export const Services = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="conta-services bg-light">
+			<div className="conta-services ">
 				<GoogleAnalyticsTracker />
-				<div className="text-center">
+				<div className="text-center bg-ligth">
 					<motion.h5 className="ourvision" variants={boxVarient2}
 						animate="visible"
 						initial="hidden">Fetaured services</motion.h5>
@@ -119,7 +119,7 @@ export const Services = () => {
 						animate="visible"
 						initial="hidden">Why you will choose <br /> Ilution Design Agency.</motion.h3>
 				</div>
-				<div className="display-none-big-screen">
+				<div className="display-none-big-screen pb-5">
 					<div className="d-flex flex-wrap">
 						<motion.div className="box-services"
 							whileHover={{
@@ -232,7 +232,7 @@ export const Services = () => {
 				</div>
 
 
-				<div className="techWeuseBanner bg-light pb-0">
+				<div className="techWeuseBanner  pb-0">
 					<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
 					<MDBRow className="d-flex justify-content-evenly mt-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
@@ -280,8 +280,8 @@ export const Services = () => {
 
 				</div>
 
-				<div className="techWeuseBanner bg-light pb-5">
-					<MDBRow className="d-flex justify-content-evenly pt-5">
+				<div className="techWeuseBanner pb-5">
+					<MDBRow className="d-flex justify-content-evenly pt-5 pb-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 							<div className="my-auto ">
 								<img src={figma} className="jslogo"></img>
@@ -326,7 +326,7 @@ export const Services = () => {
 
 				</div>
 			</div>
-			<div className="services-banner-3 mt-5">
+			<div className="services-banner-3 pt-5">
 				<h2 className="my-5 text-center text-white services-text-card">TES TEXT TITLE HERE</h2>
 				<MDBRow className="d-flex justify-content-evenly">
 					{/* <div className="d-flex justify-content-evenly"> */}
