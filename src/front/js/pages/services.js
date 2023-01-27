@@ -112,12 +112,12 @@ export const Services = () => {
 			<div className="conta-services ">
 				<GoogleAnalyticsTracker />
 				<div className="text-center bg-ligth">
-					<motion.h5 className="ourvision" variants={boxVarient2}
+					{/* <motion.h5 className="ourvision" variants={boxVarient2}
 						animate="visible"
-						initial="hidden">Fetaured services</motion.h5>
+						initial="hidden">Fetaured services</motion.h5> */}
 					<motion.h3 className="text-gradient2" transition={{ type: "spring", stiffness: 130 }} variants={boxVarient}
 						animate="visible"
-						initial="hidden">Why you will choose <br /> Ilution Design Agency.</motion.h3>
+						initial="hidden">Featured services</motion.h3>
 				</div>
 				<div className="display-none-big-screen pb-5">
 					<div className="d-flex flex-wrap">
