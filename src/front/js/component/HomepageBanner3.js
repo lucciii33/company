@@ -8,7 +8,7 @@ import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 const HomepageBanner3 = ({ width }) => {
   return (
     <div className="bg-banner-2 homepage-banner-padding">
-      <h2 className="text-center tech-text-blue">Services</h2>
+      <h2 className="text-center tech-text-blue fs-50 Orbitron">Services</h2>
       <MDBRow className="d-flex align-items-center justify-content-evenly mx-3">
         <MDBCol sm="12" md="12" lg="4">
           <Card

@@ -25,7 +25,7 @@ export function TabsMobile() {
     return (
         <>
             <div className='mt-5'>
-                <h2 className='text-center mt-5 pt-5'>What We Develop & Deliver</h2>
+                <h2 className='text-center mt-5 pt-5 fs-50'>What We Develop & Deliver</h2>
             </div>
             <div className='tab-margin-controlller mt-5'>
                 <MDBTabs justify className='mb-3  p-2'>

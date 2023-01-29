@@ -23,7 +23,7 @@ const ProcessBanner = () => {
   return (
     <>
       <div className="py-5 px-md-2 px-lg-5 bg-light">
-        <h1 className="text-center fs-52 text-dark w-100 pb-5">Our Process</h1>
+        <h2 className="text-center  text-dark w-100 pb-5 fs-50 Orbitron">Our Process</h2>
         <MDBRow className="px-5 pb-3">
           <MDBCol md="12" lg="3">
             <div className="d-flex align-items-center justify-content-center h-100 p-3">
@@ -85,8 +85,8 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3>Idea of Concept</h3>
-                          <p>
+                          <h3 className="Orbitron">Idea of Concept</h3>
+                          <p className="ubunto">
                             This is the creative area where brainstorming
                             occurs. All ideas are processed and built upon to
                             address the company's needs.
@@ -110,8 +110,8 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3>Design</h3>
-                          <p>
+                          <h3 className="Orbitron">Design</h3>
+                          <p className="ubunto">
                             Our design process is meticulous. We ensure that all
                             features and modern looks are considered to provide
                             the best result for our customers.
@@ -135,8 +135,8 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3>Development</h3>
-                          <p>
+                          <h3 className="Orbitron">Development</h3>
+                          <p className="ubunto">
                             All designs are then carefully recreated into the
                             final product. Here optimization occurs to allow for
                             functionality to meet creative design.

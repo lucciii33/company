@@ -4,7 +4,7 @@ import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 const HomepageBanner2 = ({ width }) => {
   return (
     <div className="bg-banner-1 homepage-banner-padding">
-      <h2 className="text-center text-gradient-home mb-4">Our Story</h2>
+      <h2 className="text-center text-gradient-home mb-4 fs-50">Our Story</h2>
       <div className="d-flex">
         <MDBRow className="h-100 d-flex align-items-center">
           <MDBCol
@@ -59,7 +59,7 @@ const HomepageBanner2 = ({ width }) => {
           <MDBCol className="h-100" sm="12" md="12" lg="6">
             <div>
               <div className="text-controller-2 my-auto px-5 h-100">
-                <p className="paragraph-home-text p-md-5 text-center m-0">
+                <p className="paragraph-home-text p-md-5 text-center m-0 ubunto">
                   We started as two individuals who attended the same developer
                   bootcamp. We started helping each other from time to time on
                   projects and assignments. As time progressed we collaborated

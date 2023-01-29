@@ -2,7 +2,7 @@
   font-family: "Drip"; 
   src: local("Drip"), url(../fonts/DripOctober-vm0JA.ttf) format("truetype");
 } */
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @font-face {
   font-family: "Stereofunk";
   src: local("Stereofunk"), url(../fonts/Stereofunk.ttf) format("truetype");
@@ -30,4 +30,13 @@
   height: 400px;
   border-radius: 30px;
   background-size: cover;
+}
+.fs-50 {
+  font-size: 50px !important;
+}
+.Orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+.ubunto {
+  font-family: "Ubuntu", sans-serif;
 }

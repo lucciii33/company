@@ -126,7 +126,7 @@ export const Services = () => {
 								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
 								scale: 1.1,
 								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-								originX: 0,
+
 							}}
 							transition={{ type: "spring", stiffness: 500, }} variants={boxVarient3}
 							animate="visible"
@@ -134,7 +134,7 @@ export const Services = () => {
 
 							<img src={desing} className="logo-image"></img>
 							<h3 className="mt-2 text-services">Branding</h3>
-							<p className="mt-2 text-services">Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales.</p>
+							<p className="mt-2 text-services ubunto">Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales.</p>
 							<button className="button-29">Lest Design <i className="fas fa-paint-brush p-2"></i></button>
 						</motion.div>
 						<motion.div className="box-services"
@@ -142,7 +142,7 @@ export const Services = () => {
 								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
 								scale: 1.1,
 								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-								originX: 0,
+
 							}}
 							transition={{ type: "spring", stiffness: 500, }}
 							variants={boxVarient4}
@@ -150,7 +150,7 @@ export const Services = () => {
 							initial="hidden">
 							<img src={webdesign} className="logo-image"></img>
 							<h3 className="mt-2 ">Web Design</h3>
-							<p className="mt-2">Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share.</p>
+							<p className="mt-2 ubunto">Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share.</p>
 							<button className="button-29">Lest Create <i className="fas fa-lightbulb p-2"></i></button>
 						</motion.div>
 						<motion.div className="box-services"
@@ -158,7 +158,7 @@ export const Services = () => {
 								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
 								scale: 1.1,
 								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-								originX: 0,
+
 							}}
 							transition={{ type: "spring", stiffness: 500, }}
 							variants={boxVarient5}
@@ -166,7 +166,7 @@ export const Services = () => {
 							initial="hidden">
 							<img src={code} className="logo-image"></img>
 							<h3 className="mt-2 ">Web development</h3>
-							<p className="mt-2">Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure.</p>
+							<p className="mt-2 ubunto">Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure.</p>
 							<button className="button-29">Lest Code <i className="fas fa-code p-2"></i></button>
 						</motion.div>
 						<motion.div className="box-services"
@@ -174,7 +174,7 @@ export const Services = () => {
 								boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
 								scale: 1.1,
 								background: "linear-gradient(291deg, rgba(28,1,44,1) 0%, rgba(158,1,142,1) 47%)",
-								originX: 0,
+
 							}}
 							transition={{ type: "spring", stiffness: 500, }}
 							variants={boxVarient6}
@@ -182,7 +182,7 @@ export const Services = () => {
 							initial="hidden">
 							<img src={photo} className="logo-image"></img>
 							<h3 className="mt-2 ">photography</h3>
-							<p className="mt-2">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
+							<p className="mt-2 ubunto">Ilution Design Agency recognizes the worth of photography. The reason being it evokes customer interest and lead them to buy goods and services.</p>
 							<Link to="/photography" className="text-decoration-none"><button className="button-29">Lest Capture<i className="fas fa-camera-retro p-2"></i></button></Link>
 						</motion.div>
 					</div>
@@ -327,7 +327,7 @@ export const Services = () => {
 				</div>
 			</div>
 			<div className="services-banner-3 pt-5">
-				<h2 className="my-5 text-center text-white services-text-card">TES TEXT TITLE HERE</h2>
+				<h2 className="my-5 text-center text-white services-text-card fs-50">Test tes tes here</h2>
 				<MDBRow className="d-flex justify-content-evenly">
 					{/* <div className="d-flex justify-content-evenly"> */}
 					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">

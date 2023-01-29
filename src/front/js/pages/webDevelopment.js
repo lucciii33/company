@@ -25,7 +25,7 @@ export const WebDevelopment = () => {
             <img src={pic1} className="webDevelopment-image"></img>
           </div>
           <div className="position-absolute top-50 start-0 translate-middle-y mar-controller">
-            <h5 className="title-webdevelopment border-down-web-development">
+            <h5 className="title-webdevelopment border-down-web-developmen ">
               <i class="fas fa-circle me-2"></i> Web Development
             </h5>
             <h1 className="text-webdevelopment">
@@ -46,17 +46,17 @@ export const WebDevelopment = () => {
             <div>
               <MDBRow className="webD-flex letters-top" sm="12" md="8" lg="8">
                 <MDBCol className="mletter-5 ">
-                  <h3 className="mt-2">
-                    Your development partner. We stand for excellence!
+                  <h3 className="mt-2 Orbitron">
+                    Your development partner.<br /> We stand for excellence!
                   </h3>
-                  <p className="mt-4">
+                  <p className="mt-4 ubunto">
                     Over the past decade, we have mastered the art of creating
                     websites that innovate, engage and deliver results through a
                     combination of human-centric approach and development
                     ingenuity. Hire top web developers to make your dream a
                     reality.
                   </p>
-                  <p className="mt-4">
+                  <p className="mt-4 ubunto">
                     Be it custom Web applications development and SaaS
                     platforms, ecommerce website development or informative lead
                     generation sites, our value proposition, when it comes to
@@ -64,7 +64,7 @@ export const WebDevelopment = () => {
                     context and needs of the end-users, ensuring meaningful
                     results.
                   </p>
-                  <p className="mt-4">
+                  <p className="mt-4 ubunto">
                     Be it custom Web applications development and SaaS
                     platforms, ecommerce website development or informative lead
                     generation sites, our value proposition, when it comes to
@@ -108,7 +108,7 @@ export const WebDevelopment = () => {
           </div>
           <div className="techWeuseBanner blue-gradient-background contact-section-padding">
             <div className="text-center">
-              <h2 className="text-white">Why is Web Development Important?</h2>
+              <h2 className="text-white fs-50 Orbitron">Why is Web Development Important?</h2>
             </div>
             <MDBRow className="mt-5">
               <MDBCol className="p-md-3 p-lg-5" sm="12" md="12" lg="6">
@@ -118,21 +118,21 @@ export const WebDevelopment = () => {
                 ></img>
               </MDBCol>
               <MDBCol className="my-auto py-5" sm="12" md="12" lg="6">
-                <h3 className="text-white">Creating an Online Presence</h3>
+                <h3 className="text-white Orbitron">Creating an Online Presence</h3>
                 {/* <h6 className="text-white">Lorem impsum text here</h6> */}
-                <p className="pe-4 text-white">
+                <p className="pe-4 text-white ubunto">
                   In today's world whether you are working on a personal website
                   or making a platform for your buisness it is important to have
                   a place where people can view your work.
                 </p>
-                <p className="pe-4 text-white">
+                <p className="pe-4 text-white ubunto">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
                 </p>
-                <button className="button-28">SEE PROJECTS</button>
+                <button className="button-29">SEE PROJECTS</button>
               </MDBCol>
             </MDBRow>
           </div>

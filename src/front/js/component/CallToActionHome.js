@@ -73,7 +73,7 @@ const CallToActionHome = () => {
                 Get in touch with us!
               </h3>
               <MDBInput
-                className="mb-3"
+                className="mb-3 ubunto"
                 placeholder="Name"
                 id="typeText"
                 type="text"
@@ -82,7 +82,7 @@ const CallToActionHome = () => {
                 onChange={handleChange}
               />
               <MDBInput
-                className="mb-3"
+                className="mb-3 ubunto"
                 placeholder="Email"
                 id="typeText"
                 type="email"
@@ -91,7 +91,7 @@ const CallToActionHome = () => {
                 onChange={handleChange}
               />
               <MDBInput
-                className="mb-3"
+                className="mb-3 ubunto"
                 placeholder="Phone"
                 id="typeText"
                 type="tel"
@@ -100,7 +100,7 @@ const CallToActionHome = () => {
                 onChange={handleChange}
               />
               <MDBTextArea
-                className="mb-3"
+                className="mb-3 ubunto"
                 placeholder="Project description ..."
                 id="textAreaExample"
                 rows={4}

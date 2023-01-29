@@ -5,7 +5,7 @@ const Locations = () => {
   return (
     <div className="pb-5">
       <div className="p-5">
-        <h1 className="text-dark text-center text-or w-100">Locations</h1>
+        <h2 className="text-dark text-center text-or w-100 fs-50">Locations</h2>
         <div className="d-flex justify-content-between mt-4">
           <MDBRow>
             <MDBCol sm="12" md="12" lg="4">

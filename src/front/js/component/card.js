@@ -20,7 +20,7 @@ export const Card = ({ title, description, img, type }) => {
     >
       <div className="logo-image">{img}</div>
       <h3 className="mt-2 text-services">{title}</h3>
-      <p className="mt-2 text-services">{description}</p>
+      <p className="mt-2 text-services ubunto">{description}</p>
       <button className={hover ? "button-28" : "button-29"}>
         Let's {type} <i className="fas fa-paint-brush p-2"></i>
       </button>

@@ -137,13 +137,13 @@ export const Home = () => {
             </div>
 
             <h2 className="text-carousel-projects mt-3">{num.project}</h2>
-            <p className="text-p-carousel-projects">
+            <p className="text-p-carousel-projects ubunto">
               Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p className="text-p-carousel-projects">
+            <p className="text-p-carousel-projects ubunto">
               Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -247,7 +247,7 @@ export const Home = () => {
             </div>
             <h2 className="text-white title2 bg-future">And we can help you </h2>
 
-            <p className="text-white">
+            <p className="text-white ubunto fs-20">
               Lorem ipsum is placeholder text commonly used in the graphic, <br />
               print, and publishing industries for previewing layouts and visual
               mockups <br />
@@ -274,7 +274,8 @@ export const Home = () => {
         <HomepageBanner2 width={windowDimensions.width} />
         <HomepageBanner3 width={windowDimensions.width} />
         {/* until here is the div */}
-        <div className="bg-banner-3">
+        <div className="bg-banner-3 ">
+          <h2 className="fs-50 Orbitron text-center pt-5">Projects</h2>
           <div className="">
             <Slider
               className="d-flex align-items-center"

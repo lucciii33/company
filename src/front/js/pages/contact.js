@@ -92,8 +92,8 @@ export const ContactUs = () => {
             <h5 className="title-contact-1 text-center">
               MAKE YOUR PRODUCT REALLY MATTER
             </h5>
-            <h2 className="title-contact-2 text-center">Free project quote</h2>
-            <h6 className="title-contact-3 text-center">
+            <h2 className="title-contact-2 text-center fs-50">Free project quote</h2>
+            <h6 className="title-contact-3 text-center ubunto">
               Fill out the enquiry form and we’ll get back to you as soon as
               possible.
             </h6>
@@ -109,7 +109,7 @@ export const ContactUs = () => {
               >
                 <div>
                   <input
-                    className="email w-100"
+                    className="email w-100 ubunto"
                     placeholder="Email address"
                     type="text"
                     name="email"
@@ -118,7 +118,7 @@ export const ContactUs = () => {
                   ></input>
                   <div className="d-flex mt-3">
                     <input
-                      className="name w-100"
+                      className="name w-100 ubunto"
                       placeholder="Full Name"
                       type="text"
                       name="fullName"
@@ -126,7 +126,7 @@ export const ContactUs = () => {
                       value={formData.fullName}
                     ></input>
                     <input
-                      className="phone w-100"
+                      className="phone w-100 ubunto"
                       placeholder="Phone"
                       type="text"
                       name="phone"
@@ -136,7 +136,7 @@ export const ContactUs = () => {
                   </div>
                   <div className="text-area">
                     <textarea
-                      className="mensaje mt-3 w-100 contact-text-area p-2"
+                      className="mensaje mt-3 w-100 contact-text-area p-2 ubunto"
                       placeholder="Tell us about your project/product"
                       type="text"
                       name="description"
@@ -213,17 +213,17 @@ export const ContactUs = () => {
                   <div>
                     <div className="d-flex">
                       <i className="far fa-envelope"></i>
-                      <p className="text-contact-box">
+                      <p className="text-contact-box ubunto">
                         bluelighttech22@gmail.com
                       </p>
                     </div>
                     <div className="d-flex">
                       <i className="fas fa-map-marker-alt"></i>
-                      <p className="text-contact-box">Miami, United State</p>
+                      <p className="text-contact-box ubunto">Miami, United State</p>
                     </div>
                     <div className="d-flex">
                       <i className="fas fa-mobile-alt"></i>
-                      <p className="text-contact-box">(646) 257-0133</p>
+                      <p className="text-contact-box ubunto">(646) 257-0133</p>
                     </div>
                   </div>
                 </motion.div>
@@ -237,7 +237,7 @@ export const ContactUs = () => {
             <h2 className="text-gradient-small m-0">
               Please book a meeting here
             </h2>
-            <p className="paragraph text-white">
+            <p className="paragraph text-white ubunto">
               Let us know what you want to build and we can help
             </p>
             <motion.img

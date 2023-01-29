@@ -55,7 +55,7 @@ export const Intro = () => {
         animate="visible"
         initial="hidden"
       >
-        <h3 className="text-gradient-small">WELCOME TO BLUE LIGHT TECH</h3>
+        <h3 className="text-dark text-center pt-5">WELCOME TO BLUE LIGHT TECH</h3>
         <div className="d-flex justify-content-center align-items-center mt-5">
           <motion.div variants={boxVarient4} animate="visible" initial="hidden" className="mt-5">
             <img src={logo} className="intro-image"></img>
