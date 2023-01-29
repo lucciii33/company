@@ -1488,6 +1488,7 @@ div.toast:not(.hide) {
 .title-webdevelopment {
   color: white !important;
   font-family: "Orbitron", sans-serif;
+  font-size: 48px;
 }
 
 .border-down-web-development {
