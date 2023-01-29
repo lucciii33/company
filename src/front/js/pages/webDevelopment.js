@@ -17,7 +17,6 @@ export const WebDevelopment = () => {
   return (
     <>
       <Navbar />
-
       <GoogleAnalyticsTracker />
       <div>
         <div className="position-relative">
@@ -26,7 +25,7 @@ export const WebDevelopment = () => {
           </div>
           <div className="position-absolute top-50 start-0 translate-middle-y mar-controller">
             <h5 className="title-webdevelopment border-down-web-development">
-              <i class="fas fa-circle me-2"></i> Web Development
+              <i class="fas fa-circle me-2" /> Web Development
             </h5>
             <h1 className="text-webdevelopment">
               We devise solutions to maximize
@@ -132,13 +131,14 @@ export const WebDevelopment = () => {
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
                 </p>
-                <button className="button-28">SEE PROJECTS</button>
+                <Link to="/projects">
+                  <button className="button-28">SEE PROJECTS</button>
+                </Link>
               </MDBCol>
             </MDBRow>
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );
