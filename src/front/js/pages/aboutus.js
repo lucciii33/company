@@ -178,7 +178,7 @@ export const Aboutus = () => {
             >
               <img src={tech} className="tech-image"></img>
               <img src={tech2} className="tech2-image"></img>
-              <h3 className="text-gradient-small">
+              <h3 className="about-text">
                 We believe that effectiveness <br /> is the common characteristic
                 of <br /> all great products
               </h3>

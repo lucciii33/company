@@ -120,10 +120,11 @@ export const Navbar = () => {
     //   </div>
     // </div>
     <>
-      <MDBNavbar expand="lg" light bgColor="light">
-        <MDBContainer fluid className="">
-          <MDBNavbarBrand href="#">
-            <Link className="text-decoration-none" to="/">
+      <MDBNavbar expand='lg' light bgColor='light'>
+        <MDBContainer fluid className=''>
+
+          <MDBNavbarBrand href='#'>
+            <Link className="text-decoration-none" to="/home">
               <img src={logo} className="img-logo"></img>
             </Link>
           </MDBNavbarBrand>

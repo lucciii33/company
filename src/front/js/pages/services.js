@@ -109,17 +109,17 @@ export const Services = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="conta-services bg-light">
+			<div className="conta-services ">
 				<GoogleAnalyticsTracker />
-				<div className="text-center">
-					<motion.h5 className="ourvision" variants={boxVarient2}
+				<div className="text-center bg-ligth">
+					{/* <motion.h5 className="ourvision" variants={boxVarient2}
 						animate="visible"
-						initial="hidden">Fetaured services</motion.h5>
+						initial="hidden">Fetaured services</motion.h5> */}
 					<motion.h3 className="text-gradient2" transition={{ type: "spring", stiffness: 130 }} variants={boxVarient}
 						animate="visible"
-						initial="hidden">Why you will choose <br /> Ilution Design Agency.</motion.h3>
+						initial="hidden">Featured services</motion.h3>
 				</div>
-				<div className="display-none-big-screen">
+				<div className="display-none-big-screen pb-5">
 					<div className="d-flex flex-wrap">
 						<motion.div className="box-services"
 							whileHover={{
@@ -232,7 +232,7 @@ export const Services = () => {
 				</div>
 
 
-				<div className="techWeuseBanner bg-light pb-0">
+				<div className="techWeuseBanner  pb-0">
 					<h2 className="text-center pt-5 tech-text-black">Technologies we use</h2>
 					<MDBRow className="d-flex justify-content-evenly mt-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
@@ -246,6 +246,7 @@ export const Services = () => {
 							</div>
 						</MDBCol>
 						<MDBCol className="techBox me-3 mt-2 d-flex justify-content-center bg-dark hover-overlay-container" sm="12" md="12" lg="3">
+
 							<div className="my-auto">
 								<img src={nodejs} className="jslogo"></img>
 								<div className="overlay">
@@ -279,8 +280,8 @@ export const Services = () => {
 
 				</div>
 
-				<div className="techWeuseBanner bg-light pb-5">
-					<MDBRow className="d-flex justify-content-evenly pt-5">
+				<div className="techWeuseBanner pb-5">
+					<MDBRow className="d-flex justify-content-evenly pt-5 pb-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 							<div className="my-auto ">
 								<img src={figma} className="jslogo"></img>
@@ -325,32 +326,52 @@ export const Services = () => {
 
 				</div>
 			</div>
-			<div className="services-banner-3 mt-5">
-				<h2 className="my-5 text-center">TES TEXT TITLE HERE</h2>
+			<div className="services-banner-3 pt-5">
+				<h2 className="my-5 text-center text-white services-text-card">TES TEXT TITLE HERE</h2>
 				<MDBRow className="d-flex justify-content-evenly">
 					{/* <div className="d-flex justify-content-evenly"> */}
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white text-center">BLOG WEBSITE FROM</h2>
-								<h3 className="text-white text-center">$1000</h3>
+								<h2 className="text-white text-center services-text-card">BLOG WEBSITE FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$1000</h3>
+							</div>
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i className="fas fa-sitemap"></i>
+									</div>
+								</div>
 							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white">TEST</h2>
-								<h3 className="text-white">TEXT HERE</h3>
+								<h2 className="text-white text-center services-text-card">SOFTWARES AND SYSTEMS FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$2500</h3>
 							</div>
-
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i class="fas fa-code"></i>
+									</div>
+								</div>
+							</div>
 						</div>
 					</MDBCol>
-					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-center" sm="12" md="12" lg="4">
-						<div className="">
+					<MDBCol className="card-service-3-banner d-flex justify-content-center align-items-start pt-5" sm="12" md="12" lg="4">
+						<div className="pt-3">
 							<div className="">
-								<h2 className="text-white">TEST</h2>
-								<h3 className="text-white">TEXT HERE</h3>
+								<h2 className="text-white text-center services-text-card">MOBILE APPS FROM</h2>
+								<h3 className="text-white text-center services-text-card ">$1000</h3>
+							</div>
+							<div className="">
+								<div className="squre-services d-flex justify-content-center align-items-center">
+									<div>
+										<i class="fas fa-mobile-alt"></i>
+									</div>
+								</div>
 							</div>
 						</div>
 					</MDBCol>

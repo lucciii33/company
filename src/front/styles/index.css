@@ -22,3 +22,12 @@
 .fs-20 {
   font-size: 20px !important;
 }
+
+.card-service-3-banner {
+  background-image: url("../img/4049187.jpg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  background-size: cover;
+}
