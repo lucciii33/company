@@ -170,6 +170,18 @@ export const Projects = () => {
           </div>
         </div>
       </div>
+      <div className="bg-dark products-banner">
+        <div className="d-flex justify-content-center align-items-center mt-5 pb-5 pt-5">
+          <h1 className="text-center fs-50 Orbitron text-white">New Product Soon</h1>
+          <div class="box-products"></div>
+          <div class="box-products-2"></div>
+          <div class="box-product-origin px-3">
+            <h2 className="pt-4 ">Kitchen System</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a>Click here</a>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );
