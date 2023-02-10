@@ -949,11 +949,12 @@ div.toast:not(.hide) {
 }
 
 .img-project1 {
-  width: 300px;
+  width: 495px;
   height: 400px;
   margin: auto;
   border-radius: 3px;
   object-fit: fill;
+  margin-top: 15px;
 }
 
 @media (max-width: 667px) {

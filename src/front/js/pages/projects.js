@@ -1,6 +1,8 @@
 import React, { useContext, useRef } from "react";
 import { motion, useScroll, useInView } from "framer-motion";
-import elana from "../../img/captureElana.png";
+import elana from "../../img/elanaMockup.png";
+import rest from "../../img/restaurantProject.png"
+import olimar from "../../img/olimar.png"
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
@@ -100,7 +102,7 @@ export const Projects = () => {
               <p className="description ms-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
-              <button className="button-29 ms-3">see me!</button>
+              <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
             </motion.div>
             <motion.div
               className="margin-left box-project"
@@ -114,8 +116,8 @@ export const Projects = () => {
               }}
             >
               <img
-                src="https://i.pinimg.com/originals/e1/b8/79/e1b879128c55a9c38d8c6a5f57282b46.png"
-                className="img-project ms-3"
+                src={rest}
+                className="img-project1 ms-3"
               ></img>
               <h3 className="paragraph ms-3">Lorem Ipsum</h3>
               <p className="description ms-3">
@@ -137,14 +139,14 @@ export const Projects = () => {
               }}
             >
               <img
-                src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/06cd2159578771.5a4c3e28ae18c.jpg"
-                className="img-project ms-3"
+                src={olimar}
+                className="img-project1 ms-3"
               ></img>
               <h3 className="paragraph ms-3">Lorem Ipsum</h3>
               <p className="description ms-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
-              <button className="button-29 ms-3">see me!</button>
+              <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
             </motion.div>
             <motion.div
               className="margin-left box-project"
