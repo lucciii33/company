@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import main1 from "../../img/main1.png";
-import elana from "../../img/Logo.png";
+// import elana from "../../img/Logo.png";
 import elana1 from "../../img/figma.png";
 import elana2 from "../../img/elana.png";
 import "../../styles/home.css";
@@ -18,6 +18,9 @@ import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { MDBRadio } from "mdb-react-ui-kit";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
+import elana from "../../img/elanaMockup.png";
+import rest from "../../img/restaurantProject.png"
+import olimar from "../../img/olimar.png"
 import {
   MDBRow, MDBCol, MDBBtn,
   MDBModal,
@@ -106,14 +109,17 @@ export const Home = () => {
       {
         project: "elana pelvic care",
         duration: "1 year",
+        image: `${elana}`
       },
       {
         project: "doc page",
         duration: "2 year",
+        image: `${olimar}`
       },
       {
         project: "doc page",
         duration: "2 year",
+        image: `${rest}`
       },
       {
         project: "lorem",
@@ -126,7 +132,7 @@ export const Home = () => {
           <div className="info-project-home">
             <div>
               <img
-                src="https://images.vexels.com/media/users/3/210770/preview2/251338a9d465357850c03418dafd39f4-mobile-app-mockup-design.jpg"
+                src={num.image}
                 className="img-project-1"
               ></img>
             </div>
@@ -151,14 +157,14 @@ export const Home = () => {
             </p>
             <div className="just-desktop">
               <button className="button-29 me-4 mt-2">VIEW PROJECT</button>
-              <button className="button-29 mt-2">CONTACT US</button>
+              <button className="button-29 mt-2 ">CONTACT US</button>
             </div>
             <div className="just-mobile">
               <div className="d-flex justify-content-center">
                 <div>
-                  <button className="button-29 me-2 mt-2">VIEW PROJECT</button>
+                  <button className="button-29 me-2 mt-4">VIEW PROJECT</button>
                   <div className="d-flex justify-content-center">
-                    <button className="button-29 mt-2">CONTACT US</button>
+                    <button className="button-29 mt-4 mb-5">CONTACT US</button>
                   </div>
                 </div>
               </div>

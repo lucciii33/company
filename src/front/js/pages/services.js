@@ -369,7 +369,7 @@ export const Services = () => {
 							<div className="">
 								<div className="squre-services d-flex justify-content-center align-items-center">
 									<div>
-										<i class="fas fa-mobile-alt"></i>
+										<i class="fas fa-mobile-alt icon-blue"></i>
 									</div>
 								</div>
 							</div>

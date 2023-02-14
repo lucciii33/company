@@ -222,7 +222,7 @@ export const ContactUs = () => {
                       <p className="text-contact-box ubunto">Miami, United State</p>
                     </div>
                     <div className="d-flex">
-                      <i className="fas fa-mobile-alt"></i>
+                      <i className="fas fa-mobile-alt icon-white me-3"></i>
                       <p className="text-contact-box ubunto">(646) 257-0133</p>
                     </div>
                   </div>

@@ -753,13 +753,16 @@ div.toast:not(.hide) {
   margin-right: 15px;
   margin-top: 15px;
 }
-
-.fa-mobile-alt {
+.icon-blue {
   color: white;
   font-size: 35px;
   margin-left: 15px;
   margin-right: 10px;
   margin-top: 15px;
+}
+.icon-white {
+  color: white !important;
+  margin-left: 20px;
 }
 
 .text-contact-box {
@@ -1370,7 +1373,7 @@ div.toast:not(.hide) {
 
 .info-project-home {
   width: 100%;
-  background-color: rgb(199, 228, 238);
+  /* background-color: rgb(199, 228, 238); */
   height: 500px;
   margin: 40px;
   /* margin-right: 100px; */
