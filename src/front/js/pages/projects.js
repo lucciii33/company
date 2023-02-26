@@ -84,93 +84,101 @@ export const Projects = () => {
             <br /> Have a look at some of the examples.
           </motion.h4>
         </div>
-        <div className="d-flex flex-wrap">
-          <div ref={ref} className="d-flex justify-content-between">
-            <motion.div
-              className="margin-left box-project"
-              //   variants={boxVarient3}
-              //   animate="visible"
-              //   initial="hidden"
-              style={{
-                transform: isInView ? "none" : "translateX(-200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <img src={elana} className="img-project1 ms-3"></img>
-              <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-              <p className="description ms-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </p>
-              <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
-            </motion.div>
-            <motion.div
-              className="margin-left box-project"
-              //   variants={boxVarient3}
-              //   animate="visible"
-              //   initial="hidden"
-              style={{
-                transform: isInView ? "none" : "translateX(-200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <img
-                src={rest}
-                className="img-project1 ms-3"
-              ></img>
-              <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-              <p className="description ms-3">
-                Loremn! ipsum dolor sit amet, consectetur adipiscing elit
-              </p>
-              <button className="button-29 ms-3">see me!</button>
-            </motion.div>
-          </div>
-          <div ref={ref2} className="d-flex justify-content-between">
-            <motion.div
-              className="margin-left box-project"
-              //   variants={boxVarient3}
-              //   animate="visible"
-              //   initial="hidden"
-              style={{
-                transform: isInView2 ? "none" : "translateX(-200px)",
-                opacity: isInView2 ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <img
-                src={olimar}
-                className="img-project1 ms-3"
-              ></img>
-              <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-              <p className="description ms-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </p>
-              <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
-            </motion.div>
-            <motion.div
-              className="margin-left box-project"
-              //   variants={boxVarient3}
-              //   animate="visible"
-              //   initial="hidden"
-              style={{
-                transform: isInView2 ? "none" : "translateX(-200px)",
-                opacity: isInView2 ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <img
-                src="https://i.pinimg.com/736x/3a/81/0f/3a810f0b7ec105cff334c412d9c9ed45.jpg"
-                className="img-project ms-3"
-              ></img>
-              <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-              <p className="description ms-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </p>
-              <button className="button-29 ms-3">see me!</button>
-            </motion.div>
+        <div className="d-flex flex-wrap justify-content-center">
+          <div>
+            <div ref={ref} className="d-flex justify-content-between ">
+              <motion.div
+                className="margin-left box-project "
+                //   variants={boxVarient3}
+                //   animate="visible"
+                //   initial="hidden"
+                style={{
+                  transform: isInView ? "none" : "translateX(-200px)",
+                  opacity: isInView ? 1 : 0,
+                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                }}
+              >
+                <img src={elana} className="img-project1 ms-3"></img>
+                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                <p className="description ms-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
+              </motion.div>
+              <motion.div
+                className="margin-left box-project"
+                //   variants={boxVarient3}
+                //   animate="visible"
+                //   initial="hidden"
+                style={{
+                  transform: isInView ? "none" : "translateX(-200px)",
+                  opacity: isInView ? 1 : 0,
+                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                }}
+              >
+                <img
+                  src={rest}
+                  className="img-project1 ms-3"
+                ></img>
+                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                <p className="description ms-3">
+                  Loremn! ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <button className="button-29 ms-3">see me!</button>
+              </motion.div>
+            </div>
+            <div ref={ref2} className="d-flex justify-content-between">
+              <motion.div
+                className="margin-left box-project col-sm-12"
+                //   variants={boxVarient3}
+                //   animate="visible"
+                //   initial="hidden"
+                style={{
+                  transform: isInView2 ? "none" : "translateX(-200px)",
+                  opacity: isInView2 ? 1 : 0,
+                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                }}
+              >
+                <img
+                  src={olimar}
+                  className="img-project1 ms-3"
+                ></img>
+                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                <p className="description ms-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
+              </motion.div>
+              <motion.div
+                className="margin-left box-project"
+                //   variants={boxVarient3}
+                //   animate="visible"
+                //   initial="hidden"
+                style={{
+                  transform: isInView2 ? "none" : "translateX(-200px)",
+                  opacity: isInView2 ? 1 : 0,
+                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                }}
+              >
+                <img
+                  src="https://i.pinimg.com/736x/3a/81/0f/3a810f0b7ec105cff334c412d9c9ed45.jpg"
+                  className="img-project ms-3"
+                ></img>
+                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                <p className="description ms-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <button className="button-29 ms-3">see me!</button>
+              </motion.div>
+            </div>
+
           </div>
         </div>
+
+
+
+
+
       </div>
       <div className="bg-dark products-banner">
         <div className="d-flex justify-content-center align-items-center mt-5 pb-5 pt-5">

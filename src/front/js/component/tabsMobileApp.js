@@ -28,7 +28,7 @@ export function TabsMobile() {
                 <h2 className='text-center mt-5 pt-5 fs-50'>What We Develop & Deliver</h2>
             </div>
             <div className='tab-margin-controlller mt-5'>
-                <MDBTabs justify className='mb-3  p-2'>
+                <MDBTabs justify className='mb-3  p-2 margin-just-phone'>
                     <MDBTabsItem className='tab1 bg-tabs bg-dark'>
                         <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className='text-white bor-test'>
                             iOS App Development
@@ -51,7 +51,7 @@ export function TabsMobile() {
                         <div className='d-flex justify-content-center align-items-center'>
                             <div>
                                 <h2 className='text-center'>iOS App Development</h2>
-                                <p className='text-center'>Knowing the Human Interface Guidelines from inside out, <br /> we develop native iOS apps that speak to your customers.<br /> And is built on the latest iOS frameworks and patterns.
+                                <p className='text-center'>Knowing the Human Interface Guidelines from inside out, <br className='no-phone' /> we develop native iOS apps that speak to your customers.<br className='no-phone' /> And is built on the latest iOS frameworks and patterns.
                                 </p>
                                 <div className='d-flex justify-content-center align-items-center bg-dark border-controller-mobile-app'>
                                     <div className=''>

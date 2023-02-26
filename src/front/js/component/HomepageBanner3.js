@@ -12,7 +12,7 @@ const HomepageBanner3 = ({ width }) => {
       <MDBRow className="d-flex align-items-center justify-content-evenly mx-3">
         <MDBCol sm="12" md="12" lg="4">
           <Card
-            title="Branding"
+            title="Web Development"
             description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
             img={<img src={design} className="logo-image"></img>}
             type="Create"
@@ -20,7 +20,7 @@ const HomepageBanner3 = ({ width }) => {
         </MDBCol>
         <MDBCol sm="12" md="12" lg="4">
           <Card
-            title="Web Design"
+            title="Mobile Apps"
             description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
             img={<img src={webdesign} className="logo-image"></img>}
             type="Design"
@@ -28,7 +28,7 @@ const HomepageBanner3 = ({ width }) => {
         </MDBCol>
         <MDBCol sm="12" md="12" lg="4">
           <Card
-            title="Web Development"
+            title="Sotfware"
             description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
             img={<img src={code} className="logo-image"></img>}
             type="Develop"

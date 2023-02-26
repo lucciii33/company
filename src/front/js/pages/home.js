@@ -337,7 +337,7 @@ export const Home = () => {
             <p>
               Want 20% off?{" "}
 
-              <button className="btn btn-primary .active" onClick={toggleShow} >Click here</button>
+              <a className=".active" onClick={toggleShow} >Click here</a>
 
               !
             </p>
@@ -349,21 +349,28 @@ export const Home = () => {
           <MDBModalDialog>
             <MDBModalContent>
               <MDBModalHeader>
-                <MDBModalTitle>Modal title</MDBModalTitle>
+                <MDBModalTitle>20% Discount Code</MDBModalTitle>
                 <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
               </MDBModalHeader>
               <MDBModalBody>
-                <h3>Get your discount code adding your email</h3>
-                <input value={captureEmail.name} name="name" onChange={discountCapture} placeholder="name" />
-                <input value={captureEmail.email} name="email" onChange={discountCapture} placeholder="email" />
-                <button onClick={() => actions.createDscountCode(captureEmail.name, captureEmail.email)}>Send backend</button>
+                <h3 className="text-center">Get your discount code here!</h3>
+                <div className="d-flex justify-content-center">
+                  <div>
+                    <div>
+                      <input value={captureEmail.name} name="name" onChange={discountCapture} placeholder="Angelo Maiele" className="modal-input" />
+                    </div>
+                    <div className="mt-2">
+                      <input value={captureEmail.email} name="email" onChange={discountCapture} placeholder="Luccimaiele@gmail.com" className="modal-input" />
+                    </div>
+                  </div>
+                </div>
               </MDBModalBody>
 
               <MDBModalFooter>
                 <MDBBtn color='secondary' onClick={toggleShow}>
                   Close
                 </MDBBtn>
-                <MDBBtn>Save changes</MDBBtn>
+                <MDBBtn onClick={() => actions.createDscountCode(captureEmail.name, captureEmail.email)}>Send</MDBBtn>
               </MDBModalFooter>
             </MDBModalContent>
           </MDBModalDialog>
