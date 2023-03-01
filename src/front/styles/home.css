@@ -931,19 +931,6 @@ div.toast:not(.hide) {
   /* position: relative; */
 }
 
-@media (max-width: 667px) {
-  .box-project {
-    width: 350px;
-    height: 450px;
-    padding: 10px;
-    border: 2px solid #5c58b6;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* position: relative; */
-  }
-}
-
 .img-project {
   width: 500px;
   height: 400px;
@@ -959,11 +946,58 @@ div.toast:not(.hide) {
   object-fit: fill;
   margin-top: 15px;
 }
+@media (max-width: 1080px) {
+  .box-project {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #5c58b6;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* position: relative; */
+  }
+  .img-project1 {
+    width: 445px;
+    height: 400px;
+    margin: auto;
+    border-radius: 3px;
+    object-fit: fill;
+    margin-top: 15px;
+  }
+  .img-project {
+    width: 445px;
+    height: 400px;
+    margin: auto;
+    border-radius: 3px;
+  }
+}
 
-@media (max-width: 667px) {
+@media (max-width: 1150px) {
+  .box-project {
+    width: 430px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #5c58b6;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* position: relative; */
+  }
+  .img-project1 {
+    width: 375px;
+    height: 327px;
+    margin: auto;
+    border-radius: 3px;
+    object-fit: fill;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 700px) {
   .box-project {
     width: 350px;
-    height: 450px;
+    height: auto;
     padding: 10px;
     border: 2px solid #5c58b6;
     margin: 20px;
@@ -977,6 +1011,14 @@ div.toast:not(.hide) {
     height: 200px;
     margin: auto;
     border-radius: 3px;
+  }
+  .img-project1 {
+    width: 300px;
+    height: 260px;
+    margin: auto;
+    border-radius: 3px;
+    object-fit: fill;
+    margin-top: 15px;
   }
 }
 

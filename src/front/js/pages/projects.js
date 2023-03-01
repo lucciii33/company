@@ -8,6 +8,7 @@ import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
 import { Context } from "../store/appContext";
 import "../../styles/projects.css";
+import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
 export const Projects = () => {
   const { store, actions } = useContext(Context);
@@ -18,7 +19,7 @@ export const Projects = () => {
 
   const boxVarient2 = {
     hidden: {
-      x: -10,
+      x: 0,
       opacity: 0,
       y: 0,
     },
@@ -86,91 +87,100 @@ export const Projects = () => {
         </div>
         <div className="d-flex flex-wrap justify-content-center">
           <div>
-            <div ref={ref} className="d-flex justify-content-between ">
-              <motion.div
-                className="margin-left box-project "
+            <MDBRow ref={ref} className="d-flex justify-content-between ">
+              <MDBCol md="6" lg="6" sm="12">
+                <motion.div
+                  className=" box-project "
                 //   variants={boxVarient3}
                 //   animate="visible"
                 //   initial="hidden"
-                style={{
-                  transform: isInView ? "none" : "translateX(-200px)",
-                  opacity: isInView ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
-                <img src={elana} className="img-project1 ms-3"></img>
-                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                <p className="description ms-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-                <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
-              </motion.div>
-              <motion.div
-                className="margin-left box-project"
+                // style={{
+                //   transform: isInView ? "none" : "translateX(-200px)",
+                //   opacity: isInView ? 1 : 0,
+                //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                // }}
+                >
+                  <img src={elana} className="img-project1 ms-3"></img>
+                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <p className="description ms-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                  <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
+                </motion.div>
+              </MDBCol>
+              <MDBCol md="6" lg="6" sm="12">
+                <motion.div
+                  className=" box-project"
                 //   variants={boxVarient3}
                 //   animate="visible"
                 //   initial="hidden"
-                style={{
-                  transform: isInView ? "none" : "translateX(-200px)",
-                  opacity: isInView ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
-                <img
-                  src={rest}
-                  className="img-project1 ms-3"
-                ></img>
-                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                <p className="description ms-3">
-                  Loremn! ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-                <button className="button-29 ms-3">see me!</button>
-              </motion.div>
-            </div>
-            <div ref={ref2} className="d-flex justify-content-between">
-              <motion.div
-                className="margin-left box-project col-sm-12"
+                // style={{
+                //   transform: isInView ? "none" : "translateX(-200px)",
+                //   opacity: isInView ? 1 : 0,
+                //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                // }}
+                >
+                  <img
+                    src={rest}
+                    className="img-project1 ms-3"
+                  ></img>
+                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <p className="description ms-3">
+                    Loremn! ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                  <button className="button-29 ms-3">see me!</button>
+                </motion.div>
+              </MDBCol>
+            </MDBRow>
+
+            <MDBRow ref={ref2} className="d-flex justify-content-between">
+              <MDBCol md="6" lg="6" sm="12">
+                <motion.div
+                  className=" box-project col-sm-12"
                 //   variants={boxVarient3}
                 //   animate="visible"
                 //   initial="hidden"
-                style={{
-                  transform: isInView2 ? "none" : "translateX(-200px)",
-                  opacity: isInView2 ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
-                <img
-                  src={olimar}
-                  className="img-project1 ms-3"
-                ></img>
-                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                <p className="description ms-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-                <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
-              </motion.div>
-              <motion.div
-                className="margin-left box-project"
+                // style={{
+                //   transform: isInView2 ? "none" : "translateX(-50px)",
+                //   opacity: isInView2 ? 1 : 0,
+                //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                // }}
+                >
+                  <img
+                    src={olimar}
+                    className="img-project1 ms-3"
+                  ></img>
+                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <p className="description ms-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                  <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
+                </motion.div>
+              </MDBCol>
+              <MDBCol md="6" lg="6" sm="12">
+                <motion.div
+                  className=" box-project"
                 //   variants={boxVarient3}
                 //   animate="visible"
                 //   initial="hidden"
-                style={{
-                  transform: isInView2 ? "none" : "translateX(-200px)",
-                  opacity: isInView2 ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
-                <img
-                  src="https://i.pinimg.com/736x/3a/81/0f/3a810f0b7ec105cff334c412d9c9ed45.jpg"
-                  className="img-project ms-3"
-                ></img>
-                <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                <p className="description ms-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-                <button className="button-29 ms-3">see me!</button>
-              </motion.div>
-            </div>
+                // style={{
+                //   transform: isInView2 ? "none" : "translateX(-200px)",
+                //   opacity: isInView2 ? 1 : 0,
+                //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                // }}
+                >
+                  <img
+                    src="https://i.pinimg.com/736x/3a/81/0f/3a810f0b7ec105cff334c412d9c9ed45.jpg"
+                    className="img-project ms-3"
+                  ></img>
+                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <p className="description ms-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                  <button className="button-29 ms-3">see me!</button>
+                </motion.div>
+              </MDBCol>
+            </MDBRow>
 
           </div>
         </div>
