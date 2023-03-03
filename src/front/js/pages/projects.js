@@ -80,9 +80,7 @@ export const Projects = () => {
             animate="visible"
             initial="hidden"
           >
-            Over the last 2 years, we’ve delivered more than 500 projects to our
-            clients worldwide.
-            <br /> Have a look at some of the examples.
+            Over the time, we have served various industries to help them achieve their goals, here is a sneak peak of our recent projects.
           </motion.h4>
         </div>
         <div className="d-flex flex-wrap justify-content-center">
@@ -101,7 +99,7 @@ export const Projects = () => {
                 // }}
                 >
                   <img src={elana} className="img-project1 ms-3"></img>
-                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <h3 className="paragraph ms-3">ELANA PELVIC CARE</h3>
                   <p className="description ms-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
@@ -121,12 +119,12 @@ export const Projects = () => {
                 // }}
                 >
                   <img
-                    src={rest}
+                    src={olimar}
                     className="img-project1 ms-3"
                   ></img>
-                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <h3 className="paragraph ms-3">Olimar Bueso</h3>
                   <p className="description ms-3">
-                    Loremn! ipsum dolor sit amet, consectetur adipiscing elit
+                    blog web page developed for a therapist including features like biography, services, contact form and scheduling.
                   </p>
                   <button className="button-29 ms-3">see me!</button>
                 </motion.div>
@@ -147,7 +145,7 @@ export const Projects = () => {
                 // }}
                 >
                   <img
-                    src={olimar}
+                    src={rest}
                     className="img-project1 ms-3"
                   ></img>
                   <h3 className="paragraph ms-3">Lorem Ipsum</h3>

@@ -254,12 +254,9 @@ export const Home = () => {
             <h2 className="text-white title2 bg-future">And we can help you </h2>
 
             <p className="text-white ubunto fs-20">
-              Lorem ipsum is placeholder text commonly used in the graphic, <br />
-              print, and publishing industries for previewing layouts and visual
-              mockups <br />
-              Lorem ipsum is placeholder text commonly used in the graphic, <br />
-              print, and publishing industries for previewing layouts and visual
-              mockups.
+              On Bluelight Tech we have an expert team of web designers who incorporate cutting-edge technology to build a highly competitive website for your business. We will help you develop powerful tools for your business. From the ability to create online presence to improve communications, track and manage data.
+
+
             </p>
             <div className="d-flex">
               <Link to="/contact" className="text-decoration-none">

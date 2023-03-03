@@ -13,7 +13,7 @@ const HomepageBanner3 = ({ width }) => {
         <MDBCol sm="12" md="12" lg="4">
           <Card
             title="Web Development"
-            description="Branding is mandatory for businesses, as it changes how target audience perceive your brand; it increases brand awareness, and ultimately drives sales"
+            description="Our designers meticulously incorporate your instructions to design your website exactly as per your needs.            "
             img={<img src={design} className="logo-image"></img>}
             type="Create"
           />
