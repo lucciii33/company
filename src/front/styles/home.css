@@ -2151,7 +2151,7 @@ div.toast:not(.hide) {
     -webkit-backdrop-filter: blur(5.5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 315px;
-    height: 300px;
+    height: 350px;
     z-index: 3;
     margin-left: auto;
     margin-top: 600px;

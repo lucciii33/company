@@ -94,7 +94,7 @@ export const ContactUs = () => {
             </h5>
             <h2 className="title-contact-2 text-center fs-50">Free project quote</h2>
             <h6 className="title-contact-3 text-center ubunto">
-              Fill out the enquiry form and we’ll get back to you as soon as
+              Fill out the inquiry form and we’ll get back to you as soon as
               possible.
             </h6>
           </div>
@@ -219,7 +219,7 @@ export const ContactUs = () => {
                     </div>
                     <div className="d-flex">
                       <i className="fas fa-map-marker-alt"></i>
-                      <p className="text-contact-box ubunto">Miami, United State</p>
+                      <p className="text-contact-box ubunto">Miami, United States</p>
                     </div>
                     <div className="d-flex">
                       <i className="fas fa-mobile-alt icon-white me-3"></i>

@@ -6,7 +6,7 @@ import main1 from "../../img/main1.png";
 import elana1 from "../../img/figma.png";
 import elana2 from "../../img/elana.png";
 import "../../styles/home.css";
-import Chatboot from "../component/Chatboot";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -112,21 +112,18 @@ export const Home = () => {
         image: `${elana}`
       },
       {
-        project: "doc page",
-        duration: "2 year",
+        project: "Olimar Bueson",
+        duration: "2 Month",
         image: `${olimar}`
       },
       {
-        project: "doc page",
+        project: "Cooming Soon",
         duration: "2 year",
         image: `${rest}`
       },
-      {
-        project: "lorem",
-        duration: "2 moth",
-      },
+
       {},
-    ].map((num) => (
+    ].slice(0, 3).map((num) => (
       <div>
         <div className="carouselController">
           <div className="info-project-home">
@@ -241,29 +238,29 @@ export const Home = () => {
             </h2>
             <div className="d-grid">
               <h1>
-                <span className="m-left">to be</span>
+                <span className="m-left">{store.language === "en" ? "to be" : "lucir"}</span>
 
                 <div className="message">
-                  <div className="word1">creative</div>
-                  <div className="word2">modern</div>
+                  <div className="word1">{store.language === "en" ? "creative" : "Creativa"}</div>
+                  <div className="word2">{store.language === "en" ? "modern" : "moderna"}</div>
                   <div className="word3">amused</div>
                   <div className="word4">usefull</div>
                 </div>
               </h1>
             </div>
-            <h2 className="text-white title2 bg-future">And we can help you </h2>
+            <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "Nosotros podemos ayudarte"} </h2>
 
             <p className="text-white ubunto fs-20">
-              On Bluelight Tech we have an expert team of web designers who incorporate cutting-edge technology to build a highly competitive website for your business. We will help you develop powerful tools for your business. From the ability to create online presence to improve communications, track and manage data.
+              {store.language === "en" ? " On Bluelight Tech we have an expert team of web designers who incorporate cutting-edge technology to build a highly competitive website for your business. We will help you develop powerful tools for your business. From the ability to create online presence to improve communications, track and manage data." : "En Bluelight Tech contamos con un equipo de expertos diseñadores web que incorporan tecnología de vanguardia para construir un sitio web altamente competitivo para tu negocio. Te ayudaremos a desarrollar herramientas poderosas para tu empresa. Desde la capacidad de crear presencia en línea hasta mejorar las comunicaciones, rastrear y administrar datos."}
 
 
             </p>
             <div className="d-flex">
               <Link to="/contact" className="text-decoration-none">
-                <button className="button-29 me-3">Contact Us</button>
+                <button className="button-29 me-3">{store.language === "en" ? "Contact Us" : "Contactanos"}</button>
               </Link>
               <Link to="/projects" className="text-decoration-none">
-                <button className="button-29">Our Portfolio</button>
+                <button className="button-29">{store.language === "en" ? "Our Portfolio" : "Portafolio"}</button>
               </Link>
             </div>
 
@@ -273,12 +270,12 @@ export const Home = () => {
             <img src={main1} className="imagemain"></img>
           </MDBCol>
         </MDBRow>
-        <Chatboot />
+
         <HomepageBanner2 width={windowDimensions.width} />
         <HomepageBanner3 width={windowDimensions.width} />
         {/* until here is the div */}
         <div className="bg-banner-3 ">
-          <h2 className="fs-50 Orbitron text-center pt-5">Projects</h2>
+          <h2 className="fs-50 Orbitron text-center pt-5">{store.language === "en" ? "Projects" : "Proyectos"}</h2>
           <div className="">
             <Slider
               className="d-flex align-items-center"

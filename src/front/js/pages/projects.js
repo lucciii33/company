@@ -1,7 +1,7 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { motion, useScroll, useInView } from "framer-motion";
 import elana from "../../img/elanaMockup.png";
-import rest from "../../img/restaurantProject.png"
+import rest from "../../img/Line5.jpeg"
 import olimar from "../../img/olimar.png"
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Navbar } from "../component/navbar";
@@ -16,6 +16,10 @@ export const Projects = () => {
   const ref2 = useRef(null);
   const isInView = useInView(ref, { once: true });
   const isInView2 = useInView(ref2, { once: true });
+  const [text, setText] = useState("Kitchen System");
+  const [textLong, setTextLong] = useState("BlueTable will allow you to track employees, manage inventory, organize tasks, control aspects of your restaurant, and streamline order handling. The system will provide tools to manage schedules, monitor attendance, reorder supplies, generate reports, visualize data, set pricing, adjust menus, and track sales. ");
+  const [isClicked, setIsClicked] = useState(false);
+  const [isAvailable, setIsAvailable] = useState(true);
 
   const boxVarient2 = {
     hidden: {
@@ -59,6 +63,20 @@ export const Projects = () => {
   //       },
   //     },
   //   };
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+    if (!isClicked) {
+      setText("BlueMedical");
+      setTextLong("BlueMedical is a comprehensive platform that enables healthcare providers to efficiently manage patient information and provide personalized care. Designed to provide a streamlined approach to patient care, making it easy for healthcare providers to access patient information in one place.")
+    }
+    else {
+      setText("Kitchen System");
+      setTextLong("BlueTable will allow you to track employees, manage inventory, organize tasks, control aspects of your restaurant, and streamline order handling. The system will provide tools to manage schedules, monitor attendance, reorder supplies, generate reports, visualize data, set pricing, adjust menus, and track sales. ")
+    }
+
+
+  };
 
   return (
     <>
@@ -126,7 +144,7 @@ export const Projects = () => {
                   <p className="description ms-3">
                     blog web page developed for a therapist including features like biography, services, contact form and scheduling.
                   </p>
-                  <button className="button-29 ms-3">see me!</button>
+                  <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
                 </motion.div>
               </MDBCol>
             </MDBRow>
@@ -152,7 +170,7 @@ export const Projects = () => {
                   <p className="description ms-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
-                  <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
+                  <a className="button-29 ms-3" href="https://olimarbueso.com/" disabled={true} target="_blank">see me!</a>
                 </motion.div>
               </MDBCol>
               <MDBCol md="6" lg="6" sm="12">
@@ -175,7 +193,7 @@ export const Projects = () => {
                   <p className="description ms-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
-                  <button className="button-29 ms-3">see me!</button>
+                  <button className="button-29 ms-3" disabled={true}>see me!</button>
                 </motion.div>
               </MDBCol>
             </MDBRow>
@@ -190,13 +208,14 @@ export const Projects = () => {
       </div>
       <div className="bg-dark products-banner">
         <div className="d-flex justify-content-center align-items-center mt-5 pb-5 pt-5">
-          <h1 className="text-center fs-50 Orbitron text-white">New Product Soon</h1>
+          <h2 className="text-center fs-50 Orbitron text-white">New Product Soon</h2>
           <div class="box-products"></div>
           <div class="box-products-2"></div>
           <div class="box-product-origin px-3">
-            <h2 className="pt-4 ">Kitchen System</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a>Click here</a>
+            <h2 className="pt-4 ">{text}</h2>
+            <p>{textLong}</p>
+            {isClicked === false && <span className="mb-2"><i className="fas fa-arrow-circle-right icon-projects ms-2" onClick={handleClick}></i></span>}
+            {isClicked === true && <span className="mb-2"><i className="fas fa-arrow-circle-left icon-projects ms-2 " onClick={handleClick}></i></span>}
           </div>
         </div>
       </div>
