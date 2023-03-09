@@ -248,7 +248,7 @@ export const Home = () => {
                 </div>
               </h1>
             </div>
-            <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "podemos ayudarte"} </h2>
+            <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "Podemos ayudarte"} </h2>
 
             <p className="text-white ubunto fs-20">
               {store.language === "en" ? " On Bluelight Tech we have an expert team of web designers who incorporate cutting-edge technology to build a highly competitive website for your business. We will help you develop powerful tools for your business. From the ability to create online presence to improve communications, track and manage data." : "En Bluelight Tech contamos con un equipo de expertos diseñadores web que incorporan tecnología de vanguardia para construir un sitio web altamente competitivo para tu negocio. Te ayudaremos a desarrollar herramientas poderosas para tu empresa. Desde la capacidad de crear presencia en línea hasta mejorar las comunicaciones, rastrear y administrar datos."}
