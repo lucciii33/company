@@ -191,13 +191,13 @@ export const Navbar = () => {
                     </a>
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="text-decoration-none" to="/questions">
                     <a className="nav-link text-black" href="#">
                       FAQ
                     </a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="text-decoration-none" to="/contact">
                     <a className="nav-link text-black" href="#">

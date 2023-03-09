@@ -118,7 +118,7 @@ export const Projects = () => {
                 >
                   <img src={elana} className="img-project1 ms-3"></img>
                   <h3 className="paragraph ms-3">ELANA PELVIC CARE</h3>
-                  <p className="description ms-3">
+                  <p className="description ms-3 ubunto">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
                   <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
@@ -141,8 +141,8 @@ export const Projects = () => {
                     className="img-project1 ms-3"
                   ></img>
                   <h3 className="paragraph ms-3">Olimar Bueso</h3>
-                  <p className="description ms-3">
-                    blog web page developed for a therapist including features like biography, services, contact form and scheduling.
+                  <p className="description ms-3 ubunto">
+                    Blog web page developed for a therapist including features like biography, services, contact form and scheduling.
                   </p>
                   <a className="button-29 ms-3" href="https://olimarbueso.com/" target="_blank">see me!</a>
                 </motion.div>
@@ -166,11 +166,11 @@ export const Projects = () => {
                     src={rest}
                     className="img-project1 ms-3"
                   ></img>
-                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                  <p className="description ms-3">
+                  <h3 className="paragraph ms-3">Line5</h3>
+                  <p className="description ms-3 ubunto">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
-                  <a className="button-29 ms-3" href="https://olimarbueso.com/" disabled={true} target="_blank">see me!</a>
+                  <p className="description ms-3 ubunto">Coming soon for march 27</p>
                 </motion.div>
               </MDBCol>
               <MDBCol md="6" lg="6" sm="12">
@@ -190,10 +190,10 @@ export const Projects = () => {
                     className="img-project ms-3"
                   ></img>
                   <h3 className="paragraph ms-3">Lorem Ipsum</h3>
-                  <p className="description ms-3">
+                  <p className="description ms-3 ubunto" ubunto>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   </p>
-                  <button className="button-29 ms-3" disabled={true}>see me!</button>
+                  <p className="description ms-3 ubunto">Coming soon for april 3</p>
                 </motion.div>
               </MDBCol>
             </MDBRow>

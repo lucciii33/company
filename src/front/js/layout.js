@@ -18,6 +18,7 @@ import { MobileApps } from "./pages/mobileApps";
 import { Intro } from "./pages/intro";
 import { Photoraphy } from "./pages/photography";
 
+
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import "../fonts/RobloxBlackOutline.ttf";

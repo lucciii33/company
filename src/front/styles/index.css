@@ -43,3 +43,12 @@
 .icon-projects {
   font-size: 30px;
 }
+.no-phone-display {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .no-phone-display {
+    display: none;
+  }
+}

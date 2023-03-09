@@ -377,6 +377,16 @@ h1 span {
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
+@media (max-width: 600px) {
+  .text-gradient-2 {
+    font-size: 28px;
+    background: -webkit-linear-gradient(#9e018e, #3a4e93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+  }
+}
 
 .text-gradient-small {
   font-size: 50px;
@@ -445,7 +455,7 @@ h1 span {
 
 @media (max-width: 600px) {
   .text-gradient {
-    font-size: 52px;
+    font-size: 42px;
     background: -webkit-linear-gradient(#9e018e, #3a4e93);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -473,7 +483,7 @@ h1 span {
     color: #3a4e93;
     margin-top: 20px;
     padding-button: 10px;
-    font-family: "Orbitron", sans-serif;
+    /* font-family: "Orbitron", sans-serif; */
     line-height: 1.7em;
   }
 
@@ -1034,8 +1044,8 @@ div.toast:not(.hide) {
 
 .description {
   color: #3a4e93;
-  font-family: "Orbitron", sans-serif;
-  font-size: 15px;
+  /* font-family: "Orbitron", sans-serif; */
+  font-size: 18px;
 }
 
 .margin-left {

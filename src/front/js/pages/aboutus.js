@@ -87,7 +87,7 @@ export const Aboutus = () => {
 
     <>
       <Navbar />
-      <div className="contai bg-ligth">
+      <div className="contai bg-ligth px-1">
         <GoogleAnalyticsTracker />
         <div>
           <div
@@ -144,10 +144,10 @@ export const Aboutus = () => {
               }}
               transition={{ type: "spring", stiffness: 130 }}
             >
-              Getting the most out <br /> of your web presence
+              Getting the most out <br className="no-phone-display" /> of your web presence
             </motion.h2>
             <motion.h4
-              className="paragraph"
+              className="paragraph ubunto"
               transition={{ type: "spring", stiffness: 130 }}
               variants={boxVarient}
               animate="visible"
@@ -155,7 +155,7 @@ export const Aboutus = () => {
             >
               We’re a unique combination of a software house and interactive
               agency,
-              <br />
+              <br className="no-phone-display" />
               creating custom web solutions custom-fit to support the growth of
               modern startups.
             </motion.h4>
@@ -179,12 +179,12 @@ export const Aboutus = () => {
               <img src={tech} className="tech-image"></img>
               <img src={tech2} className="tech2-image"></img>
               <h3 className="text-gradient-2 mt-4">
-                We believe that effectiveness <br /> is the common characteristic
-                of <br /> all great products
+                We believe that effectiveness <br className="no-phone-display" /> is the common characteristic
+                of <br className="no-phone-display" /> all great products
               </h3>
-              <p className="paragraph">
+              <p className="paragraph ubunto">
                 That’s why you can expect us to put the highest emphasis on
-                <br /> seamless UX, high performance, scalability, and
+                <br className="no-phone-display" /> seamless UX, high performance, scalability, and
                 accessibility in the solutions we deliver.
               </p>
             </motion.div>
