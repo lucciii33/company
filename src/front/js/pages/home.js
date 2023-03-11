@@ -21,6 +21,8 @@ import { Footer } from "../component/footer";
 import elana from "../../img/elanaMockup.png";
 import rest from "../../img/restaurantProject.png"
 import olimar from "../../img/olimar.png"
+import elanaMobile from "../../img/elanaMobile.png"
+import olimarMobile from "../../img/olimarMobile.png"
 import {
   MDBRow, MDBCol, MDBBtn,
   MDBModal,
@@ -109,12 +111,14 @@ export const Home = () => {
       {
         project: "elana pelvic care",
         duration: "1 year",
-        image: `${elana}`
+        image: `${elana}`,
+        image2: `${elanaMobile}`
       },
       {
         project: "Olimar Bueson",
         duration: "2 Month",
-        image: `${olimar}`
+        image: `${olimar}`,
+        image2: `${olimarMobile}`
       },
       {
         project: "Cooming Soon",
@@ -129,7 +133,7 @@ export const Home = () => {
           <div className="info-project-home">
             <div>
               <img
-                src={num.image}
+                src={windowDimensions.width > 600 ? num.image : num.image2}
                 className="img-project-1"
               ></img>
             </div>
@@ -229,7 +233,7 @@ export const Home = () => {
             </div>
           </div>
         )}
-        <MDBRow className="d-flex conta">
+        <MDBRow className="d-flex conta pt-5">
           <MDBCol className="m-top m-main-controller" lg="6" md="6" sm="12">
             <h2 className="text-white title ">
               {store.language === "en"
@@ -248,7 +252,7 @@ export const Home = () => {
                 </div>
               </h1>
             </div>
-            <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "Podemos ayudarte"} </h2>
+            <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "¡Podemos ayudarte!"} </h2>
 
             <p className="text-white ubunto fs-20">
               {store.language === "en" ? " On Bluelight Tech we have an expert team of web designers who incorporate cutting-edge technology to build a highly competitive website for your business. We will help you develop powerful tools for your business. From the ability to create online presence to improve communications, track and manage data." : "En Bluelight Tech contamos con un equipo de expertos diseñadores web que incorporan tecnología de vanguardia para construir un sitio web altamente competitivo para tu negocio. Te ayudaremos a desarrollar herramientas poderosas para tu empresa. Desde la capacidad de crear presencia en línea hasta mejorar las comunicaciones, rastrear y administrar datos."}

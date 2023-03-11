@@ -5,10 +5,12 @@ import {
   MDBTextArea,
   MDBBtn,
 } from "mdb-react-ui-kit";
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { Context } from "../store/appContext";
 import SubmitModal from "./SubmitModal";
 
 const CallToActionHome = () => {
+  const { store, actions } = useContext(Context);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -59,7 +61,7 @@ const CallToActionHome = () => {
           >
             <div>
               <h1 className="text-white text-center text-wrap m-0 mb-sm-4">
-                Let's make your idea a reality.
+                {store.language === "en" ? "Let's make your idea a reality" : "Hacemos tu idea realidad"}
               </h1>
             </div>
           </MDBCol>
@@ -70,7 +72,7 @@ const CallToActionHome = () => {
           >
             <div className="w-75">
               <h3 className="text-white text-center text-or">
-                Get in touch with us!
+                {store.language === "en" ? "Get in touch with us!" : "Ponte en contacto con nosotros"}
               </h3>
               <MDBInput
                 className="mb-3 ubunto"

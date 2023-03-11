@@ -112,7 +112,7 @@ export const WebDevelopment = () => {
             <MDBRow className="mt-5">
               <MDBCol className="p-md-3 p-lg-5" sm="12" md="12" lg="6">
                 <img
-                  src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   className="image-web-development rounded"
                 ></img>
               </MDBCol>
