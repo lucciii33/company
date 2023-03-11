@@ -63,7 +63,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         setStore({ cart: newList });
       },
 
-      createContactForm: (email, phone, terms, fullName, description) => {
+      createContactForm: (email, phone, fullName, description) => {
         // let storeCartShop = getStore().carShop;
         //   let favoriteString = favorites.toString();
         fetch(`${process.env.REACT_APP_BACKEND_URL}/contact/create`, {
@@ -71,7 +71,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, phone, terms, fullName, description }),
+          body: JSON.stringify({ email, phone, fullName, description }),
         })
           .then((response) => response.json())
           .then((data) => {

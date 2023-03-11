@@ -12,7 +12,7 @@ import SubmitModal from "./SubmitModal";
 const CallToActionHome = () => {
   const { store, actions } = useContext(Context);
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
     phone: "",
     description: "",
@@ -24,19 +24,21 @@ const CallToActionHome = () => {
 
   const onSubmit = () => {
     if (
-      formData.name !== "" ||
+      formData.fullName !== "" ||
       formData.email !== "" ||
       formData.phone !== "" ||
       formData.description !== ""
     ) {
       setFormData({
-        name: "",
+        fullName: "",
         email: "",
         phone: "",
         description: "",
       });
+      actions.createContactForm(formData.email, formData.phone, formData.fullName, formData.description)
       toggleShow();
     }
+    // return actions.createContactForm
   };
 
   const [basicModal, setBasicModal] = useState(false);
@@ -79,8 +81,8 @@ const CallToActionHome = () => {
                 placeholder="Name"
                 id="typeText"
                 type="text"
-                name="name"
-                value={formData?.name}
+                name="fullName"
+                value={formData?.fullName}
                 onChange={handleChange}
               />
               <MDBInput

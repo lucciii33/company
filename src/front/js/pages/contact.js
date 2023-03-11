@@ -191,21 +191,18 @@ export const ContactUs = () => {
                         if (
                           formData.email != "" ||
                           formData.phone != "" ||
-                          formData.terms != false ||
                           formData.fullName != "" ||
                           formData.description != ""
                         ) {
                           actions.createContactForm(
                             formData.email,
                             formData.phone,
-                            formData.terms,
                             formData.fullName,
                             formData.description
                           );
                           setFormData({
                             email: "",
                             fullName: "",
-                            terms: !formData,
                             phone: "",
                             description: "",
                           });
