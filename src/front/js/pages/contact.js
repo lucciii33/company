@@ -12,6 +12,31 @@ import { Context } from "../store/appContext";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 export const ContactUs = () => {
+
+
+
+  const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  };
+
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
+
   const { store, actions } = useContext(Context);
   const [formData, setFormData] = useState({
     email: "",
@@ -252,7 +277,7 @@ export const ContactUs = () => {
 
           <div className="mt-2">
             <InlineWidget
-              url="https://calendly.com/bluelighttech"
+              url={windowDimensions.width > 700 ? "https://calendly.com/bluelighttech/" : "https://calendly.com/bluelighttech/meeting"}
               styles={{
                 height: "650px",
                 boxShadow: "0px, 0px, 8px, rgba(255, 255, 255)",
