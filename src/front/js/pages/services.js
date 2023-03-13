@@ -282,7 +282,7 @@ export const Services = () => {
 				</div>
 
 				<div className="techWeuseBanner pb-5">
-					<MDBRow className="d-flex justify-content-evenly pt-5 pb-5">
+					<MDBRow className="d-flex justify-content-evenly pt-controller-5 pb-5">
 						<MDBCol className="techBox me-3 d-flex justify-content-center bg-dark mt-2 hover-overlay-container" sm="12" md="12" lg="3">
 							<div className="my-auto ">
 								<img src={figma} className="jslogo"></img>

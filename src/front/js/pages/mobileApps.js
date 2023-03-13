@@ -23,9 +23,9 @@ export const MobileApps = () => {
                 <div className="position-absolute top-50 start-0 translate-middle-y m-5">
                     <h5 className="title-webdevelopment-2 border-down-web-development"><i class="fas fa-circle me-2"></i>Mobile Apps</h5>
                     <h2 className="text-webdevelopment">We leverage the mobile device capabilities to create<br /> a memorable end-user experience to spur your brand’s growth.<br /> A trusted mobile app development company for world-class brands.</h2>
-                    <div>
-                        <button className="button-28 me-2">SEE PROJECTS</button>
-                        <button className="btn btn-outline-primary controller-p">ASK FOR QUOTE</button>
+                    <div className="d-flex">
+                        <button className="button-28 me-2">PROJECTS</button>
+                        <button className="button-29 controller-p">ASK FOR QUOTE</button>
                     </div>
                 </div>
             </div>

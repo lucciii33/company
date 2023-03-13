@@ -21,8 +21,8 @@ import { Footer } from "../component/footer";
 import elana from "../../img/elanaMockup.png";
 import rest from "../../img/restaurantProject.png"
 import olimar from "../../img/olimar.png"
-import elanaMobile from "../../img/elanaMobile.png"
-import olimarMobile from "../../img/olimarMobile.png"
+import elanaMobile from "../../img/logo4.png"
+import olimarMobile from "../../img/Line5.jpeg"
 import {
   MDBRow, MDBCol, MDBBtn,
   MDBModal,

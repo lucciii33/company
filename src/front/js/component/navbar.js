@@ -139,11 +139,11 @@ export const Navbar = () => {
 
           <MDBCollapse navbar show={showNavSecond}>
             <MDBNavbarNav fullWidth={false} right>
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+              <ul className="navbar-nav me mb-2 mb-lg-0">
+                <li className="nav-item bg-link-navbar">
                   <div className="nav-link dropdown">
                     <a
-                      className=" dropdown-toggle text-dark text-decoration-none"
+                      className=" dropdown-toggle text-black-nav text-decoration-none"
                       href="#"
                       role="button"
                       id="dropdownMenuLink"
@@ -158,7 +158,7 @@ export const Navbar = () => {
                       aria-labelledby="dropdownMenuLink"
                     >
                       <Link to="/services" className="text-decoration-none">
-                        <li>
+                        <li className="">
                           <a className="dropdown-item " href="#">
                             All services
                           </a>
@@ -184,9 +184,9 @@ export const Navbar = () => {
                     </ul>
                   </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="text-decoration-none" to="/projects">
-                    <a className="nav-link text-black" href="#">
+                <li className="nav-item bg-link-navbar">
+                  <Link className="text-decoration-none text-black-nav" to="/projects">
+                    <a className="nav-link text-black-nav" href="#">
                       Projects
                     </a>
                   </Link>
@@ -198,28 +198,30 @@ export const Navbar = () => {
                     </a>
                   </Link>
                 </li> */}
-                <li className="nav-item">
+                <li className="nav-item bg-link-navbar">
                   <Link className="text-decoration-none" to="/contact">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black-nav" href="#">
                       Contact Us
                     </a>
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item bg-link-navbar">
                   <Link className="text-decoration-none" to="/aboutus">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black-nav" href="#">
                       About Us
                     </a>
                   </Link>
                 </li>
 
-                <li className="nav-item">
-                  <button
-                    className="button-29"
-                    onClick={() => actions.changeLanguege()}
-                  >
-                    {store.language == "en" ? "ESPANOL" : "ENGLISH"}
-                  </button>
+                <li className="nav-item ">
+                  <div className="display-center-mobile">
+                    <button
+                      className="button-29"
+                      onClick={() => actions.changeLanguege()}
+                    >
+                      {store.language == "en" ? "ESPANOL" : "ENGLISH"}
+                    </button>
+                  </div>
                 </li>
               </ul>
               {/* <MDBNavbarLink active aria-current='page' href='#'>

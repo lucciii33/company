@@ -941,7 +941,7 @@ div.toast:not(.hide) {
 
 .box-project {
   width: 550px;
-  height: 650px;
+  height: 695px;
   padding: 10px;
   border: 2px solid #5c58b6;
   margin: 20px;
@@ -2184,13 +2184,49 @@ div.toast:not(.hide) {
     position: absolute;
   }
 }
-
+.testest {
+  height: auto;
+}
 .no-phone {
+  display: block;
+}
+.pt-controller-5 {
+  padding-top: 3rem;
+}
+.bg-link-navbar {
+  background-color: transparent transparent;
+}
+.text-black-nav {
+  color: black !important;
+}
+.display-center-mobile {
   display: block;
 }
 @media (max-width: 650px) {
   .no-phone {
     display: none;
+  }
+  .pt-controller-5 {
+    padding-top: 0rem;
+  }
+  .bg-link-navbar {
+    background-color: #343a40;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+  }
+  .text-black-nav {
+    color: white !important;
+  }
+  .display-center-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding-bottom: 5px;
   }
 }
 .modal-input {
@@ -2198,4 +2234,19 @@ div.toast:not(.hide) {
   border-radius: 5px;
   border: 2px solid #77acf0;
   height: 40px;
+}
+.text-size-controller {
+  text-align: start;
+}
+.button-display-mobile {
+  display: block;
+}
+@media (max-width: 990px) {
+  .text-size-controller {
+    text-align: center;
+  }
+  .button-display-mobile {
+    display: flex;
+    justify-content: center;
+  }
 }

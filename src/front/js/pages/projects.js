@@ -3,6 +3,7 @@ import { motion, useScroll, useInView } from "framer-motion";
 import elana from "../../img/elanaMockup.png";
 import rest from "../../img/Line5.jpeg"
 import olimar from "../../img/olimar.png"
+import logo4 from "../../img/logo4.png"
 import { GoogleAnalyticsTracker } from "../component/googleAnalyticsTracker";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
@@ -119,7 +120,8 @@ export const Projects = () => {
                   <img src={elana} className="img-project1 ms-3"></img>
                   <h3 className="paragraph ms-3">ELANA PELVIC CARE</h3>
                   <p className="description ms-3 ubunto">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    health care page created to find medical providers, their skills, services and locations. Providers can log in and create their profiles. Also includes blog features and directory with filters and log in for users.
+
                   </p>
                   <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
                 </motion.div>
@@ -186,8 +188,8 @@ export const Projects = () => {
                 // }}
                 >
                   <img
-                    src="https://i.pinimg.com/736x/3a/81/0f/3a810f0b7ec105cff334c412d9c9ed45.jpg"
-                    className="img-project ms-3"
+                    src={logo4}
+                    className="img-project1 ms-3"
                   ></img>
                   <h3 className="paragraph ms-3">Lorem Ipsum</h3>
                   <p className="description ms-3 ubunto" ubunto>

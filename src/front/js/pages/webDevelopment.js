@@ -29,12 +29,11 @@ export const WebDevelopment = () => {
             </h5>
             <h1 className="text-webdevelopment">
               We devise solutions to maximize
-              <br /> your business efficiency. lorem <br />
-              ipsum here to make more text
+              <br /> your business efficiency.
             </h1>
             <div>
               <button className="button-28 me-2">SEE PROJECTS</button>
-              <button className="btn btn-outline-primary controller-p">
+              <button className="button-29 controller-p">
                 ASK FOR QUOTE
               </button>
             </div>
@@ -117,7 +116,7 @@ export const WebDevelopment = () => {
                 ></img>
               </MDBCol>
               <MDBCol className="my-auto py-5" sm="12" md="12" lg="6">
-                <h3 className="text-white Orbitron">Creating an Online Presence</h3>
+                <h3 className="text-white Orbitron text-size-controller">Creating an Online Presence</h3>
                 {/* <h6 className="text-white">Lorem impsum text here</h6> */}
                 <p className="pe-4 text-white ubunto">
                   In today's world whether you are working on a personal website
@@ -132,7 +131,9 @@ export const WebDevelopment = () => {
                   specimen book.
                 </p>
                 <Link to="/projects">
-                  <button className="button-28">SEE PROJECTS</button>
+                  <div className="button-display-mobile">
+                    <button className="button-28">SEE PROJECTS</button>
+                  </div>
                 </Link>
               </MDBCol>
             </MDBRow>
