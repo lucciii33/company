@@ -16,6 +16,7 @@ const HomepageBanner3 = ({ width }) => {
             description="Our designers meticulously incorporate your instructions to design your website exactly as per your needs.            "
             img={<img src={design} className="logo-image"></img>}
             type="Create"
+            to="/webDevelopment"
           />
         </MDBCol>
         <MDBCol sm="12" md="12" lg="4">
@@ -24,6 +25,7 @@ const HomepageBanner3 = ({ width }) => {
             description="Digital marketing is flawed without web applications. In fact, experience tells us that websites are necessary to capture online, or perhaps global, market share."
             img={<img src={webdesign} className="logo-image"></img>}
             type="Design"
+            to="/mobileApps"
           />
         </MDBCol>
         <MDBCol sm="12" md="12" lg="4">
@@ -32,6 +34,7 @@ const HomepageBanner3 = ({ width }) => {
             description="Web presence is necessary, for website allows brands opportunity to meet millions of web servers. In fact, business websites are crucial touch point of sale closure."
             img={<img src={code} className="logo-image"></img>}
             type="Develop"
+            to="/webDevelopment"
           />
         </MDBCol>
       </MDBRow>

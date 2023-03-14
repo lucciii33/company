@@ -1,8 +1,9 @@
 import React, { Children, useState } from "react";
 import { motion } from "framer-motion";
 import desing from "../../img/design.png";
+import { Link } from "react-router-dom";
 
-export const Card = ({ title, description, img, type }) => {
+export const Card = ({ title, description, img, type, to }) => {
   const [hover, setHover] = useState(false)
   return (
 
@@ -21,9 +22,11 @@ export const Card = ({ title, description, img, type }) => {
       <div className="logo-image">{img}</div>
       <h3 className="mt-2 text-services">{title}</h3>
       <p className="mt-2 text-services ubunto">{description}</p>
-      <button className={hover ? "button-28" : "button-29"}>
-        Let's {type} <i className="fas fa-paint-brush p-2"></i>
-      </button>
+      <Link to={to} className="text-decoration-none">
+        <button className={hover ? "button-28" : "button-29"}>
+          Let's {type} <i className="fas fa-paint-brush p-2"></i>
+        </button>
+      </Link>
     </motion.div>
     // <div className="card card-banner-2">
     //     <h5 className="card-title title-banner-color title-banner-box text-center">

@@ -191,9 +191,10 @@ export const Projects = () => {
                     src={logo4}
                     className="img-project1 ms-3"
                   ></img>
-                  <h3 className="paragraph ms-3">Lorem Ipsum</h3>
+                  <h3 className="paragraph ms-3">YachtBuddy</h3>
                   <p className="description ms-3 ubunto" ubunto>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    YachtBuddy is a premier boat chartering company that offers a wide selection of luxurious yachts for rent. Their fleet of boats is meticulously maintained and equipped with state-of-the-art amenities to ensure a comfortable and unforgettable experience.
+
                   </p>
                   <p className="description ms-3 ubunto">Coming soon for april 3</p>
                 </motion.div>

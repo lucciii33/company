@@ -112,22 +112,28 @@ export const Home = () => {
         project: "elana pelvic care",
         duration: "1 year",
         image: `${elana}`,
-        image2: `${elanaMobile}`
+        image2: `${elanaMobile}`,
+        link1: "https://elana.health",
+        id: 1
       },
       {
         project: "Olimar Bueson",
         duration: "2 Month",
         image: `${olimar}`,
-        image2: `${olimarMobile}`
+        image2: `${olimarMobile}`,
+        link2: "https://olimarbueso.com/",
+        id: 2
       },
-      {
-        project: "Cooming Soon",
-        duration: "2 year",
-        image: `${rest}`
-      },
+      // {
+      //   project: "Cooming Soon",
+      //   duration: "2 year",
+      //   image: `${rest}`,
+      //   link3: "/projects",
+      //   id: 3
+      // },
 
       {},
-    ].slice(0, 3).map((num) => (
+    ].slice(0, 2).map((num) => (
       <div>
         <div className="carouselController">
           <div className="info-project-home">
@@ -157,8 +163,8 @@ export const Home = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <div className="just-desktop">
-              <button className="button-29 me-4 mt-2">VIEW PROJECT</button>
-              <button className="button-29 mt-2 ">CONTACT US</button>
+              <a href={num.id === 1 ? num.link1 : num.id === 2 ? num.link2 : ""} target="_blank" className="button-29 me-4 mt-2">VIEW PROJECT</a>
+              <Link to="/contact" className="text-decoration-none"><button className="button-29 mt-2 ">CONTACT US</button></Link>
             </div>
             <div className="just-mobile">
               <div className="d-flex justify-content-center">
@@ -279,7 +285,7 @@ export const Home = () => {
         <HomepageBanner3 width={windowDimensions.width} />
         {/* until here is the div */}
         <div className="bg-banner-3 ">
-          <h2 className="fs-50 Orbitron text-center pt-5">{store.language === "en" ? "Projects" : "Proyectos"}</h2>
+          <h2 className="fs-50 Orbitron text-center pt-5">{store.language === "en" ? "New Projects" : "Nuevos Proyectos"}</h2>
           <div className="">
             <Slider
               className="d-flex align-items-center"
