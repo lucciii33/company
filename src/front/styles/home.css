@@ -1663,9 +1663,10 @@ div.toast:not(.hide) {
   }
 
   .img-project-1 {
-    width: 430px;
+    width: 175px;
     height: 300px;
     border-radius: 20px;
+    margin-left: -55px;
   }
 
   .box-chart {
