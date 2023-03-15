@@ -32,10 +32,10 @@ export const WebDevelopment = () => {
               <br /> your business efficiency.
             </h1>
             <div>
-              <button className="button-28 me-2">SEE PROJECTS</button>
-              <button className="button-29 controller-p">
+              <Link to="/projects" className="text-decoration-none"><button className="button-28 me-2">SEE PROJECTS</button></Link>
+              <Link to="/contact" className="text-decoration-none"><button className="button-29 controller-p">
                 ASK FOR QUOTE
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -48,11 +48,10 @@ export const WebDevelopment = () => {
                     Your development partner.<br /> We stand for excellence!
                   </h3>
                   <p className="mt-4 ubunto">
-                    Over the past decade, we have mastered the art of creating
-                    websites that innovate, engage and deliver results through a
-                    combination of human-centric approach and development
-                    ingenuity. Hire top web developers to make your dream a
-                    reality.
+                    Bluelight Tech helps businesses and organizations establish a strong online presence, improve their visibility and accessibility, and drive growth and revenue.
+
+                    Our services include designing, developing, testing, and maintaining websites that meet the specific needs and requirements of clients.
+
                   </p>
                   <p className="mt-4 ubunto">
                     Be it custom Web applications development and SaaS
@@ -62,41 +61,37 @@ export const WebDevelopment = () => {
                     context and needs of the end-users, ensuring meaningful
                     results.
                   </p>
-                  <p className="mt-4 ubunto">
-                    Be it custom Web applications development and SaaS
-                    platforms, ecommerce website development or informative lead
-                    generation sites, our value proposition, when it comes to
-                    web development, is to build solutions by prioritizing the
-                    context and needs of the end-users, ensuring meaningful
-                    results.
-                  </p>
+
                 </MDBCol>
                 <MDBCol className="d-flex mt-2 m-5" sm="12" md="4" lg="4">
                   <div className="">
                     <div className="box-chart">
                       <h6>
-                        more that 10
-                        <br /> projects in 2022
+                        Management Systems
+
+                        <br />
                       </h6>
                     </div>
                     <div className="box-charts-two">
                       <h6>
-                        more that 10
-                        <br /> projects in 2022
+                        Software
+                        <br />
                       </h6>
                     </div>
                   </div>
                   <div className="">
                     <div className="box-charts-three">
                       <h6 className=" my-auto">
-                        more that 10
-                        <br /> projects in 2022
+                        Web development
+
+                        <br />
                       </h6>
                     </div>
                     <div className="box-charts-four">
                       <h6>
-                        more that 10
-                        <br /> projects in 2022
+                        E-commerce Development
+
+
                       </h6>
                     </div>
                   </div>
@@ -130,7 +125,7 @@ export const WebDevelopment = () => {
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
                 </p>
-                <Link to="/projects">
+                <Link to="/projects" className="text-decoration-none">
                   <div className="button-display-mobile">
                     <button className="button-28">SEE PROJECTS</button>
                   </div>

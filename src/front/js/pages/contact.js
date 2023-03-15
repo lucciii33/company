@@ -10,10 +10,24 @@ import { Footer } from "../component/footer";
 
 import { Context } from "../store/appContext";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
+import {
+  MDBInput,
+  MDBTextArea,
+  MDBBtn,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from "mdb-react-ui-kit";
 
 export const ContactUs = () => {
 
+  const [basicModalContact, setBasicModalContact] = useState(false);
 
+  const toggleShowContact = () => setBasicModalContact(!basicModalContact);
 
   const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window;
@@ -206,7 +220,10 @@ export const ContactUs = () => {
                             phone: "",
                             description: "",
                           });
+                          toggleShowContact()
                         }
+
+
                       }}
                     >
                       Submit
@@ -364,6 +381,13 @@ export const ContactUs = () => {
           send me
         </button>
       </div> */}
+        <MDBModal show={basicModalContact} setShow={setBasicModalContact} tabIndex='-1'>
+          <MDBModalDialog>
+            <MDBModalContent>
+              <MDBModalBody>Thank you for write us, we will get back to you soon!</MDBModalBody>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
       </div>
 
       <Footer />

@@ -6,7 +6,6 @@ import main1 from "../../img/main1.png";
 import elana1 from "../../img/figma.png";
 import elana2 from "../../img/elana.png";
 import "../../styles/home.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -103,26 +102,30 @@ export const Home = () => {
     handleShow();
   }, []);
 
+
+
   // useEffect(() => {
   //   handleShow();
   // }, []);
   const renderSlides = () =>
     [
       {
-        project: "elana pelvic care",
+        project: "Elana Pelvic Care",
         duration: "1 year",
         image: `${elana}`,
         image2: `${elanaMobile}`,
         link1: "https://elana.health",
-        id: 1
+        id: 1,
+        description: "Connect patients with medical providers! This platform allows medical providers to create a profile that showcases their skills, services, and locations. They can log in and update their profiles as needed. Patients can search for medical providers using various filters, such as location, specialty, services offered, and can save their favorite providers and access their profiles at any time. This healthcare page also features a blog. The blog may include articles written by medical professionals, patients, or other experts in the field. The blog can serve as a source of information for patients and providers alike."
       },
       {
-        project: "Olimar Bueson",
+        project: "Olimar Bueso",
         duration: "2 Month",
         image: `${olimar}`,
         image2: `${olimarMobile}`,
         link2: "https://olimarbueso.com/",
-        id: 2
+        id: 2,
+        description: "Webpage designed specifically for a medical professional including features such as a biography, services, contact form, and scheduling. Useful tool for a therapist who wants to provide their patients with information about their services and make it easy to contact them and schedule appointments. By including detailed information about the professional background, patients can make informed decisions about whether the therapist is a good fit for their needs. "
       },
       // {
       //   project: "Cooming Soon",
@@ -151,17 +154,14 @@ export const Home = () => {
 
             <h2 className="text-carousel-projects mt-3">{num.project}</h2>
             <p className="text-p-carousel-projects ubunto">
+              {num.description}
+            </p>
+            {/* <p className="text-p-carousel-projects ubunto">
               Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p className="text-p-carousel-projects ubunto">
-              Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            </p> */}
             <div className="just-desktop">
               <a href={num.id === 1 ? num.link1 : num.id === 2 ? num.link2 : ""} target="_blank" className="button-29 me-4 mt-2">VIEW PROJECT</a>
               <Link to="/contact" className="text-decoration-none"><button className="button-29 mt-2 ">CONTACT US</button></Link>
@@ -381,6 +381,8 @@ export const Home = () => {
         </MDBModal>
       </div>
       <Footer />
+
+
     </>
   );
 };

@@ -3,7 +3,7 @@ import {
   MDBRow,
   MDBInput,
   MDBTextArea,
-  MDBBtn,
+
 } from "mdb-react-ui-kit";
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
@@ -17,6 +17,8 @@ const CallToActionHome = () => {
     phone: "",
     description: "",
   });
+
+
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -113,7 +115,9 @@ const CallToActionHome = () => {
                 onChange={handleChange}
               />
               <div className="d-flex justify-content-center">
-                <button className="button-29 px-5" onClick={() => onSubmit()}>
+                <button className="button-29 px-5" onClick={() => {
+                  onSubmit()
+                }}>
                   SUBMIT
                 </button>
               </div>
@@ -121,6 +125,7 @@ const CallToActionHome = () => {
           </MDBCol>
         </MDBRow>
       </div>
+
     </>
   );
 };
