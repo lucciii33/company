@@ -91,7 +91,7 @@ export const Projects = () => {
             animate="visible"
             initial="hidden"
           >
-            What we’re proud of
+            {store.language === "en" ? "What we’re proud of" : "De que estamos orgullosos"}
           </motion.h2>
           <motion.h4
             className="paragraph mb-4 p-3"
@@ -99,7 +99,7 @@ export const Projects = () => {
             animate="visible"
             initial="hidden"
           >
-            Over the time, we have served various industries to help them achieve their goals, here is a sneak peak of our recent projects.
+            {store.language === "en" ? "Over the time, we have served various industries to help them achieve their goals, here is a sneak peak of our recent projects." : "Con el tiempo, hemos servido a diversas industrias para ayudarles a alcanzar sus objetivos. Aquí les presentamos un vistazo a nuestros proyectos recientes."}
           </motion.h4>
         </div>
         <div className="d-flex flex-wrap justify-content-center">
@@ -211,7 +211,7 @@ export const Projects = () => {
       </div>
       <div className="bg-dark products-banner">
         <div className="d-flex justify-content-center align-items-center mt-5 pb-5 pt-5">
-          <h2 className="text-center fs-50 Orbitron text-white">New Product Soon</h2>
+          <h2 className="text-center fs-50 Orbitron text-white">{store.language === "en" ? "New Product Soon" : "Nuevos productos pronto"}</h2>
           <div class="box-products"></div>
           <div class="box-products-2"></div>
           <div class="box-product-origin px-3">

@@ -128,12 +128,11 @@ export const ContactUs = () => {
             }}
           /> */}
             <h5 className="title-contact-1 text-center">
-              MAKE YOUR PRODUCT REALLY MATTER
+              {store.language === "en" ? "MAKE YOUR PRODUCT REALLY MATTER" : "HAZ QUR TU PRODUCTO REALMENTE IMPORTANTE"}
             </h5>
-            <h2 className="title-contact-2 text-center fs-50">Free project quote</h2>
+            <h2 className="title-contact-2 text-center fs-50">{store.language === "en" ? "Free project quote" : "Revisamos tu projecto gratis"}</h2>
             <h6 className="title-contact-3 text-center ubunto">
-              Fill out the inquiry form and we’ll get back to you as soon as
-              possible.
+              {store.language === "en" ? "Fill out the inquiry form and we’ll get back to you as soon as possible." : "Completa el formulario de consulta y nos pondremos en contacto contigo lo antes posible."}
             </h6>
           </div>
 
@@ -273,10 +272,10 @@ export const ContactUs = () => {
         <div className="blue-gradient-background contact-section-padding">
           <div className="text-center">
             <h2 className="text-gradient-small m-0">
-              Please book a meeting here
+              {store.language === "en" ? "Please book a meeting here" : "Reserva una reunión aquí."}
             </h2>
             <p className="paragraph text-white ubunto">
-              Let us know what you want to build and we can help
+              {store.language === "en" ? "Let us know what you want to build and we can help" : "Dejanos saber qué desea construir y podremos ayudarle."}
             </p>
             <motion.img
               src={arrow}
