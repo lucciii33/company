@@ -7,7 +7,6 @@ import { PopupWidget } from "react-calendly";
 import arrow from "../../img/arrow.png";
 import { Navbar } from "../component/navbar";
 import { Footer } from "../component/footer";
-
 import { Context } from "../store/appContext";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 import {
