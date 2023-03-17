@@ -73,11 +73,33 @@ h1 span {
   left: 200px;
   animation: openclose 5s ease-in-out infinite;
 }
+.purple-box {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .message {
+    /* background-color: #5994ce; */
+    display: none;
+  }
+  .purple-box {
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #e2a8ff 0,
+      #9e018e 100%
+    );
+    color: #333;
+    display: inline;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+  }
+}
 
 @media (max-width: 600px) {
   .message {
     /* background-color: #5994ce; */
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       100% 100% at 100% 0,
       #e2a8ff 0,
       #9e018e 100%
@@ -90,7 +112,7 @@ h1 span {
     padding-left: 0.5rem;
     top: 0.2rem;
     left: 115px;
-    animation: openclose 5s ease-in-out infinite;
+    animation: openclose 5s ease-in-out infinite; */
   }
 }
 
@@ -218,6 +240,20 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1080px) {
+  .conta {
+    height: auto;
+    width: 100%;
+    background: #1c012c;
+    background: -webkit-linear-gradient(top left, #1c012c, #9e018e);
+    background: -moz-linear-gradient(top left, #1c012c, #9e018e);
+    background: linear-gradient(to bottom right, #1c012c, #77acf0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .title {

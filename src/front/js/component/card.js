@@ -24,7 +24,7 @@ export const Card = ({ title, description, img, type, to }) => {
       <p className="mt-2 text-services ubunto">{description}</p>
       <Link to={to} className="text-decoration-none">
         <button className={hover ? "button-28" : "button-29"}>
-          Let's {type} <i className="fas fa-paint-brush p-2"></i>
+          {type} <i className="fas fa-paint-brush p-2"></i>
         </button>
       </Link>
     </motion.div>

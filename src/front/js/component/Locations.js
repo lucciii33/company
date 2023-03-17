@@ -11,7 +11,7 @@ const Locations = () => {
             <MDBCol sm="12" md="12" lg="4">
               <div className="entire-card p-4 m-2 text-or">
                 <img
-                  src={`https://maps.googleapis.com/maps/api/staticmap?center=Miami,Florida&zoom=12&size=600x600&key=AIzaSyAj-Sv-ohOJEKLFU7mOqrjw45UIRlb9vK0`}
+                  src={`https://maps.googleapis.com/maps/api/staticmap?center=Miami,Florida&zoom=12&size=600x600&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
                   alt="Miami"
                   className="img-fluid"
                 />
@@ -31,7 +31,7 @@ const Locations = () => {
             <MDBCol sm="12" md="12" lg="4">
               <div className="entire-card p-4 m-2 text-or">
                 <img
-                  src={`https://maps.googleapis.com/maps/api/staticmap?center=Caracas,Venezuela&zoom=12&size=600x600&key=${process.env.GOOGLE_API_KEY}`}
+                  src={`https://maps.googleapis.com/maps/api/staticmap?center=Caracas,Venezuela&zoom=12&size=600x600&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
                   alt="Caracas"
                   className="img-fluid"
                 />

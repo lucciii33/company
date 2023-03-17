@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   MDBTabs,
   MDBTabsItem,
@@ -8,8 +8,11 @@ import {
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
+import { Context } from "../store/appContext";
+
 
 const ProcessBanner = () => {
+  const { store } = useContext(Context);
   const [verticalActive, setVerticalActive] = useState("tab1");
 
   const handleVerticalClick = (value) => {
@@ -23,7 +26,7 @@ const ProcessBanner = () => {
   return (
     <>
       <div className="py-5 px-md-2 px-lg-5 bg-light">
-        <h2 className="text-center  text-dark w-100 pb-5 fs-50 Orbitron">Our Process</h2>
+        <h2 className="text-center  text-dark w-100 pb-5 fs-50 Orbitron">{store.language == "en" ? "Our Process" : "Nuestro Proceso"}</h2>
         <MDBRow className="px-5 pb-3">
           <MDBCol md="12" lg="3">
             <div className="d-flex align-items-center justify-content-center h-100 p-3">
@@ -38,7 +41,7 @@ const ProcessBanner = () => {
                         : "text-start p-3 fs-20 text-secondary border border-dark border-0 rounded-0 "
                     }
                   >
-                    1. Idea of Concept
+                    1. {store.language == "en" ? "Idea of Concept" : "Idea del Concepto"}
                   </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
@@ -51,7 +54,7 @@ const ProcessBanner = () => {
                         : "text-start p-3 fs-20 text-secondary border border-0 border-dark rounded-0 "
                     }
                   >
-                    2. Design
+                    2. {store.language == "en" ? "Design" : "Diseño"}
                   </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
@@ -64,7 +67,7 @@ const ProcessBanner = () => {
                         : "text-start p-3 fs-20 text-secondary border border-0 border-dark rounded-0 "
                     }
                   >
-                    3. Development
+                    3. {store.language == "en" ? "Development" : "Desarrollo"}
                   </MDBTabsLink>
                 </MDBTabsItem>
               </MDBTabs>
@@ -85,11 +88,9 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3 className="Orbitron">Idea of Concept</h3>
+                          <h3 className="Orbitron">{store.language == "en" ? "Idea of Concept" : "Idea del Concepto"}</h3>
                           <p className="ubunto">
-                            This is the creative area where brainstorming
-                            occurs. All ideas are processed and built upon to
-                            address the company's needs.
+                            {store.language == "en" ? "This is the creative area where brainstorming occurs. All ideas are processed and built upon to address the company's needs." : "Esta es el área creativa donde se realiza la lluvia de ideas. Todas las ideas se procesan y se desarrollan para abordar las necesidades de la empresa."}
                           </p>
                         </div>
                       </div>
@@ -110,11 +111,9 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3 className="Orbitron">Design</h3>
+                          <h3 className="Orbitron">{store.language == "en" ? "Design" : "Diseño"}</h3>
                           <p className="ubunto">
-                            Our design process is meticulous. We ensure that all
-                            features and modern looks are considered to provide
-                            the best result for our customers.
+                            {store.language == "en" ? "Our design process is meticulous. We ensure that all features and modern looks are considered to provide the best result for our customers." : "Nuestro proceso de diseño es meticuloso. Nos aseguramos de considerar todas las características y aspectos modernos para proporcionar el mejor resultado a nuestros clientes."}
                           </p>
                         </div>
                       </div>
@@ -135,11 +134,9 @@ const ProcessBanner = () => {
                     <MDBCol md="12" lg="6">
                       <div className="p-3 d-flex align-items-center h-100 text-white">
                         <div>
-                          <h3 className="Orbitron">Development</h3>
+                          <h3 className="Orbitron">{store.language == "en" ? "Development" : "Desarrollo"}</h3>
                           <p className="ubunto">
-                            All designs are then carefully recreated into the
-                            final product. Here optimization occurs to allow for
-                            functionality to meet creative design.
+                            {store.language == "en" ? "All designs are then carefully recreated into the final product. Here optimization occurs to allow for functionality to meet creative design." : "Todos los diseños son recreados cuidadosamente en el producto final. Aquí ocurre la optimización para permitir que la funcionalidad cumpla con el diseño creativo."}
                           </p>
                         </div>
                       </div>

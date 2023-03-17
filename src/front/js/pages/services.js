@@ -380,7 +380,7 @@ export const Services = () => {
 						<div className="pt-3">
 							<div className="">
 								<h2 className="text-white text-center services-text-card">E-commerce</h2>
-								<h3 className="text-white text-center services-text-card ">$1500</h3>
+								<h3 className="text-white text-center services-text-card ">$500</h3>
 							</div>
 							<div className="">
 								<div className="squre-services d-flex justify-content-center align-items-center">

@@ -116,7 +116,8 @@ export const Home = () => {
         image2: `${elanaMobile}`,
         link1: "https://elana.health",
         id: 1,
-        description: "Connect patients with medical providers! This platform allows medical providers to create a profile that showcases their skills, services, and locations. They can log in and update their profiles as needed. Patients can search for medical providers using various filters, such as location, specialty, services offered, and can save their favorite providers and access their profiles at any time. This healthcare page also features a blog. The blog may include articles written by medical professionals, patients, or other experts in the field. The blog can serve as a source of information for patients and providers alike."
+        description: "Connect patients with medical providers! This platform allows medical providers to create a profile that showcases their skills, services, and locations. They can log in and update their profiles as needed. Patients can search for medical providers using various filters, such as location, specialty, services offered, and can save their favorite providers and access their profiles at any time. This healthcare page also features a blog. The blog may include articles written by medical professionals, patients, or other experts in the field. The blog can serve as a source of information for patients and providers alike.",
+        spanish: "¡Conecte a los pacientes con los proveedores médicos! Esta plataforma permite a los proveedores médicos crear un perfil que muestre sus habilidades, servicios y ubicaciones. Pueden iniciar sesión y actualizar sus perfiles según sea necesario. Los pacientes pueden buscar proveedores médicos utilizando varios filtros, como ubicación, especialidad, servicios ofrecidos, y pueden guardar a sus proveedores favoritos y acceder a sus perfiles en cualquier momento. Esta página de atención médica también cuenta con un blog. El blog puede incluir artículos escritos por profesionales médicos, pacientes u otros expertos en el campo. El blog puede servir como fuente de información tanto para pacientes como para proveedores."
       },
       {
         project: "Olimar Bueso",
@@ -125,7 +126,8 @@ export const Home = () => {
         image2: `${olimarMobile}`,
         link2: "https://olimarbueso.com/",
         id: 2,
-        description: "Webpage designed specifically for a medical professional including features such as a biography, services, contact form, and scheduling. Useful tool for a therapist who wants to provide their patients with information about their services and make it easy to contact them and schedule appointments. By including detailed information about the professional background, patients can make informed decisions about whether the therapist is a good fit for their needs. "
+        description: "Webpage designed specifically for a medical professional including features such as a biography, services, contact form, and scheduling. Useful tool for a therapist who wants to provide their patients with information about their services and make it easy to contact them and schedule appointments. By including detailed information about the professional background, patients can make informed decisions about whether the therapist is a good fit for their needs. ",
+        spanish: "Página web diseñada específicamente para un profesional médico que incluye características como una biografía, servicios, formulario de contacto y programación. Una herramienta útil para un terapeuta que desea proporcionar a sus pacientes información sobre sus servicios y hacer que sea fácil ponerse en contacto y programar citas. Al incluir información detallada sobre la formación profesional, los pacientes pueden tomar decisiones informadas sobre si el terapeuta es adecuado para sus necesidades."
       },
       // {
       //   project: "Cooming Soon",
@@ -148,13 +150,13 @@ export const Home = () => {
             </div>
           </div>
           <div className="my-auto">
-            <div className="border-name-project">
+            {/* <div className="border-name-project">
               <h5 className="duration-carousel-projects">{num.duration}</h5>
-            </div>
+            </div> */}
 
             <h2 className="text-carousel-projects mt-3">{num.project}</h2>
             <p className="text-p-carousel-projects ubunto">
-              {num.description}
+              {store.language == "en" ? num.description : num.spanish}
             </p>
             {/* <p className="text-p-carousel-projects ubunto">
               Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -163,15 +165,17 @@ export const Home = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p> */}
             <div className="just-desktop">
-              <a href={num.id === 1 ? num.link1 : num.id === 2 ? num.link2 : ""} target="_blank" className="button-29 me-4 mt-2">VIEW PROJECT</a>
-              <Link to="/contact" className="text-decoration-none"><button className="button-29 mt-2 ">CONTACT US</button></Link>
+              <a href={num.id === 1 ? num.link1 : num.id === 2 ? num.link2 : ""} target="_blank" className="button-29 me-4 mt-2">{store.language == "en" ? "VIEW PROJECT" : "VER PROYECTO"}</a>
+              <Link to="/contact" className="text-decoration-none"><button className="button-29 mt-2 ">{store.language == "en" ? "CONTACT US" : "CONTACTENOS"}</button></Link>
             </div>
             <div className="just-mobile">
               <div className="d-flex justify-content-center">
                 <div>
-                  <button className="button-29 me-2 mt-4">VIEW PROJECT</button>
+                  <a href={num.id === 1 ? num.link1 : num.id === 2 ? num.link2 : ""} target="_blank" className="button-29 me-4 mt-2">{store.language == "en" ? "VIEW PROJECT" : "VER PROYECTO"}</a>
                   <div className="d-flex justify-content-center">
-                    <button className="button-29 mt-4 mb-5">CONTACT US</button>
+                    <Link to="/contact" className="text-decoration-none">
+                      <button className="button-29 mt-4 mb-5">{store.language == "en" ? "CONTACT US" : "CONTACTENOS"}</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -246,16 +250,18 @@ export const Home = () => {
                 ? "Your website needs"
                 : "Tu pagina necesita"}
             </h2>
-            <div className="d-grid">
+            <div className={windowDimensions.width > 1080 ? "d-grid" : "d-flex"}>
               <h1>
                 <span className="m-left">{store.language === "en" ? "to be" : "lucir"}</span>
 
                 <div className="message">
-                  <div className="word1">{store.language === "en" ? "creative" : "Creativa"}</div>
+                  <div className="word1">{store.language === "en" ? "creative" : "creativa"}</div>
                   <div className="word2">{store.language === "en" ? "modern" : "moderna"}</div>
-                  <div className="word3">amused</div>
-                  <div className="word4">usefull</div>
+                  <div className="word3">{store.language === "en" ? "amusing" : "original"}</div>
                 </div>
+                <span className="purple-box">
+                  <span className="word1">{store.language === "en" ? "creative" : "Creativa"}</span>
+                </span>
               </h1>
             </div>
             <h2 className="text-white title2 bg-future">{store.language === "en" ? "And we can help you" : "¡Podemos ayudarte!"} </h2>
