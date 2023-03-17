@@ -213,7 +213,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item ">
+                {/* <li className="nav-item ">
                   <div className="display-center-mobile">
                     <button
                       className="button-29"
@@ -222,7 +222,7 @@ export const Navbar = () => {
                       {store.language == "en" ? "ESPANOL" : "ENGLISH"}
                     </button>
                   </div>
-                </li>
+                </li> */}
               </ul>
               {/* <MDBNavbarLink active aria-current='page' href='#'>
                 Home
