@@ -123,7 +123,7 @@ export const Projects = () => {
                     health care page created to find medical providers, their skills, services and locations. Providers can log in and create their profiles. Also includes blog features and directory with filters and log in for users.
 
                   </p>
-                  <a className="button-29 ms-3" href="https://elana.health" target="_blank">see me!</a>
+                  <a className="button-29 ms-3" href="https://staging-site-elana.netlify.app/" target="_blank">see me!</a>
                 </motion.div>
               </MDBCol>
               <MDBCol md="6" lg="6" sm="12">
@@ -170,7 +170,7 @@ export const Projects = () => {
                   ></img>
                   <h3 className="paragraph ms-3">Line5</h3>
                   <p className="description ms-3 ubunto">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Line 5 partners with dealers to fully fund vehicle protection plans for Automobiles, SUVs, Trucks and more. With guaranteed approvals and zero down payment requirements, your customers get the coverage they want at a payment they can afford. You sell more products and make more money.
                   </p>
                   <p className="description ms-3 ubunto">Coming soon for march 27</p>
                 </motion.div>

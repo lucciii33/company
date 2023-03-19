@@ -92,7 +92,7 @@ h1 span {
     display: inline;
     padding: 0.5rem;
     margin-left: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -266,7 +266,7 @@ h1 span {
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Orbitron", sans-serif;
   }
   .title2 {

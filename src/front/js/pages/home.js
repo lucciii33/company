@@ -114,7 +114,7 @@ export const Home = () => {
         duration: "1 year",
         image: `${elana}`,
         image2: `${elanaMobile}`,
-        link1: "https://elana.health",
+        link1: "https://staging-site-elana.netlify.app/",
         id: 1,
         description: "Connect patients with medical providers! This platform allows medical providers to create a profile that showcases their skills, services, and locations. They can log in and update their profiles as needed. Patients can search for medical providers using various filters, such as location, specialty, services offered, and can save their favorite providers and access their profiles at any time. This healthcare page also features a blog. The blog may include articles written by medical professionals, patients, or other experts in the field. The blog can serve as a source of information for patients and providers alike.",
         spanish: "¡Conecte a los pacientes con los proveedores médicos! Esta plataforma permite a los proveedores médicos crear un perfil que muestre sus habilidades, servicios y ubicaciones. Pueden iniciar sesión y actualizar sus perfiles según sea necesario. Los pacientes pueden buscar proveedores médicos utilizando varios filtros, como ubicación, especialidad, servicios ofrecidos, y pueden guardar a sus proveedores favoritos y acceder a sus perfiles en cualquier momento. Esta página de atención médica también cuenta con un blog. El blog puede incluir artículos escritos por profesionales médicos, pacientes u otros expertos en el campo. El blog puede servir como fuente de información tanto para pacientes como para proveedores."
